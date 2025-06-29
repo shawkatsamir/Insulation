@@ -1,0 +1,400 @@
+{
+  "ar": {
+    "header": {
+      "logo": "عوازل مكة",
+      "links": ["خدماتنا", "لماذا نحن؟", "تواصل معنا", "المدونة"]
+    },
+    "hero": {
+      "title": "شركة عوازل مكة",
+      "subtitle": "نقدم في عوازل مكة خدمات عزل حراري ومائي موثوقة للأسطح والمسابح والخزانات، باستخدام أجود المواد وضمان تنفيذي يدوم لسنوات. خبرة سنوات في مكة المكرمة، جدة, النورية، الجموم، بحرة وهدا الشام.",
+      "trustItems": [
+        { "icon": "podium-outline", "text": "مواد معتمدة" },
+        { "icon": "star-outline", "text": "خبرة 20 سنة" },
+        { "icon": "time-outline", "text": "تنفيذ سريع" },
+        { "icon": "checkmark-circle-outline", "text": "ضمان شامل" },
+        { "icon": "time-outline", "text": "خدمة 24/7" },
+        { "icon": "shield-checkmark-outline", "text": "كشف بدون تكسير" }
+      ]
+    },
+    "contact": {
+      "callBtn": "اتصل بنا الآن",
+      "whatsappBtn": "تواصل عبر الواتساب"
+    },
+    "locations": {
+      "heading": "نقدم خدماتنا في هذه المناطق:",
+      "hero": {
+        "list": ["مكة", "النورية", "الجموم", "هدا الشام", "جدة", "بحرة"]
+      },
+      "contact": {
+        "list": ["مكة", "النورية", "الجموم", "هدا الشام", "جدة", "بحرة"]
+      },
+      "footerText": "تواصل معنا الآن للحصول على استشارة مجانية!"
+    },
+    "services": {
+      "header": {
+        "name": "خدماتنا المتميزة",
+        "title": "حلول شاملة لجميع أنواع العزل وكشف التسريبات",
+        "subtitle": "نقدم مجموعة متكاملة من الخدمات المتخصصة في العزل و كشف التسريبات باستخدام أحدث التقنيات والمعدات الحديثة"
+      },
+      "cards": [
+        {
+          "title": "عزل الأسطح",
+          "subtitle": "حماية من تسرب المياه والحرارة باستخدام مواد معتمدة عالميًا وراتنجات الإيبوكسي الحديثة.",
+          "features": [
+            "ضمان تنفيذي يدوم لسنوات",
+            "مقاومة عالية للماء والحرارة",
+            "فحص دوري مجاني"
+          ]
+        },
+        {
+          "title": "عزل الخزانات",
+          "subtitle": "ضمان نقاء المياه باستخدام تقنيات الإيبوكسي الآمنة وغير السام.",
+          "features": [
+            "مقاومة كيميائية عالية",
+            "تطبيق آمن وغير سام",
+            "عزل داخلي وخارجي"
+          ]
+        },
+        {
+          "title": "عزل المطابخ و الحمامات",
+          "subtitle": "حلول فعّالة للوقاية من التسرب المائي في المناطق الرطبة مثل الحمامات والمطابخ.",
+          "features": [
+            "عزل شامل للمجاري والمغاسل",
+            "مقاومة طويلة الأمد للماء",
+            "معالجة التشققات"
+          ]
+        },
+        {
+          "title": "كشف التسريبات بدون تكسير",
+          "subtitle": "تقنية متقدمة لكشف التسرب دون إحداث أي تشويه أو تكسير في الجدران أو الأرضيات.",
+          "features": [
+            "استخدام أحدث أجهزة الكشف الحراري",
+            "دقة عالية وسرعة في التشخيص",
+            "تحديد مكان التسريب بدقة"
+          ]
+        },
+        {
+          "title": "الصيانة و الإصلاح",
+          "subtitle": "خدمات صيانة دورية وتصليح سريع لأي مشاكل بعد العزل",
+          "features": [
+            "زيارات دورية مجانية",
+            "تصليح فوري عند وجود تسرب",
+            "فريق محترف ومعدات حديثة"
+          ]
+        },
+        {
+          "title": "استشارة فنية",
+          "subtitle": "احصل على استشارة مجانية قبل بدء العمل لتحديد أفضل حلول العزل المناسبة.",
+          "features": [
+            "دراسة حالة الموقع",
+            "اقتراح الحلول المناسبة",
+            "متابعة ما بعد التنفيذ"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "header": {
+        "name": "لماذا تختارنا؟",
+        "title": "الريادة والتميز في خدمات العزل",
+        "subtitle": "نقدم خدمات عزل حراري ومائي موثوقة مع ضمان تنفيذي يدوم لسنوات، باستخدام أجود المواد وفريق محترف."
+      },
+      "items": [
+        {
+          "title": "مواد معتمدة عالميًا",
+          "text": "نستخدم مواد عزل عالية الجودة معتمدة من المؤسسات العالمية"
+        },
+        {
+          "title": "تقنيات متقدمة",
+          "text": "نستخدم أحدث الأجهزة لكشف التسرب بدون تكسير، ونستخدم تقنيات متطورة لعزل الخزانات والأسطح"
+        },
+        {
+          "title": "ضمان تنفيذي",
+          "text": "نستخدم أحدث التقنيات لكشف التسريبات بدون تكسير أو تشويه، مما يحافظ على هيكل المبنى ويقلل الوقت والجهد."
+        },
+        {
+          "title": "خدمات بمدن متعددة",
+          "text": "جميع خدماتنا تأتي مع ضمان تنفيذي يدوم لسنوات، مما يضمن راحتك ورضاك."
+        },
+        {
+          "title": "فريق محترف",
+          "text": "فريق عمل مدرب ومحترف معتمد من أفضل المؤسسات التدريبية المتخصصة."
+        },
+        {
+          "title": "خبرة سنوات في مكة",
+          "text": "أكثر من 20 سنة من الخبرة في عزل الأسطح والخزانات بمكة المكرمة والمناطق المحيطة."
+        }
+      ]
+    },
+    "contact_us": {
+      "header": {
+        "name": "تواصل معنا",
+        "subtitle": "احصل على استشارة مجانية أو رفع طلب خدمة فورًا من خلال الهاتف أو الواتساب – متاحون لك دائمًا في مكة المكرمة، جدة، النورية، الجموم، بحرة، وهدا الشام."
+      },
+      "contactInfo": {
+        "phoneLabel": "الهاتف",
+        "phone": "+966 50 000 0000",
+        "whatsappLabel": "الواتساب",
+        "whatsapp": "+966 50 000 0000",
+        "emailLabel": "البريد الإلكتروني",
+        "email": "info@insulmakkah.com"
+      },
+      "trustItems": [
+        { "text": "مواد معتمدة" },
+        { "text": "20+ سنة خبرة" },
+        { "text": "خدمة 24/7" }
+      ],
+      "locations": {
+        "heading": "نقدم خدماتنا في هذه المناطق:",
+        "list": ["مكة", "النورية", "الجموم", "هدا الشام", "جدة", "بحرة"],
+        "footerText": "تواصل معنا الآن للحصول على استشارة مجانية!"
+      }
+    },
+    "footer": {
+      "about": {
+        "name": "عوازل مكة",
+        "description": "نقدم خدمات عزل حراري ومائي موثوقة للأسطح والمسابح والخزانات باستخدام أجود المواد وضمان تنفيذي يدوم لسنوات."
+      },
+      "quickLinks": {
+        "title": "روابط سريعة",
+        "home": "الرئيسية",
+        "services": "خدماتنا",
+        "whyUs": "لماذا نحن؟",
+        "contact": "تواصل معنا"
+      },
+      "ourServices": {
+        "title": "خدماتنا",
+        "roofInsulation": "عزل الأسطح",
+        "leakDetection": "كشف التسريبات بدون تكسير",
+        "tankInsulation": "عزل الخزانات",
+        "bathroomWaterproofing": "عزل الحمامات والمطابخ"
+      },
+      "contactUs": {
+        "title": "تواصل معنا",
+        "phone": "+966 50 000 0000",
+        "whatsapp": "+966 50 000 0000",
+        "email": "info@insulmakkah.com"
+      },
+      "bottomBar": {
+        "copyright": "© 2025 عوازل مكة – جميع الحقوق محفوظة",
+        "languageToggle": "عربي / English"
+      }
+    }
+  },
+  "en": {
+    "header": {
+      "logo": "Makkah Insulation",
+      "links": ["services", "why us", "contact us", "blog"]
+    },
+
+    "hero": {
+      "title": "Makkah Insulation Co.",
+      "subtitle": "InsulMakkah provides reliable thermal and waterproof insulation for roofs, pools, and tanks using globally certified materials and long-term execution warranty. Years of experience in Makkah, Al-Nouria, Al-Jomum, and Hada Al-Sham.",
+      "trustItems": [
+        { "icon": "podium-outline", "text": "Certified Materials" },
+        { "icon": "star-outline", "text": "20 Years of Experience" },
+        { "icon": "time-outline", "text": "Fast Execution" },
+        {
+          "icon": "checkmark-circle-outline",
+          "text": "Comprehensive Warranty"
+        },
+        { "icon": "time-outline", "text": "24/7 Service" },
+        {
+          "icon": "shield-checkmark-outline",
+          "text": "Non-Destructive Leak Detection"
+        }
+      ]
+    },
+    "contact": {
+      "callBtn": "Call Us Now",
+      "whatsappBtn": "Chat on WhatsApp"
+    },
+    "locations": {
+      "heading": "We offer our services in the following areas:",
+      "hero": {
+        "list": [
+          "Mecca",
+          "Al-Nouriyah",
+          "Al-Jumum",
+          "Hada Al-Sham",
+          "Jeddah",
+          "Bahrah"
+        ]
+      },
+      "contact": {
+        "list": [
+          "Mecca",
+          "Al-Nouriyah",
+          "Al-Jumum",
+          "Hada Al-Sham",
+          "Jeddah",
+          "Bahrah"
+        ]
+      },
+      "footerText": "Contact us now for a free consultation!"
+    },
+
+    "services": {
+      "header": {
+        "name": "Our Premium Services",
+        "title": "Comprehensive Solutions for All Types of Insulation & Leak Detection",
+        "subtitle": "We offer a complete range of specialized insulation and leak detection services using the latest technologies and modern equipment."
+      },
+      "cards": [
+        {
+          "title": "Roof Insulation",
+          "subtitle": "Protection from water and heat leaks using globally certified materials.",
+          "features": [
+            "Long-Term Execution Warranty",
+            "High Resistance to Water & Heat",
+            "Free Periodic Inspection"
+          ]
+        },
+        {
+          "title": "Tank Insulation",
+          "subtitle": "Ensuring water purity and protection from contamination using advanced techniques.",
+          "features": [
+            "High Chemical Resistance",
+            "Safe and Non-Toxic Application",
+            "Internal & External Insulation"
+          ]
+        },
+        {
+          "title": "Kitchen & Bathroom Waterproofing",
+          "subtitle": "Effective solutions to prevent water leakage in wet areas like bathrooms and kitchens.",
+          "features": [
+            "Full Sealing for Drains and Sinks",
+            "Long-Lasting Water Resistance",
+            "Crack Treatment"
+          ]
+        },
+        {
+          "title": "Leak Detection Without Breaking",
+          "subtitle": "Advanced technology to detect leaks without causing damage to walls or floors.",
+          "features": [
+            "Use of Latest Thermal Detection Devices",
+            "High Precision & Fast Diagnosis",
+            "Accurate Leak Location Identification"
+          ]
+        },
+        {
+          "title": "Maintenance & Repair",
+          "subtitle": "Periodic maintenance and fast repair services for any issues after insulation.",
+          "features": [
+            "Free Periodic Visits",
+            "Immediate Repair Upon Leak Detection",
+            "Professional Team & Modern Equipment"
+          ]
+        },
+        {
+          "title": "Technical Consultation",
+          "subtitle": "Get free consultation before starting work to determine the best insulation solutions for your project.",
+          "features": [
+            "Site Condition Assessment",
+            "Suitable Solution Recommendations",
+            "Post-Execution Follow-Up"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "header": {
+        "name": "Why Choose Us?",
+        "title": "Leadership and excellence in insulation services",
+        "subtitle": "We offer reliable thermal and waterproof insulation services with long-term execution warranty, using globally certified materials and a professional team."
+      },
+      "items": [
+        {
+          "title": "Globally Certified Materials",
+          "text": "We use high-quality insulation materials certified by international institutions."
+        },
+        {
+          "title": "Advanced Detection & Insulation Techniques",
+          "text": "We use the latest devices for leak detection without breaking, and advanced methods for tank and roof insulation."
+        },
+        {
+          "title": "Non-Destructive Methods",
+          "text": "We apply modern non-destructive techniques to detect leaks without damage, preserving building structure and saving time."
+        },
+        {
+          "title": "Service Across Multiple Cities",
+          "text": "Our services come with long-term execution warranty, ensuring your satisfaction and peace of mind."
+        },
+        {
+          "title": "Certified Professional Team",
+          "text": "Our team is trained and certified by top specialized training institutions."
+        },
+        {
+          "title": "20+ Years of Experience in Makkah",
+          "text": "Over 20 years of experience in roof and tank insulation in Makkah and surrounding areas."
+        }
+      ]
+    },
+    "contact_us": {
+      "header": {
+        "name": "Get in Touch",
+        "subtitle": "We serve in Makkah Al-Mukarramah, Al-Nouria, Al-Jomum, Hada Al-Sham, Jeddah, and Bahra. Request a free consultation or service instantly via phone or WhatsApp – we’re always available!"
+      },
+      "contactInfo": {
+        "phoneLabel": "Phone",
+        "phone": "+966 50 000 0000",
+        "whatsappLabel": "WhatsApp",
+        "whatsapp": "+966 50 000 0000",
+        "emailLabel": "Email",
+        "email": "info@insulmakkah.com"
+      },
+      "trustItems": [
+        { "text": "Certified Materials" },
+        { "text": "20+ Years of Experience" },
+        { "text": "24/7 Service" }
+      ],
+      "locations": {
+        "heading": "We Serve in These Areas:",
+        "list": [
+          "Makkah",
+          "Al-Nouria",
+          "Al-Jomum",
+          "Hada Al-Sham",
+          "Jeddah",
+          "Bahra"
+        ],
+        "footerText": "Get in touch now for a free consultation!"
+      },
+      "buttons": {
+        "callBtn": "Call Us Now",
+        "whatsappBtn": "Chat on WhatsApp"
+      }
+    },
+    "footer": {
+      "about": {
+        "name": "InsulMakkah",
+        "description": "We offer reliable thermal and waterproof insulation services for roofs, pools, and tanks using globally certified materials and long-term execution warranty."
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "home": "Home",
+        "services": "Our Services",
+        "whyUs": "Why Us",
+        "contact": "Contact Us"
+      },
+      "ourServices": {
+        "title": "Our Services",
+        "roofInsulation": "Roof Insulation",
+        "leakDetection": "Leak Detection Without Breaking",
+        "tankInsulation": "Tank Insulation",
+        "bathroomWaterproofing": "Bathroom & Kitchen Waterproofing"
+      },
+      "contactUs": {
+        "title": "Get in Touch",
+        "phone": "+966 50 000 0000",
+        "whatsapp": "+966 50 000 0000",
+        "email": "info@insulmakkah.com",
+        "address": "Abu Bakr Al-Siddiq St, Makkah Al-Mukarramah, Saudi Arabia"
+      },
+      "bottomBar": {
+        "copyright": "© 2025 InsulMakkah – All Rights Reserved",
+        "languageToggle": "عربي / English"
+      }
+    }
+  }
+}
