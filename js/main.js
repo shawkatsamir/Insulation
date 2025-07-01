@@ -139,11 +139,18 @@
 
   let translations = {};
 
-  // Load translations from external JSON
   async function loadTranslations() {
+    const cached = localStorage.getItem("translations");
+
+    if (cached) {
+      translations = JSON.parse(cached);
+      return;
+    }
+
     try {
       const response = await fetch("./data/translation.json");
       translations = await response.json();
+      localStorage.setItem("translations", JSON.stringify(translations));
     } catch (error) {
       console.error("Failed to load translations:", error);
     }
@@ -226,10 +233,10 @@
       setText(el, t.locations.footerText)
     );
 
-    elements.locations.heroLocations.forEach((el,i) =>
+    elements.locations.heroLocations.forEach((el, i) =>
       setText(el, t.locations.hero.list[i])
     );
-    elements.locations.contactLocations.forEach((el,i) =>
+    elements.locations.contactLocations.forEach((el, i) =>
       setText(el, t.locations.contact.list[i])
     );
 
