@@ -55,10 +55,6 @@ body {
   color: #fff;
 }
 
-/* [dir="ltr"] .header-navbar {
-  transform: translateX(-100%);
-} */
-
 .header-navbar {
   background-color: rgba(51, 92, 133, 0.6);
   --webkit-backdrop-filter: blur(5px);
@@ -78,10 +74,6 @@ body {
   opacity: 0;
   z-index: 9;
 }
-
-/* [dir="ltr"].nav-open .header-navbar {
-  transform: translateY(0);
-} */
 
 .header-navbar__links {
   display: flex;
@@ -109,7 +101,6 @@ body {
 
 .button-mobile__toggle {
   z-index: 9999;
-  /* color: red; */
 }
 
 .icon-mobile__nav {
@@ -129,8 +120,6 @@ body {
 }
 
 .header.sticky {
-  /* width: 100%;
-  position: fixed; */
   background-color: rgba(255, 255, 255, 0.95);
 }
 .lang-toggle {
@@ -168,7 +157,7 @@ body {
       rgba(0, 51, 102, 0.35),
       rgba(0, 41, 82, 0.35)
     ),
-    url("/imgs/stock-photo-waterproofing-roll-bituminous-material-in-the-trench-constructi.jpeg");
+    url("/imgs/hero-insulation.webp");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -664,7 +653,6 @@ body {
   color: #bbb;
 }
 
-/* Back to top button */
 .btn-back-to-top {
   position: fixed;
   bottom: 80px;
@@ -705,22 +693,6 @@ body {
     padding: 1rem 2rem;
   }
 
-  .header.sticky {
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: rgba(
-      0,
-      51,
-      102,
-      0.95
-    ); /* Match original header background */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    animation: slideInDown 0.5s ease-in-out;
-  }
-
   .header-logo__text {
     font-size: 2.4rem;
   }
@@ -743,10 +715,6 @@ body {
     display: flex;
   }
 
-  /* [dir="ltr"] .header-navbar {
-  transform: none;
-} */
-
   .button-mobile__toggle {
     display: none;
   }
@@ -754,7 +722,6 @@ body {
   .header-navbar__links {
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: start; */
 
     gap: 3.2rem;
     align-items: center;
