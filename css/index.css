@@ -1,6 +1,6 @@
 :root {
-  /* Colors */
   --color-dark-blue: #003366;
+  --color-light-blue: #335c85;
   --color-forest-green: #228b22;
   --color-gold: #ffd700;
   --color-cream-white: #fff8e1;
@@ -9,14 +9,7 @@
   --color-white: #ffffff;
 }
 
-html {
-  font-size: 62.5%; /* 1rem = 10px */
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Cairo", sans-serif; /* Default for Arabic */
-  line-height: 1.6;
   color: var(--color-dark-gray);
 }
 
@@ -28,14 +21,15 @@ body {
   background-color: rgba(0, 51, 102, 0.95);
   color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header ion-icon {
   font-size: 2.4rem;
-}
-
-.header-navbar {
-  display: none;
 }
 
 .header-logo {
@@ -49,22 +43,96 @@ body {
 .header-logo__icon {
   color: #ffd700;
   display: inline-flex;
-  background-color: #335c85;
+  background-color: var(--color-light-blue);
   padding: 1rem;
   border-radius: 50%;
 }
 
-.header-mobile__nav {
+.button-mobile__toggle {
   cursor: pointer;
   border: none;
   background: none;
   color: #fff;
 }
 
-.header-mobile__nav [name="close-outline"] {
+/* [dir="ltr"] .header-navbar {
+  transform: translateX(-100%);
+} */
+
+.header-navbar {
+  background-color: rgba(51, 92, 133, 0.6);
+  --webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+
+  opacity: 0;
+  z-index: 9;
+}
+
+/* [dir="ltr"].nav-open .header-navbar {
+  transform: translateY(0);
+} */
+
+.header-navbar__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.header-navbar__link:hover {
+  color: var(--color-gold);
+}
+
+.header-navbar__link {
+  color: var(--color-white);
+
+  font-size: 2.4rem;
+  transition: color 0.3s ease;
+}
+
+.nav-open .header-navbar {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.button-mobile__toggle {
+  z-index: 9999;
+  /* color: red; */
+}
+
+.icon-mobile__nav {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon-mobile__nav[name="close-outline"] {
   display: none;
 }
 
+.nav-open .icon-mobile__nav[name="menu-outline"] {
+  display: none;
+}
+.nav-open .icon-mobile__nav[name="close-outline"] {
+  display: block;
+}
+
+.header.sticky {
+  /* width: 100%;
+  position: fixed; */
+  background-color: rgba(255, 255, 255, 0.95);
+}
 .lang-toggle {
   position: absolute;
   top: 1rem;
@@ -83,6 +151,16 @@ body {
   color: #ffd700;
 }
 
+.section {
+  transition: all 0.5s ease-out;
+}
+
+.section--hidden {
+  opacity: 0;
+
+  transform: translateY(8rem);
+}
+
 .hero {
   text-align: center;
   background-image: linear-gradient(
@@ -91,15 +169,11 @@ body {
       rgba(0, 41, 82, 0.35)
     ),
     url("/imgs/stock-photo-waterproofing-roll-bituminous-material-in-the-trench-constructi.jpeg");
-  min-height: 90vh;
+  min-height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.hero-areas__list {
-  display: none;
 }
 
 .hero-title {
@@ -157,7 +231,7 @@ body {
 }
 
 .hero-trust__item:hover .hero-trust__item-icon {
-  color: #003366; /* Dark Blue */
+  color: var(--color-dark-blue);
 }
 
 .btn-call__icon {
@@ -168,13 +242,10 @@ body {
   display: none;
 }
 
-/* Main Services Section */
 .services {
-  /* padding: 4rem 1.5rem; */
-  background-color: #f5f5f5; /* Cream white background */
+  background-color: #f5f5f5;
 }
 
-/* Services Header */
 .services-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -184,7 +255,7 @@ body {
   display: block;
 
   font-weight: 600;
-  color: #003366;
+  color: var(--color-dark-blue);
   background-color: rgba(255, 215, 0, 0.2);
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -195,24 +266,21 @@ body {
 
 .services-title {
   font-size: 2.8rem;
-  color: #003366; /* Dark Blue */
+  color: var(--color-dark-blue);
   margin: 1.3rem 0 1rem;
   line-height: 1.3;
 }
 
 .services-subtitle {
   font-size: 1.2rem;
-  color: #333;
   margin: 0 auto;
 }
 
-/* Grid of Cards */
 .services-grid {
   display: grid;
   gap: 2rem;
 }
 
-/* Service Card Styles */
 .service-card {
   background-color: #fff;
   border-radius: 10px;
@@ -233,7 +301,11 @@ body {
   width: 6rem;
   height: 6rem;
   font-size: 2.4rem;
-  background: linear-gradient(135deg, #335c85, #003366);
+  background: linear-gradient(
+    135deg,
+    var(--color-light-blue),
+    var(--color-dark-blue)
+  );
   color: #ffd700;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -242,7 +314,7 @@ body {
 
 .service-card__title {
   font-size: 1.8rem;
-  color: #003366; /* Dark Blue */
+  color: var(--color-dark-blue);
   margin-bottom: 1rem;
 }
 
@@ -263,14 +335,73 @@ body {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.4rem;
-  /* margin-bottom: 0.5rem; */
+
   color: #333;
 }
 
 .service-card__features-item ion-icon {
-  color: #335c85;
+  color: var(--color-light-blue);
 
   border-radius: 50%;
+}
+
+.sticky-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sticky-buttons.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sticky-buttons .sticky-call,
+.sticky-buttons .sticky-whatsapp {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.sticky-buttons .sticky-call {
+  background-color: var(--color-dark-blue);
+}
+
+.sticky-buttons .sticky-whatsapp {
+  background-color: #25d366;
+  color: #d3f6e0;
+}
+
+.btn.btn-call:hover {
+  background-color: #002244;
+}
+
+.hero-contact .btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+.sticky-buttons .sticky-call:hover {
+  background-color: #002244;
+  transform: scale(1.1);
+}
+
+.sticky-buttons .sticky-whatsapp:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
 }
 
 .why-us {
@@ -310,7 +441,7 @@ body {
   align-items: center;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #003366, #002244);
+  background: linear-gradient(135deg, var(--color-dark-blue), #002244);
   color: #ffd700;
   border-radius: 50%;
   font-size: 2.4rem;
@@ -318,7 +449,7 @@ body {
 
 .why-us__item-title {
   font-size: 1.8rem;
-  color: #003366;
+  color: var(--color-dark-blue);
 }
 
 .why-us__item-text {
@@ -363,7 +494,7 @@ body {
 .contact-us__icon {
   font-size: 2rem;
   color: #ffd700;
-  background-color: #335c85;
+  background-color: var(--color-light-blue);
   border-radius: 50%;
   padding: 1rem;
 }
@@ -376,7 +507,7 @@ body {
 .contact-us__text strong {
   display: block;
   margin-bottom: 0.5rem;
-  color: #003366;
+  color: var(--color-dark-blue);
 }
 
 .locations {
@@ -388,7 +519,7 @@ body {
 }
 
 .locations > p {
-  color: #003366;
+  color: var(--color-dark-blue);
   margin-bottom: 1rem;
 }
 
@@ -413,24 +544,15 @@ body {
 }
 
 .footer__section {
-  background-color: #003366;
+  background-color: var(--color-dark-blue);
   color: #fff;
-  /* padding: 4rem 1.5rem; */
 }
-
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
 
 .footer__grid {
   display: grid;
   gap: 2rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@media (min-width: 768px) {
 }
 
 .footer__about {
@@ -448,7 +570,7 @@ body {
 .footer__logo-icon {
   font-size: 2rem;
   color: #ffd700;
-  background-color: #335c85;
+  background-color: var(--color-light-blue);
   padding: 0.8rem;
   border-radius: 50%;
 }
@@ -542,54 +664,107 @@ body {
   color: #bbb;
 }
 
-.footer-bottom__lang-toggle button {
-  background: transparent;
-  border: 1px solid #ffd700;
+/* Back to top button */
+.btn-back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9997;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-dark-blue);
   color: #ffd700;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.footer-bottom__lang-toggle button:hover {
-  background: #ffd700;
-  color: #003366;
+.btn-back-to-top:hover {
+  background-color: #002244;
+  transform: scale(1.1);
+}
+
+.btn-back-to-top.show {
+  display: flex;
+}
+
+@media (min-width: 690px) {
+  .hero .contact {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
   .header {
-    /* padding: 0.6rem 1.2rem; */
     padding: 1rem 2rem;
+  }
+
+  .header.sticky {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(
+      0,
+      51,
+      102,
+      0.95
+    ); /* Match original header background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInDown 0.5s ease-in-out;
   }
 
   .header-logo__text {
     font-size: 2.4rem;
   }
 
-  .header-mobile__nav {
+  .header-navbar {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    transform: none;
+    background: none;
+    backdrop-filter: none;
+    opacity: 1;
+    z-index: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+  }
+
+  /* [dir="ltr"] .header-navbar {
+  transform: none;
+} */
+
+  .button-mobile__toggle {
     display: none;
   }
 
-  .header-navbar {
-    display: block;
-  }
+  .header-navbar__links {
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: start; */
 
-  .header-navbar__list {
-    display: flex;
     gap: 3.2rem;
     align-items: center;
   }
 
   .header-navbar__link {
     color: var(--color-white);
-    text-decoration: none;
-    font-size: var(--font-size-lg); /* 1.8rem */
-    transition: color 0.3s ease;
-  }
 
-  .header-navbar__link:hover {
-    color: var(--color-gold);
+    font-size: var(--font-size-lg);
+    transition: color 0.3s ease;
   }
 
   .hero-trust__item {
@@ -641,10 +816,6 @@ body {
 @media (min-width: 900px) {
   .hero {
     padding: 9.6rem 1.5rem 0;
-  }
-
-  .hero .contact {
-    flex-direction: row;
   }
 }
 
@@ -705,5 +876,14 @@ body {
   }
   100% {
     transform: translate(0, 0) rotate(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
