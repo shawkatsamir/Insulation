@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- These will be dynamically updated by blog.js -->
+
+    <title>Blog Post Title</title>
+
+    <meta name="description" content="A brief summary of the blog post." />
+
+    <link rel="canonical" href="https://www.insulmakkah.com/post.html" />
+
+    <meta property="og:title" content="Blog Post Title" />
+
+    <meta
+      property="og:description"
+      content="A brief summary of the blog post."
+    />
+
+    <meta property="og:type" content="article" />
+
+    <meta property="og:url" content="https://www.insulmakkah.com/post.html" />
+
+    <meta
+      property="og:image"
+      content="https://www.insulmakkah.com/imgs/post-image.jpg"
+    />
+
+    <script id="structured-data" type="application/ld+json"></script>
+
+    <link rel="stylesheet" href="dist/index.min.css" />
+
+    <link rel="stylesheet" href="css/post.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <ion-icon
+          name="shield-half-outline"
+          class="header-logo__icon"
+          aria-hidden="true"
+        ></ion-icon>
+        <span class="header-logo__text" data-key="header.logo">عوازل مكة</span>
+      </div>
+      <nav class="header-navbar" role="navigation" aria-label="Main navigation">
+        <ul class="header-navbar__links">
+          <li>
+            <a class="header-navbar__link" href="index.html">الرئيسية</a>
+          </li>
+          <li>
+            <a class="header-navbar__link no-scroll" href="blog.html"
+              >المدونة</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="button-mobile__toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <ion-icon
+          name="menu-outline"
+          class="icon-mobile__nav"
+          aria-hidden="true"
+        ></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="icon-mobile__nav"
+          aria-hidden="true"
+        ></ion-icon>
+      </button>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <article class="post-full">
+          <header class="post-header">
+            <!-- Dynamically filled -->
+
+            <h1 class="post-title"></h1>
+
+            <div class="post-meta">
+              <span class="post-author"></span>
+              <time class="post-date"></time>
+            </div>
+
+            <figure class="post-featured-image">
+              <img src="" alt="" />
+            </figure>
+          </header>
+
+          <section class="post-body"></section>
+
+          <footer class="post-footer">
+            <div class="social-share">
+              <span>شارك هذا المقال:</span>
+              <a
+                href="#"
+                class="social-share-link"
+                aria-label="Share on Facebook"
+                >FB</a
+              >
+
+              <a
+                href="#"
+                class="social-share-link"
+                aria-label="Share on Twitter"
+                >TW</a
+              >
+
+              <a
+                href="#"
+                class="social-share-link"
+                aria-label="Share on WhatsApp"
+                >WA</a
+              >
+            </div>
+          </footer>
+        </article>
+
+        <section class="cta-section">
+          <h2>هل تحتاج إلى خدمات عزل متخصصة؟</h2>
+
+          <p>
+            نقدم في "عوازل مكة" حلولاً متكاملة للعزل المائي والحراري. تواصل معنا
+            اليوم للحصول على استشارة مجانية.
+          </p>
+          <a href="#contact-us" class="btn btn-call">اطلب عرض سعر</a>
+        </section>
+
+        <aside class="related-posts">
+          <h2>مقالات ذات صلة</h2>
+
+          <div class="related-posts-container"></div>
+        </aside>
+        <a href="blog.html" class="back-link">العودة إلى المدونة</a>
+      </div>
+    </main>
+
+    <!-- Main Site Footer -->
+
+    <footer class="footer__section section">
+      <div class="container">
+        <div class="footer__grid">
+          <!-- Logo + Description -->
+          <div class="footer__about">
+            <div class="footer__logo">
+              <ion-icon
+                name="shield-half-outline"
+                class="footer__logo-icon"
+                aria-hidden="true"
+              ></ion-icon>
+              <span class="footer__name" data-key="footer.about.name"
+                >عوازل مكة</span
+              >
+            </div>
+            <p class="footer__desc" data-key="footer.about.name">
+              نقدم خدمات عزل حراري ومائي موثوقة للأسطح والمسابح والخزانات
+              باستخدام أجود المواد وضمان تنفيذي يدوم لسنوات.
+            </p>
+            <div class="footer__socials">
+              <a href="#" aria-label="Facebook"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="#" aria-label="Google My Business"
+                ><ion-icon name="logo-google"></ion-icon
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer__section">
+            <h4 class="footer__title">روابط سريعة</h4>
+            <ul class="footer__links">
+              <li><a href="/">الرئيسية</a></li>
+              <li><a href="#services.html">خدماتنا</a></li>
+              <li><a href="#why-us.html">لماذا نحن؟</a></li>
+              <li><a href="#contact.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Footer Menu -->
+          <div class="footer__section">
+            <h4 class="footer__title">خدماتنا</h4>
+            <ul class="footer__links">
+              <li><a href="#">كشف التسريبات بدون تكسير</a></li>
+              <li><a href="#">عزل الخزانات</a></li>
+              <li><a href="#">عزل الحمامات والمطابخ</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer__section">
+            <h4 class="footer__title">تواصل معنا</h4>
+            <ul class="footer__contact">
+              <li>
+                <ion-icon
+                  name="call-outline"
+                  class="footer__icon"
+                  aria-hidden="true"
+                ></ion-icon>
+                <a href="tel:966507565754">+966 50 000 0000</a>
+              </li>
+              <li>
+                <ion-icon
+                  name="logo-whatsapp"
+                  class="footer__icon"
+                  aria-hidden="true"
+                ></ion-icon>
+                <a
+                  href="https://wa.me/966507565754?text=مرحباً+عندك+استفسار%20عن%20خدمات%20العزل"
+                  target="_blank"
+                  >+966 50 000 0000</a
+                >
+              </li>
+              <li>
+                <ion-icon
+                  name="mail-outline"
+                  class="footer__icon"
+                  aria-hidden="true"
+                ></ion-icon>
+                <a href="mailto:info@insulmakkah.com">info@insulmakkah.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p>© 2025 عوازل مكة – جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+      <button class="btn-back-to-top" aria-label="العودة إلى الأعلى">
+        <ion-icon name="arrow-up-outline" class="icon-back-to-top"></ion-icon>
+      </button>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/blog.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "en": [
+    {
+      "id": 1,
+      "title": "The Importance of Proper Insulation",
+      "author": "John Doe",
+      "date": "2025-07-03",
+      "summary": "Learn why proper insulation is crucial for your home's energy efficiency and comfort. We'll cover the different types of insulation and their benefits."
+    }
+  ],
+  "ar": [
+    {
+      "id": 1,
+      "title": "الدليل الشامل لخدمات العزل: كل ما تحتاج لمعرفته",
+      "summary": "نقدم نظرة عميقة على خدمات العزل المختلفة، من عزل الأسطح إلى الخزانات. تعلم عن الخطوات، المواد المستخدمة، وال��وائد التي تعود على منزلك.",
+      "author": "فريق عوازل مكة",
+      "date": "2025-06-15",
+      "category": "خدمات العزل",
+      "imageUrl": "imgs/posts/comprehensive-insulation-guide.webp",
+      "imageAlt": "صورة بانورامية تعرض مواد عزل مختلفة مثل الفوم والألواح"
+    }
+  ]
+}
