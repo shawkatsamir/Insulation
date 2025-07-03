@@ -1,3 +1,24 @@
+/* -Spacing System (PX):
+    2 / 4 / 6 / 8 / 10 / 12 / 14 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    
+    -Font Size (px):
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /  62 / 74 / 86 / 98
+    -COLORS:  
+    Dark Blue #003366 => Header, footer, trust
+    Forest Green #228B22 => Secondary color for highlights
+    Gold #FFD700 => Accent color (buttons, icons)
+    Cream White #FFF8E1 => Backgrounds, service cards
+    Light Gray #F5F5F5 => Section backgrounds
+    Dark Gray #333333 => Body text (high readability)
+    White #FFFFFF => Clean layouts, modals
+
+    -FONTS:
+    Headings (H1-H3) Dubai Bold
+    Body Text Cairo Regular
+    English Version Montserrat
+    Buttons / CTA Dubai Medium / Montserrat
+  */
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +62,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-
+  /* margin-top: 3.2rem; */
   padding-bottom: 1.2rem;
 }
 
@@ -85,6 +106,7 @@ a {
   box-shadow: 0 0 0 0.8 rgba(37, 211, 101, 0.5);
 }
 
+/* Accessibility: focus styles */
 a:focus,
 button:focus,
 input:focus {
