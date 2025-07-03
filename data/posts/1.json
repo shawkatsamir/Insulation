@@ -1,22 +1,110 @@
 {
   "en": {
-    "title": "The Comprehensive Guide to Insulation Services",
-    "author": "Makkah Insulators Team",
-    "date": "2025-06-15",
-    "category": "Insulation Services",
-    "imageUrl": "imgs/posts/comprehensive-insulation-guide.webp",
-    "imageAlt": "Panoramic image showing various insulation materials like foam and panels",
-    "contentHtml": "<h2>A Deep Dive into Insulation Services</h2><p>Effective insulation is one of the most crucial investments for protecting your property and ensuring comfort. It encompasses a range of services tailored to different parts of a building. Here’s a comprehensive look at what professional insulation involves.</p><h3>The Key Steps of Thermal Insulation</h3><p>A successful insulation project follows a precise methodology to ensure maximum effectiveness and longevity.</p><ol><li><strong>Step One: Preparation:</strong> The process begins with thoroughly cleaning and preparing the surface. All dust, debris, and moisture must be removed to ensure the insulation material adheres properly.</li><li><strong>Step Two: Base Layer Application:</strong> The first layer of the chosen insulation material is applied. This foundational layer is critical for establishing a thermal barrier.</li><li><strong>Step Three: Final Layers and Finishing:</strong> Protective top layers and finishes are added. This not only enhances the insulation's durability but also protects it from weather elements and mechanical damage.</li></ol><h3>Common Materials Used in Insulation</h3><p>The choice of material depends on the specific needs of the project, including budget and desired thermal resistance.</p><ul class=\"materials-list\"><li><strong>Rock Wool:</strong> An excellent material for both thermal and acoustic insulation. It is fire-resistant and highly durable, making it a popular choice for roofs and walls.</li><li><strong>Polyurethane Foam:</strong> A highly effective and versatile material. It provides superior insulation against water and heat and is very lightweight, making it ideal for a wide range of applications.</li></ul>",
-    "relatedPosts": [2, 3]
+    "postInfo": {
+      "title": "The Comprehensive Guide to Insulation Services",
+      "author": "Makkah Insulators Team",
+      "date": "2025-06-15",
+      "category": "Insulation Services",
+      "summary": "Effective insulation is one of the most crucial investments for protecting your property and ensuring comfort."
+    },
+    "media": {
+      "imageUrl": "imgs/posts/post1.webp",
+      "imageAlt": "Panoramic image showing various insulation materials like foam and panels"
+    },
+    "body": {
+      "section1": {
+        "heading": "A Deep Dive into Insulation Services",
+        "paragraph": "Effective insulation encompasses a range of services tailored to different parts of a building. Here’s a comprehensive look at what professional insulation involves."
+      },
+      "section2": {
+        "heading": "The Key Steps of Thermal Insulation",
+        "paragraph": "A successful insulation project follows a precise methodology to ensure maximum effectiveness and longevity.",
+        "steps": [
+          {
+            "title": "Step One: Preparation",
+            "description": "Thoroughly clean and prepare the surface. Remove all dust, debris, and moisture."
+          },
+          {
+            "title": "Step Two: Base Layer Application",
+            "description": "Apply the first layer of the chosen insulation material to create a thermal barrier."
+          },
+          {
+            "title": "Step Three: Final Layers and Finishing",
+            "description": "Add protective top layers to enhance durability and weather resistance."
+          }
+        ]
+      },
+      "section3": {
+        "heading": "Common Materials Used in Insulation",
+        "paragraph": "Material choice depends on budget and desired thermal resistance.",
+        "materials": [
+          {
+            "title": "Rock Wool",
+            "description": "Excellent for thermal and acoustic insulation. Fire-resistant and durable for roofs/walls."
+          },
+          {
+            "title": "Polyurethane Foam",
+            "description": "Highly effective and versatile. Lightweight and ideal for wide-ranging applications."
+          }
+        ]
+      }
+    },
+    "related": {
+      "posts": [2, 3]
+    }
   },
   "ar": {
-    "title": "الدليل الشامل لخدمات العزل: كل ما تحتاج لمعرفته",
-    "author": "فريق عوازل مكة",
-    "date": "2025-06-15",
-    "category": "خدمات العزل",
-    "imageUrl": "imgs/posts/post1.webp",
-    "imageAlt": "صورة بانورامية تعرض مواد عزل مختلفة مثل الفوم والألواح",
-    "contentHtml": "<h2>نظرة عميقة على خدمات العزل</h2><p>يعتبر العزل الفعال أحد أهم الاستثمارات لحماية الممتلكات وضمان الراحة. إنه يشمل مجموعة من الخدمات المصممة خصيصاً لأجزاء مختلفة من المبنى. إليك نظرة شاملة على ما يتضمنه العزل الاحترافي.</p><h3>الخطوات الرئيسية للعزل الحراري</h3><p>يتبع مشروع العزل الناجح منهجية دقيقة لضمان أقصى قدر من الفعالية والمتانة.</p><ol><li><strong>الخطوة الأولى: التحضير:</strong> تبدأ العملية بتنظيف السطح وتجهيزه بالكامل. يجب إزالة جميع الأتربة والحطام والرطوبة لضمان التصاق مادة العزل بشكل صحيح.</li><li><strong>الخطوة الثانية: تطبيق الطبقة الأساسية:</strong> يتم وضع الطبقة الأولى من مادة العزل المختارة. هذه الطبقة التأسيسية حاسمة في إنشاء حاجز حراري فعال.</li><li><strong>الخطوة الثالثة: الطبقات النهائية والتشطيب:</strong> تُضاف الطبقات الواقية والتشطيبات النهائية. هذا لا يعزز متانة العزل فحسب، بل يحميه أيضاً من العوامل الجوية والأضرار الميكانيكية.</li></ol><h3>المواد الشائعة المستخدمة في العزل</h3><p>يعتمد اختيار المادة على الاحتياجات المحددة للمشروع، بما في ذلك الميزانية ومستوى المقاومة الحرارية المطلوبة.</p><ul class=\"materials-list\"><li><strong>الصوف الصخري:</strong> مادة ممتازة للعزل الحراري والصوتي على حد سواء. مقاومة للحريق ومتينة للغاية، مما يجعلها خياراً شائعاً للأسطح والجدران.</li><li><strong>فوم البولي يوريثان:</strong> مادة فعالة للغاية ومتعددة الاستخدامات. توفر عزلاً فائقاً ضد الماء والحرارة وهي خفيفة الوزن، مما يجعلها مثالية لمجموعة واسعة من التطبيقات.</li></ul>",
-    "relatedPosts": [2, 3]
+    "postInfo": {
+      "title": "الدليل الشامل لخدمات العزل: كل ما تحتاج لمعرفته",
+      "author": "فريق عوازل مكة",
+      "date": "2025-06-15",
+      "category": "خدمات العزل",
+      "summary": "العزل الفعال أحد أهم الاستثمارات لحماية الممتلكات وضمان الراحة."
+    },
+    "media": {
+      "imageUrl": "imgs/posts/post1.webp",
+      "imageAlt": "صورة بانورامية تعرض مواد عزل مختلفة مثل الفوم والألواح"
+    },
+    "body": {
+      "section1": {
+        "heading": "نظرة عميقة على خدمات العزل",
+        "paragraph": "العزل الفعال يشمل خدمات مصممة خصيصاً لأجزاء مختلفة من المبنى."
+      },
+      "section2": {
+        "heading": "الخطوات الرئيسية للعزل الحراري",
+        "paragraph": "يتبع مشروع العزل الناجح منهجية دقيقة لضمان أقصى قدر من الفعالية والمتانة.",
+        "steps": [
+          {
+            "title": "الخطوة الأولى: التحضير",
+            "description": "تنظيف السطح وتجهيزه بالكامل وإزالة الأتربة والحطام والرطوبة."
+          },
+          {
+            "title": "الخطوة الثانية: تطبيق الطبقة الأساسية",
+            "description": "وضع الطبقة الأولى من مادة العزل لخلق حاجز حراري فعال."
+          },
+          {
+            "title": "الخطوة الثالثة: الطبقات النهائية والتشطيب",
+            "description": "إضافة طبقات واقية لتعزيز المتانة وحمايتها من العوامل الجوية."
+          }
+        ]
+      },
+      "section3": {
+        "heading": "المواد الشائعة المستخدمة في العزل",
+        "paragraph": "يعتمد اختيار المادة على الاحتياجات المحددة للمشروع.",
+        "materials": [
+          {
+            "title": "الصوف الصخري",
+            "description": "مادة ممتازة للعزل الحراري والصوتي. مقاومة للحريق ومتينة للأسطح والجدران."
+          },
+          {
+            "title": "فوم البولي يوريثان",
+            "description": "مادة فعالة ومتعددة الاستخدامات. خفيفة الوزن ومناسبة لمجموعة واسعة من التطبيقات."
+          }
+        ]
+      }
+    },
+    "related": {
+      "posts": [2, 3]
+    }
   }
 }
