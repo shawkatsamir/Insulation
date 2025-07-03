@@ -42,6 +42,49 @@
     <link rel="canonical" href="https://www.insulmakkah.com/blog.html" />
     <link rel="stylesheet" href="dist/index.min.css" />
     <link rel="stylesheet" href="css/blog.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      as="style"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      as="style"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .header {
+        background-color: #003366;
+        color: white;
+        padding: 1rem 1.5rem;
+      }
+      .hero {
+        min-height: 95vh;
+        background-size: cover;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 4rem;
+        color: #ffd700;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="/dist/index.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link rel="stylesheet" href="/dist/index.min.css" /></noscript>
   </head>
   <body>
     <header class="header">
@@ -56,7 +99,7 @@
       <nav class="header-navbar" role="navigation" aria-label="Main navigation">
         <ul class="header-navbar__links">
           <li>
-            <a class="header-navbar__link" href="#services">الرئيسية</a>
+            <a class="header-navbar__link" href="/index.html">الرئيسية</a>
           </li>
 
           <li>
@@ -99,7 +142,15 @@
       <section class="blog-posts section">
         <div class="container">
           <div id="posts-container" class="posts-container">
-            <!-- Blog post cards will be dynamically inserted here by blog.js -->
+            <article class="post-card" data-post-id="1">
+              <h2 data-key="post.1.title"></h2>
+              <p class="post-meta">
+                By <span data-key="post.1.author"></span> on
+                <span data-key="post.1.date"></span>
+              </p>
+              <p data-key="post.1.summary"></p>
+              <a href="post.html?id=1" class="read-more">Read More</a>
+            </article>
           </div>
         </div>
       </section>
@@ -213,7 +264,8 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="js/blog.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/blog.js"></script>
   </body>
 </html>

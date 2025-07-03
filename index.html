@@ -42,7 +42,7 @@
       href="https://www.insulmakkah.com/en/ "
       hreflang="en-US"
     />
-    <!-- Favicon -->
+    <link rel="canonical" href="https://www.insulmakkah.com/ " />
     <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
@@ -85,37 +85,6 @@
         ]
       }
     </script>
-    <style>
-      .header {
-        padding: 0.6rem 1.2rem;
-        background-color: #003366;
-        color: white;
-      }
-      .header-logo__text {
-        font-size: 1.8rem;
-      }
-      .hero {
-        min-height: 95vh;
-        background-size: cover;
-        text-align: center;
-      }
-      .hero-title {
-        font-size: 4rem;
-        color: #ffd700;
-      }
-      .hero-subtitle {
-        font-size: 2rem;
-        color: white;
-      }
-      .lang-toggle {
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        background-color: #ffd700;
-        color: #003366;
-        border-radius: 20px;
-      }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -819,9 +788,9 @@
             <h4 class="footer__title">روابط سريعة</h4>
             <ul class="footer__links">
               <li><a href="/">الرئيسية</a></li>
-              <li><a href="#services.html">خدماتنا</a></li>
-              <li><a href="#why-us.html">لماذا نحن؟</a></li>
-              <li><a href="#contact.html">تواصل معنا</a></li>
+              <li><a href="/services.html">خدماتنا</a></li>
+              <li><a href="/why-us.html">لماذا نحن؟</a></li>
+              <li><a href="/contact.html">تواصل معنا</a></li>
             </ul>
           </div>
 
@@ -829,6 +798,7 @@
           <div class="footer__section">
             <h4 class="footer__title">خدماتنا</h4>
             <ul class="footer__links">
+              <li><a href="#">عزل الأسطح</a></li>
               <li><a href="#">كشف التسريبات بدون تكسير</a></li>
               <li><a href="#">عزل الخزانات</a></li>
               <li><a href="#">عزل الحمامات والمطابخ</a></li>
@@ -888,8 +858,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <!-- <script defer src="js/main.js"></script>
-    <script defer src="js/effects.js"></script> -->
+    <script defer src="js/effects.js"></script>
+    <script defer src="js/common.js"></script>
     <script defer src="dist/bundle.min.js"></script>
     <script type="application/ld+json">
       {

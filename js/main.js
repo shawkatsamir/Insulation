@@ -139,18 +139,11 @@
 
   let translations = {};
 
+  // Load translations from external JSON
   async function loadTranslations() {
-    const cached = localStorage.getItem("translations");
-
-    if (cached) {
-      translations = JSON.parse(cached);
-      return;
-    }
-
     try {
       const response = await fetch("./data/translation.json");
       translations = await response.json();
-      localStorage.setItem("translations", JSON.stringify(translations));
     } catch (error) {
       console.error("Failed to load translations:", error);
     }
@@ -322,6 +315,9 @@
     elements.html.setAttribute("lang", lang);
     elements.html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     localStorage.setItem("preferred-lang", lang);
+    window.dispatchEvent(
+      new CustomEvent("languageChanged", { detail: { lang } })
+    );
     updateContent(lang);
   }
 
