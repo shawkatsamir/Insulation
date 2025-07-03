@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- These will be dynamically updated by blog.js -->
+    <title data-key="post.title">الدليل الشامل لخدمات العزل</title>
 
-    <title>Blog Post Title</title>
+    <meta property="og:title" content="الدليل الشامل لخدمات العزل" />
+    <meta name="description" content="" />
+    <meta property="og:image" content="imgs/posts/post1.webp" />
+    <meta property="og:url" content="https://www.insulmakkah.com/post.html " />
+    <link rel="canonical" href="https://www.insulmakkah.com/post.html " />
 
-    <meta name="description" content="A brief summary of the blog post." />
-
-    <link rel="canonical" href="https://www.insulmakkah.com/post.html" />
-
-    <meta property="og:title" content="Blog Post Title" />
-
-    <meta
-      property="og:description"
-      content="A brief summary of the blog post."
+    <link
+      rel="preload"
+      as="style"
+      href=" https://fonts.googleapis.com/css2?family=Cairo&display=swap"
     />
 
-    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="../dist/index.min.css" />
+    <link rel="stylesheet" href="../css/post.css" />
 
-    <meta property="og:url" content="https://www.insulmakkah.com/post.html" />
-
-    <meta
-      property="og:image"
-      content="https://www.insulmakkah.com/imgs/post-image.jpg"
-    />
-
+    <!-- Structured Data -->
     <script id="structured-data" type="application/ld+json"></script>
-
-    <link rel="stylesheet" href="dist/index.min.css" />
-
-    <link rel="stylesheet" href="css/post.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="header-logo">
@@ -49,10 +36,11 @@
       <nav class="header-navbar" role="navigation" aria-label="Main navigation">
         <ul class="header-navbar__links">
           <li>
-            <a class="header-navbar__link" href="index.html">الرئيسية</a>
+            <a class="header-navbar__link" href="/index.html">الرئيسية</a>
           </li>
+
           <li>
-            <a class="header-navbar__link no-scroll" href="blog.html"
+            <a class="header-navbar__link no-scroll" href="/blog.html"
               >المدونة</a
             >
           </li>
@@ -77,181 +65,136 @@
       </button>
     </header>
 
-    <main class="main-content">
-      <div class="container">
-        <article class="post-full">
-          <header class="post-header">
-            <!-- Dynamically filled -->
+    <main class="post-full">
+      <article class="post">
+        <!-- Header -->
+        <header class="post-header">
+          <h1 class="post-title" data-key="post.body.section1.heading">
+            الدليل الشامل لخدمات العزل
+          </h1>
+          <div class="post-meta">
+            <span class="post-author" data-key="post.postInfo.author"
+              >فريق عوازل مكة</span
+            >
+            <time class="post-date" data-key="post.postInfo.date"
+              >2025-06-15</time
+            >
+          </div>
+          <figure class="post-featured-image">
+            <img
+              src=""
+              alt=""
+              width="800"
+              height="450"
+              data-key="media.imageAlt"
+            />
+          </figure>
+        </header>
 
-            <h1 class="post-title"></h1>
-
-            <div class="post-meta">
-              <span class="post-author"></span>
-              <time class="post-date"></time>
-            </div>
-
-            <figure class="post-featured-image">
-              <img src="" alt="" />
-            </figure>
-          </header>
-
-          <section class="post-body"></section>
-
-          <footer class="post-footer">
-            <div class="social-share">
-              <span>شارك هذا المقال:</span>
-              <a
-                href="#"
-                class="social-share-link"
-                aria-label="Share on Facebook"
-                >FB</a
-              >
-
-              <a
-                href="#"
-                class="social-share-link"
-                aria-label="Share on Twitter"
-                >TW</a
-              >
-
-              <a
-                href="#"
-                class="social-share-link"
-                aria-label="Share on WhatsApp"
-                >WA</a
-              >
-            </div>
-          </footer>
-        </article>
-
-        <section class="cta-section">
-          <h2>هل تحتاج إلى خدمات عزل متخصصة؟</h2>
-
-          <p>
-            نقدم في "عوازل مكة" حلولاً متكاملة للعزل المائي والحراري. تواصل معنا
-            اليوم للحصول على استشارة مجانية.
+        <!-- Body -->
+        <section class="post-body">
+          <h2 data-key="post.body.section1.heading">
+            نظرة عميقة على خدمات العزل
+          </h2>
+          <p data-key="post.body.section1.paragraph">
+            العزل الفعال أحد أهم الاستثمارات لحماية الممتلكات وضمان الراحة.
           </p>
-          <a href="#contact-us" class="btn btn-call">اطلب عرض سعر</a>
+
+          <h3 data-key="post.body.section2.heading">
+            الخطوات الرئيسية للعزل الحراري
+          </h3>
+          <p data-key="post.body.section2.paragraph">
+            يتبع مشروع العزل الناجح منهجية دقيقة لضمان أقصى قدر من الفعالية
+            والمتانة.
+          </p>
+
+          <ol class="post-steps">
+            <li>
+              <strong data-key="post.body.section2.steps[0].title"
+                >الخطوة الأولى: التحضير</strong
+              >
+              <span data-key="post.body.section2.steps[0].description"
+                >تنظيف السطح وتجهيزه بالكامل وإزالة الأتربة والحطام
+                والرطوبة.</span
+              >
+            </li>
+            <li>
+              <strong data-key="post.body.section2.steps[1].title"
+                >الخطوة الثانية: تطبيق الطبقة الأساسية</strong
+              >
+              <span data-key="post.body.section2.steps[1].description"
+                >وضع الطبقة الأولى من مادة العزل لخلق حاجز حراري فعال.</span
+              >
+            </li>
+            <li>
+              <strong data-key="post.body.section2.steps[2].title"
+                >الخطوة الثالثة: الطبقات النهائية والتشطيب</strong
+              >
+              <span data-key="post.body.section2.steps[2].description"
+                >إضافة طبقات واقية لتعزيز المتانة وحمايتها من العوامل
+                الجوية.</span
+              >
+            </li>
+          </ol>
+
+          <h3 data-key="post.body.section3.heading">
+            المواد الشائعة المستخدمة في العزل
+          </h3>
+          <p data-key="post.body.section3.paragraph">
+            يعتمد اختيار المادة على الاحتياجات المحددة للمشروع.
+          </p>
+
+          <ul class="post-materials">
+            <li>
+              <strong data-key="post.body.section3.materials[0].title"
+                >الصوف الصخري</strong
+              >
+              <span data-key="post.body.section3.materials[0].description"
+                >مادة ممتازة للعزل الحراري والصوتي. مقاومة للحريق ومتينة للأسطح
+                والجدران.</span
+              >
+            </li>
+            <li>
+              <strong data-key="post.body.section3.materials[1].title"
+                >فوم البولي يوريثان</strong
+              >
+              <span data-key="post.body.section3.materials[1].description"
+                >مادة فعالة ومتعددة الاستخدامات. خفيفة الوزن ومناسبة لمجموعة
+                واسعة من التطبيقات.</span
+              >
+            </li>
+          </ul>
         </section>
 
-        <aside class="related-posts">
-          <h2>مقالات ذات صلة</h2>
-
-          <div class="related-posts-container"></div>
-        </aside>
-        <a href="blog.html" class="back-link">العودة إلى المدونة</a>
-      </div>
+        <!-- Related Posts -->
+        <section class="related-posts">
+          <h3>مقالات ذات صلة</h3>
+          <ul class="related-posts-list">
+            <li><a href="post.html?id=2&lang=ar">مقالة 2</a></li>
+            <li><a href="post.html?id=3&lang=ar">مقالة 3</a></li>
+          </ul>
+        </section>
+      </article>
     </main>
 
-    <!-- Main Site Footer -->
-
-    <footer class="footer__section section">
-      <div class="container">
-        <div class="footer__grid">
-          <!-- Logo + Description -->
-          <div class="footer__about">
-            <div class="footer__logo">
-              <ion-icon
-                name="shield-half-outline"
-                class="footer__logo-icon"
-                aria-hidden="true"
-              ></ion-icon>
-              <span class="footer__name" data-key="footer.about.name"
-                >عوازل مكة</span
-              >
-            </div>
-            <p class="footer__desc" data-key="footer.about.name">
-              نقدم خدمات عزل حراري ومائي موثوقة للأسطح والمسابح والخزانات
-              باستخدام أجود المواد وضمان تنفيذي يدوم لسنوات.
-            </p>
-            <div class="footer__socials">
-              <a href="#" aria-label="Facebook"
-                ><ion-icon name="logo-facebook"></ion-icon
-              ></a>
-              <a href="#" aria-label="Instagram"
-                ><ion-icon name="logo-instagram"></ion-icon
-              ></a>
-              <a href="#" aria-label="Google My Business"
-                ><ion-icon name="logo-google"></ion-icon
-              ></a>
-            </div>
-          </div>
-
-          <!-- Quick Links -->
-          <div class="footer__section">
-            <h4 class="footer__title">روابط سريعة</h4>
-            <ul class="footer__links">
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="#services.html">خدماتنا</a></li>
-              <li><a href="#why-us.html">لماذا نحن؟</a></li>
-              <li><a href="#contact.html">تواصل معنا</a></li>
-            </ul>
-          </div>
-
-          <!-- Services Footer Menu -->
-          <div class="footer__section">
-            <h4 class="footer__title">خدماتنا</h4>
-            <ul class="footer__links">
-              <li><a href="#">كشف التسريبات بدون تكسير</a></li>
-              <li><a href="#">عزل الخزانات</a></li>
-              <li><a href="#">عزل الحمامات والمطابخ</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="footer__section">
-            <h4 class="footer__title">تواصل معنا</h4>
-            <ul class="footer__contact">
-              <li>
-                <ion-icon
-                  name="call-outline"
-                  class="footer__icon"
-                  aria-hidden="true"
-                ></ion-icon>
-                <a href="tel:966507565754">+966 50 000 0000</a>
-              </li>
-              <li>
-                <ion-icon
-                  name="logo-whatsapp"
-                  class="footer__icon"
-                  aria-hidden="true"
-                ></ion-icon>
-                <a
-                  href="https://wa.me/966507565754?text=مرحباً+عندك+استفسار%20عن%20خدمات%20العزل"
-                  target="_blank"
-                  >+966 50 000 0000</a
-                >
-              </li>
-              <li>
-                <ion-icon
-                  name="mail-outline"
-                  class="footer__icon"
-                  aria-hidden="true"
-                ></ion-icon>
-                <a href="mailto:info@insulmakkah.com">info@insulmakkah.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="footer-bottom">
-          <p>© 2025 عوازل مكة – جميع الحقوق محفوظة</p>
-        </div>
+    <!-- Footer & Social Sharing -->
+    <footer class="post-footer">
+      <div class="social-share">
+        <span>شارك هذا المقال:</span>
+        <a href="#" class="social-share-link" aria-label="Share on Facebook"
+          >Facebook</a
+        >
+        <a href="#" class="social-share-link" aria-label="Share on Twitter"
+          >Twitter</a
+        >
+        <a href="#" class="social-share-link" aria-label="Share on WhatsApp"
+          >WhatsApp</a
+        >
       </div>
-      <button class="btn-back-to-top" aria-label="العودة إلى الأعلى">
-        <ion-icon name="arrow-up-outline" class="icon-back-to-top"></ion-icon>
-      </button>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="js/blog.js"></script>
-    <script defer src="js/main.js"></script>
+
+    <!-- Scripts -->
+    <script defer src="/js/post.js"></script>
+    <script defer src="/js/common.js"></script>
   </body>
 </html>

@@ -6,6 +6,14 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #eee;
+  min-height: 800px; /* Reserve space for content */
+}
+
+.post-title {
+  min-height: 10rem; /* Reserve space for the title to prevent layout shifts */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Post Header Styling */
@@ -48,6 +56,7 @@
   max-height: 450px;
   object-fit: cover;
   border-radius: 8px;
+  aspect-ratio: 16 / 9;
 }
 
 .post-body {
@@ -211,4 +220,46 @@
   font-size: 1.6rem;
   color: #0055a4;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .related-posts-container {
+    grid-template-columns: 1fr;
+  }
+
+  .post-body h2 {
+    font-size: 2.6rem;
+  }
+}
+.button-mobile__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.icon-mobile__nav {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .button-mobile__toggle {
+    display: block;
+  }
+
+  .header-navbar {
+    display: none;
+  }
+
+  .nav-open .header-navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+  }
 }

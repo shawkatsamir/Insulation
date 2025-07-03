@@ -1,6 +1,6 @@
 /* Blog page specific styles */
 .main-content {
-    position: relative;
+  position: relative;
 }
 .blog-hero {
   background-color: #f8f9fa;
@@ -18,7 +18,7 @@
 .blog-hero__subtitle {
   font-size: 1.2em;
   color: #555;
-  max-width: 700px;
+
   margin: 0 auto;
 }
 
@@ -46,16 +46,10 @@
 .post-card h2 {
   margin-top: 0;
   font-size: 1.5em;
-}
-
-.post-card h2 a {
-  text-decoration: none;
   color: #333;
 }
 
-.post-card h2 a:hover {
-  text-decoration: underline;
-}
+
 
 .post-meta {
   font-size: 0.9em;

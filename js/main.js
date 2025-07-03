@@ -226,10 +226,10 @@
       setText(el, t.locations.footerText)
     );
 
-    elements.locations.heroLocations.forEach((el,i) =>
+    elements.locations.heroLocations.forEach((el, i) =>
       setText(el, t.locations.hero.list[i])
     );
-    elements.locations.contactLocations.forEach((el,i) =>
+    elements.locations.contactLocations.forEach((el, i) =>
       setText(el, t.locations.contact.list[i])
     );
 
@@ -315,6 +315,9 @@
     elements.html.setAttribute("lang", lang);
     elements.html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     localStorage.setItem("preferred-lang", lang);
+    window.dispatchEvent(
+      new CustomEvent("languageChanged", { detail: { lang } })
+    );
     updateContent(lang);
   }
 

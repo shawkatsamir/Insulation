@@ -345,6 +345,14 @@ body {
   border-radius: 50%;
 }
 
+.icon.chekcmark-icon {
+  width: 2.4rem;
+}
+
+.service-card__features-item .icon {
+  width: 2.4rem;
+}
+
 .sticky-buttons {
   position: fixed;
   bottom: 20px;
