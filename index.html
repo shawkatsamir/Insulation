@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>
+      شركة عوازل مكة | أفضل خدمات العزل0507565754 و كشف التسريبات في مكة المكرمة
+    </title>
+
     <meta
       name="description"
       content="عوازل مكة | عزل حراري ومائي للأسطح والمسابح بمكة المكرمة، النورية، الجموم، وهدا الشام. ضمان الجودة والتنفيذ السريع. اتصل بنا الآن!"
@@ -42,58 +48,269 @@
       href="https://www.insulmakkah.com/en/ "
       hreflang="en-US"
     />
-    <link rel="canonical" href="https://www.insulmakkah.com/ " />
+
+    <link rel="canonical" href="https://www.insulmakkah.com/" />
+
     <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
+      href="/public/fonts/cairo-regular.woff2"
+      type="font/woff2"
+      crossorigin
     />
-    <link rel="stylesheet" href="dist/index.min.css" />
-    <title>
-      شركة عوازل مكة | أفضل خدمات العزل و كشف التسريبات في مكة المكرمة
-    </title>
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/cairo-bold.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/cairo-semibold.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/montserrat-regular.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/montserrat-bold.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/montserrat-semibold.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="bundle.min.css" />
+
+    <style>
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 1.2rem;
+        background-color: rgba(0, 51, 102, 0.95);
+        color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .header-logo {
+        font-weight: 700;
+        font-size: 1.8rem;
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+      }
+
+      .logo-icon {
+        color: #ffd700;
+        display: inline-flex;
+        background-color: #335cad;
+        padding: 0.7rem;
+        border-radius: 50%;
+      }
+
+      .button-mobile__toggle {
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: #fff;
+        z-index: 9999;
+      }
+
+      .icon-mobile__nav {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .lang-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        background-color: #ffd700;
+        color: #003366;
+        border: none;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .lang-toggle:hover {
+        background-color: #002244;
+        color: #ffd700;
+      }
+
+      .hero {
+        text-align: center;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 51, 102, 0.35),
+            rgba(0, 41, 82, 0.35)
+          ),
+          url("/imgs/insulation-hero.webp");
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .hero-title {
+        color: #ffd700;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-subtitle {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        color: #ffffff;
+      }
+
+      .btn-call,
+      .btn-whatsapp {
+        display: inline-flex;
+        border-radius: 100px;
+        gap: 1.2rem;
+        margin: 0 auto;
+        align-items: center;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+
+      .hero-trust {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 3.2rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-trust__item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: rgba(0, 51, 102, 0.6);
+        border-radius: 8px;
+        transition: background 0.3s ease;
+      }
+
+      .hero-trust__item:hover {
+        background: #ffd700;
+        color: #003366;
+        font-weight: bold;
+      }
+
+      .hero-trust__item-icon {
+        color: #ffd700;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      .hero-trust__item:hover .hero-trust__item-icon {
+        color: #003366;
+      }
+
+      .hero .locations {
+        display: none;
+      }
+    </style>
 
     <script type="application/ld+json" id="schema-data">
       {
         "@context": "https://schema.org ",
         "@type": "LocalBusiness",
-        "name": "عوازل مكة - InsulMakkah",
+        "name": "عوازل مكة",
+        "image": "https://www.insulmakkah.com/images/logo.png ",
+        "description": "شركة عوازل مكة تقدم خدمات عزل حراري ومائي موثوقة للأسطح والخزانات والمسابح باستخدام أجود المواد وضمان تنفيذي يدوم لسنوات.",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "مكة المكرمة",
           "addressLocality": "مكة المكرمة",
-          "addressRegion": "مكة"
+          "addressRegion": "مكة",
+          "postalCode": "",
+          "addressCountry": "SA"
         },
+        "areaServed": [
+          "مكة المكرمة",
+          "النورية",
+          "الجموم",
+          "هدا الشام",
+          "جدة",
+          "بحرة"
+        ],
         "telephone": "+966507565754",
+        "email": "info@insulmakkah.com",
         "url": "https://www.insulmakkah.com/ ",
         "sameAs": [
           "https://www.facebook.com/insulmakkah ",
           "https://www.instagram.com/insulmakkah "
         ],
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "telephone": "+966 50 000 0000",
-            "contactType": "Customer Service",
-            "areaServed": "مكة المكرمة، النورية، الجموم، هدا الشام، جدة، بحرة",
-            "availableLanguage": ["Arabic", "English"]
-          }
-        ]
+        "openingHours": "Mo-Su 08:00-18:00",
+        "priceRange": "$$",
+        "serviceType": "عزل حراري, عزل مائي, كشف تسربات بدون تكسير",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "150"
+        }
       }
     </script>
   </head>
   <body>
     <header class="header">
       <div class="header-logo">
-        <ion-icon
-          name="shield-half-outline"
-          class="header-logo__icon"
-          aria-hidden="true"
-        ></ion-icon>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon logo-icon size-xlg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M463.1 112.37C373.68 96.33 336.71 84.45 256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464c15.42-6.21 223.3-94.87 207.1-351.63z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+          <path
+            d="M256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464z"
+          />
+        </svg>
         <span class="header-logo__text" data-key="header.logo">عوازل مكة</span>
       </div>
       <nav class="header-navbar" role="navigation" aria-label="Main navigation">
@@ -138,16 +355,34 @@
         aria-expanded="false"
         aria-controls="main-navigation"
       >
-        <ion-icon
-          name="menu-outline"
-          class="icon-mobile__nav"
-          aria-hidden="true"
-        ></ion-icon>
-        <ion-icon
-          name="close-outline"
-          class="icon-mobile__nav"
-          aria-hidden="true"
-        ></ion-icon>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon size-lg open"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M80 160h352M80 256h352M80 352h352"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon size-lg close"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M368 368L144 144M368 144L144 368"
+          />
+        </svg>
       </button>
     </header>
     <main>
@@ -173,51 +408,125 @@
 
             <div class="hero-trust" data-container="hero.trustItems">
               <div class="hero-trust__item">
-                <ion-icon
-                  name="podium-outline"
-                  class="hero-trust__item-icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon hero-trust__item-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M32 160v296a8 8 0 008 8h136V160a16 16 0 00-16-16H48a16 16 0 00-16 16zM320 48H192a16 16 0 00-16 16v400h160V64a16 16 0 00-16-16zM464 208H352a16 16 0 00-16 16v240h136a8 8 0 008-8V224a16 16 0 00-16-16z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
                 <span>مواد معتمدة</span>
               </div>
               <div class="hero-trust__item">
-                <ion-icon
-                  name="star-outline"
-                  class="hero-trust__item-icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon hero-trust__item-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
                 <span>20 سنة خبرة</span>
               </div>
               <div class="hero-trust__item">
-                <ion-icon
-                  name="time-outline"
-                  class="hero-trust__item-icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon hero-trust__item-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M256 128v144h96"
+                  />
+                </svg>
                 <span>تنفيذ سريع</span>
               </div>
               <div class="hero-trust__item">
-                <ion-icon
-                  name="checkmark-circle-outline"
-                  class="hero-trust__item-icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon hero-trust__item-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M352 176L217.6 336 160 272"
+                  />
+                </svg>
                 <span>ضمان شامل</span>
               </div>
               <div class="hero-trust__item">
-                <ion-icon
-                  name="time-outline"
-                  class="hero-trust__item-icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon hero-trust__item-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
                 <span>خدمة 24/7</span>
               </div>
               <div class="hero-trust__item">
-                <ion-icon
-                  name="shield-checkmark-outline"
-                  class="hero-trust__item-icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon hero-trust__item-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M336 176L225.2 304 176 255.8"
+                  />
+                  <path
+                    d="M463.1 112.37C373.68 96.33 336.71 84.45 256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464c15.42-6.21 223.3-94.87 207.1-351.63z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
                 <span>كشف بدون تكسير</span>
               </div>
             </div>
@@ -227,11 +536,20 @@
                 <span data-key="contact.buttons.callBtn" aria-hidden="true">
                   اتصل بنا الآن
                 </span>
-                <ion-icon
-                  name="call-outline"
-                  class="btn-call__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon btn-call__icon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                </svg>
               </a>
               <a
                 href="https://wa.me/966507565754?text=مرحباً+عندك+استفسار%20عن%20خدمات%20العزل"
@@ -240,8 +558,17 @@
                 aria-hidden="true"
                 ><span data-key="contact.buttons.whatsappBtn"
                   >تواصل عبر الواتساب</span
-                ><ion-icon name="logo-whatsapp"></ion-icon
-              ></a>
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <div class="hero-locations locations">
@@ -280,33 +607,83 @@
           <div class="services-grid">
             <!-- Card 1: عزل الأسطح -->
             <div class="service-card" data-key="services.cards[0]">
-              <div class="service-card__icon">
-                <ion-icon name="home-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon service-card__icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="service-card__title" data-key="title">عزل الأسطح</h3>
               <p class="services-card__subtitle" data-key="subtitle">
                 حماية من تسرب المياه والحرارة باستخدام مواد معتمدة عالميًا.
               </p>
               <ul class="service-card__features">
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span>ضمان تنفيذي يدوم لسنوات</span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> مقاومة عالية للماء والحرارة </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span>فحص دورى مجانى</span>
                 </li>
               </ul>
@@ -314,33 +691,82 @@
 
             <!-- Card 2: عزل الخزانات -->
             <div class="service-card" data-key="services.cards[1]">
-              <div class="service-card__icon">
-                <ion-icon name="water-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon service-card__icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M400 320c0 88.37-55.63 144-144 144s-144-55.63-144-144c0-94.83 103.23-222.85 134.89-259.88a12 12 0 0118.23 0C296.77 97.15 400 225.17 400 320z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  d="M344 328a72 72 0 01-72 72"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="service-card__title">عزل الخزانات</h3>
               <p class="services-card__subtitle">
                 ضمان نقاء المياه وحمايتها من التلوث باستخدام تقنيات متقدمة.
               </p>
               <ul class="service-card__features">
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> مقاومة كيميائية عالية </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> تطبيق آمن وغير سام </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> عزل داخلي وخارجي </span>
                 </li>
               </ul>
@@ -348,9 +774,21 @@
 
             <!-- Card 3: عزل الحمامات و المطابخ -->
             <div class="service-card" data-key="services.cards[2]">
-              <div class="service-card__icon">
-                <ion-icon name="cafe-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon service-card__icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M368 80h64a16 16 0 0116 16v34a46 46 0 01-46 46h-34M96 80h272v192a80 80 0 01-80 80H176a80 80 0 01-80-80V80h0zM64 416h336"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="service-card__title">عزل الحمامات و المطابخ</h3>
               <p class="services-card__subtitle">
                 حلول فعّالة للوقاية من التسرب المائي في المناطق الرطبة مثل
@@ -358,24 +796,54 @@
               </p>
               <ul class="service-card__features">
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> عزل شامل للمجاري والمغاسل </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> مقاومة طويلة الأمد للماء </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> معالجة التشققات </span>
                 </li>
               </ul>
@@ -383,9 +851,28 @@
 
             <!-- Card 4: كشف التسريبات بدون تكسير -->
             <div class="service-card" data-key="services.cards[3]">
-              <div class="service-card__icon">
-                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon service-card__icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                  d="M338.29 338.29L448 448"
+                />
+              </svg>
+
               <h3 class="service-card__title">كشف التسريبات بدون تكسير</h3>
               <p class="services-card__subtitle">
                 تقنية متقدمة لكشف التسرب دون إحداث أي تشويه أو تكسير في الجدران
@@ -393,17 +880,37 @@
               </p>
               <ul class="service-card__features">
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> استخدام أحدث أجهزة الكشف الحراري </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> دقة عالية وسرعة في التشخيص </span>
                 </li>
                 <li class="service-card__features-item">
@@ -415,33 +922,76 @@
 
             <!-- Card 5: الصيانة و الإصلاح -->
             <div class="service-card" data-key="services.cards[4]">
-              <div class="service-card__icon">
-                <ion-icon name="build-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon service-card__icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M393.87 190a32.1 32.1 0 01-45.25 0l-26.57-26.57a32.09 32.09 0 010-45.26L382.19 58a1 1 0 00-.3-1.64c-38.82-16.64-89.15-8.16-121.11 23.57-30.58 30.35-32.32 76-21.12 115.84a31.93 31.93 0 01-9.06 32.08L64 380a48.17 48.17 0 1068 68l153.86-167a31.93 31.93 0 0131.6-9.13c39.54 10.59 84.54 8.6 114.72-21.19 32.49-32 39.5-88.56 23.75-120.93a1 1 0 00-1.6-.26z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <circle cx="96" cy="416" r="16" />
+              </svg>
+
               <h3 class="service-card__title">الصيانة و الإصلاح</h3>
               <p class="services-card__subtitle">
                 خدمات صيانة دورية وتصليح سريع لأي مشاكل بعد العزل
               </p>
               <ul class="service-card__features">
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> زيارات دورية مجانية </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> تصليح فوري عند وجود تسرب </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> فريق محترف ومعدات حديثة </span>
                 </li>
               </ul>
@@ -449,9 +999,29 @@
 
             <!-- Card 6: استشارة فنية -->
             <div class="service-card" data-key="services.cards[5]">
-              <div class="service-card__icon">
-                <ion-icon name="bulb-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon service-card__icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M294 240s-21.51 16-38 16-38-16-38-16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="service-card__title">استشارة فنية</h3>
               <p class="services-card__subtitle">
                 احصل على استشارة مجانية قبل بدء العمل لتحديد أفضل حلول العزل
@@ -459,24 +1029,54 @@
               </p>
               <ul class="service-card__features">
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> دراسة حالة الموقع </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> اقتراح الحلول المناسبة </span>
                 </li>
                 <li class="service-card__features-item">
-                  <ion-icon
-                    name="checkmark-outline"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon service-card__features-item_icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M416 128L192 384l-96-96"
+                    />
+                  </svg>
                   <span> متابعة ما بعد التنفيذ </span>
                 </li>
               </ul>
@@ -486,20 +1086,35 @@
 
         <div class="sticky-buttons">
           <a href="tel:+966507565754" class="sticky-call" aria-label="Call Us">
-            <span
-              ><ion-icon
-                name="call-outline"
-                class="btn-call__icon"
-                aria-hidden="true"
-              ></ion-icon
-            ></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon btn-call__icon size-sm"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
+                fill="none"
+                stroke="currentColor"
+                stroke-miterlimit="10"
+                stroke-width="32"
+              />
+            </svg>
           </a>
           <a
             href="https://wa.me/966507565754 "
             class="sticky-whatsapp"
             aria-label="Chat on WhatsApp"
           >
-            <span><ion-icon name="logo-whatsapp"></ion-icon></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon size-sm"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                fill-rule="evenodd"
+              />
+            </svg>
           </a>
         </div>
       </section>
@@ -522,12 +1137,29 @@
           <div class="why-us__grid">
             <!-- Trust Item 1 -->
             <div class="why-us__item">
-              <div class="why-us__item-icon">
-                <ion-icon
-                  name="shield-checkmark-outline"
-                  aria-hidden="true"
-                ></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon why-us__item-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M336 176L225.2 304 176 255.8"
+                />
+                <path
+                  d="M463.1 112.37C373.68 96.33 336.71 84.45 256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464c15.42-6.21 223.3-94.87 207.1-351.63z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="why-us__item-title" data-key="whyUs.items[0].title">
                 خبرة سنوات في مكة
               </h3>
@@ -539,9 +1171,21 @@
 
             <!-- Trust Item 2 -->
             <div class="why-us__item">
-              <div class="why-us__item-icon">
-                <ion-icon name="podium-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon why-us__item-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M32 160v296a8 8 0 008 8h136V160a16 16 0 00-16-16H48a16 16 0 00-16 16zM320 48H192a16 16 0 00-16 16v400h160V64a16 16 0 00-16-16zM464 208H352a16 16 0 00-16 16v240h136a8 8 0 008-8V224a16 16 0 00-16-16z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="why-us__item-title" data-key="whyUs.items[1].title">
                 مواد معتمدة عالميًا
               </h3>
@@ -553,9 +1197,21 @@
 
             <!-- Trust Item 3 -->
             <div class="why-us__item">
-              <div class="why-us__item-icon">
-                <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon why-us__item-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="why-us__item-title" data-key="whyUs.items[2].title">
                 تقنيات متقدمة
               </h3>
@@ -567,9 +1223,19 @@
 
             <!-- Trust Item 4 -->
             <div class="why-us__item">
-              <div class="why-us__item-icon">
-                <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon why-us__item-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
               <h3 class="why-us__item-title" data-key="whyUs.items[3].title">
                 ضمان تنفيذي
               </h3>
@@ -580,9 +1246,44 @@
             </div>
 
             <div class="why-us__item">
-              <div class="why-us__item-icon">
-                <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon why-us__item-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+              </svg>
+
               <h3 class="why-us__item-title" data-key="whyUs.items[3].title">
                 فريق محترف
               </h3>
@@ -591,9 +1292,40 @@
               </p>
             </div>
             <div class="why-us__item">
-              <div class="why-us__item-icon">
-                <ion-icon name="medal-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon why-us__item-icon"
+                viewBox="0 0 512 512"
+              >
+                <circle
+                  cx="256"
+                  cy="352"
+                  r="112"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <circle
+                  cx="256"
+                  cy="352"
+                  r="48"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M147 323L41.84 159.32a32 32 0 01-1.7-31.61l31-62A32 32 0 0199.78 48h312.44a32 32 0 0128.62 17.69l31 62a32 32 0 01-1.7 31.61L365 323M371 144H37M428.74 52.6L305 250M140.55 144L207 250"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
               <h3 class="why-us__item-title" data-key="whyUs.items[3].title">
                 سرعة الاستجابة
               </h3>
@@ -623,11 +1355,19 @@
             <!-- Contact Info -->
             <div class="contact-us__info">
               <div class="contact-us__item">
-                <ion-icon
-                  name="call-outline"
-                  class="contact-us__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon btn-call__icon contact-us__icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                </svg>
                 <div class="contact-us__text">
                   <strong data-key="contact_us.contactInfo.phoneLabel"
                     >الهاتف</strong
@@ -643,11 +1383,16 @@
               </div>
 
               <div class="contact-us__item">
-                <ion-icon
-                  name="logo-whatsapp"
-                  class="contact-us__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon contact-us__icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <div class="contact-us__text">
                   <strong data-key="contact_us.contactInfo.whatsappLabel"
                     >الواتساب</strong
@@ -664,11 +1409,28 @@
               </div>
 
               <div class="contact-us__item">
-                <ion-icon
-                  name="mail-outline"
-                  class="contact-us__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon contact-us__icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M441.6 171.61L266.87 85.37a24.57 24.57 0 00-21.74 0L70.4 171.61A40 40 0 0048 207.39V392c0 22.09 18.14 40 40.52 40h335c22.38 0 40.52-17.91 40.52-40V207.39a40 40 0 00-22.44-35.78z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M397.33 368L268.07 267.46a24 24 0 00-29.47 0L109.33 368M309.33 295l136-103M61.33 192l139 105"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
                 <div class="contact-us__text">
                   <strong data-key="contact_us.contactInfo.emailLabel"
                     >البريد الإلكتروني</strong
@@ -686,29 +1448,54 @@
               <!-- Trust Items -->
               <div class="hero-trust hero-trust--contact">
                 <div class="hero-trust__item">
-                  <ion-icon
-                    name="shield-half-outline"
-                    class="hero-trust__item-icon"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon hero-trust__item-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M32 160v296a8 8 0 008 8h136V160a16 16 0 00-16-16H48a16 16 0 00-16 16zM320 48H192a16 16 0 00-16 16v400h160V64a16 16 0 00-16-16zM464 208H352a16 16 0 00-16 16v240h136a8 8 0 008-8V224a16 16 0 00-16-16z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                  </svg>
                   <span data-key="contact.trustItems[0].text">مواد معتمدة</span>
                 </div>
                 <div class="hero-trust__item">
-                  <ion-icon
-                    name="star-outline"
-                    class="hero-trust__item-icon"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon hero-trust__item-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                  </svg>
                   <span data-key="contact.trustItems[1].text"
                     >20+ سنة خبرة</span
                   >
                 </div>
                 <div class="hero-trust__item">
-                  <ion-icon
-                    name="time-outline"
-                    class="hero-trust__item-icon"
-                    aria-hidden="true"
-                  ></ion-icon>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon hero-trust__item-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                  </svg>
                   <span data-key="contact.trustItems[2].text">خدمة 24/7</span>
                 </div>
               </div>
@@ -731,21 +1518,42 @@
 
             <div class="contact">
               <a href="tel:966507565754" class="btn btn-call">
-                <span data-key="contact.buttons.callBtn"> اتصل بنا الآن </span>
-                <ion-icon
-                  name="call-outline"
-                  class="btn-call__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <span data-key="contact.buttons.callBtn" aria-hidden="true">
+                  اتصل بنا الآن
+                </span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon btn-call__icon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                </svg>
               </a>
               <a
                 href="https://wa.me/966507565754?text=مرحباً+عندك+استفسار%20عن%20خدمات%20العزل"
                 target="_blank"
                 class="btn btn-whatsapp"
+                aria-hidden="true"
                 ><span data-key="contact.buttons.whatsappBtn"
                   >تواصل عبر الواتساب</span
-                ><ion-icon name="logo-whatsapp"></ion-icon
-              ></a>
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon contanct-us__icon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -757,11 +1565,23 @@
           <!-- Logo + Description -->
           <div class="footer__about">
             <div class="footer__logo">
-              <ion-icon
-                name="shield-half-outline"
-                class="footer__logo-icon"
-                aria-hidden="true"
-              ></ion-icon>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon logo-icon size-md"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M463.1 112.37C373.68 96.33 336.71 84.45 256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464c15.42-6.21 223.3-94.87 207.1-351.63z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M256 48c-80.71 36.45-117.68 48.33-207.1 64.37C32.7 369.13 240.58 457.79 256 464z"
+                />
+              </svg>
               <span class="footer__name" data-key="footer.about.name"
                 >عوازل مكة</span
               >
@@ -772,14 +1592,42 @@
             </p>
             <div class="footer__socials">
               <a href="#" aria-label="Facebook"
-                ><ion-icon name="logo-facebook"></ion-icon
-              ></a>
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
               <a href="#" aria-label="Instagram"
-                ><ion-icon name="logo-instagram"></ion-icon
-              ></a>
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                  />
+                  <path
+                    d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                  />
+                </svg>
+              </a>
               <a href="#" aria-label="Google My Business"
-                ><ion-icon name="logo-google"></ion-icon
-              ></a>
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon size-sm"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M473.16 221.48l-2.26-9.59H262.46v88.22H387c-12.93 61.4-72.93 93.72-121.94 93.72-35.66 0-73.25-15-98.13-39.11a140.08 140.08 0 01-41.8-98.88c0-37.16 16.7-74.33 41-98.78s61-38.13 97.49-38.13c41.79 0 71.74 22.19 82.94 32.31l62.69-62.36C390.86 72.72 340.34 32 261.6 32c-60.75 0-119 23.27-161.58 65.71C58 139.5 36.25 199.93 36.25 256s20.58 113.48 61.3 155.6c43.51 44.92 105.13 68.4 168.58 68.4 57.73 0 112.45-22.62 151.45-63.66 38.34-40.4 58.17-96.3 58.17-154.9 0-24.67-2.48-39.32-2.59-39.96z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -810,19 +1658,32 @@
             <h4 class="footer__title">تواصل معنا</h4>
             <ul class="footer__contact">
               <li>
-                <ion-icon
-                  name="call-outline"
-                  class="footer__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon btn-call__icon footer-contact__icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                </svg>
                 <a href="tel:966507565754">+966 50 000 0000</a>
               </li>
               <li>
-                <ion-icon
-                  name="logo-whatsapp"
-                  class="footer__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon contanct-us__icon footer-contact__icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <a
                   href="https://wa.me/966507565754?text=مرحباً+عندك+استفسار%20عن%20خدمات%20العزل"
                   target="_blank"
@@ -830,11 +1691,28 @@
                 >
               </li>
               <li>
-                <ion-icon
-                  name="mail-outline"
-                  class="footer__icon"
-                  aria-hidden="true"
-                ></ion-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon footer-contact__icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M441.6 171.61L266.87 85.37a24.57 24.57 0 00-21.74 0L70.4 171.61A40 40 0 0048 207.39V392c0 22.09 18.14 40 40.52 40h335c22.38 0 40.52-17.91 40.52-40V207.39a40 40 0 00-22.44-35.78z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M397.33 368L268.07 267.46a24 24 0 00-29.47 0L109.33 368M309.33 295l136-103M61.33 192l139 105"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
                 <a href="mailto:info@insulmakkah.com">info@insulmakkah.com</a>
               </li>
             </ul>
