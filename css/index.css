@@ -28,10 +28,6 @@ body {
   z-index: 100;
 }
 
-.header ion-icon {
-  font-size: 2.4rem;
-}
-
 .header-logo {
   font-weight: 700;
   font-size: 1.8rem;
@@ -40,11 +36,11 @@ body {
   align-items: center;
 }
 
-.header-logo__icon {
+.logo-icon {
   color: #ffd700;
   display: inline-flex;
   background-color: var(--color-light-blue);
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 50%;
 }
 
@@ -54,10 +50,6 @@ body {
   background: none;
   color: #fff;
 }
-
-/* [dir="ltr"] .header-navbar {
-  transform: translateX(-100%);
-} */
 
 .header-navbar {
   background-color: rgba(51, 92, 133, 0.6);
@@ -78,10 +70,6 @@ body {
   opacity: 0;
   z-index: 9;
 }
-
-/* [dir="ltr"].nav-open .header-navbar {
-  transform: translateY(0);
-} */
 
 .header-navbar__links {
   display: flex;
@@ -117,14 +105,14 @@ body {
   height: 4rem;
 }
 
-.icon-mobile__nav[name="close-outline"] {
+.button-mobile__toggle .close {
   display: none;
 }
 
-.nav-open .icon-mobile__nav[name="menu-outline"] {
+.nav-open .button-mobile__toggle .open {
   display: none;
 }
-.nav-open .icon-mobile__nav[name="close-outline"] {
+.nav-open .button-mobile__toggle .close {
   display: block;
 }
 
@@ -168,7 +156,7 @@ body {
       rgba(0, 51, 102, 0.35),
       rgba(0, 41, 82, 0.35)
     ),
-    url("/imgs/stock-photo-waterproofing-roll-bituminous-material-in-the-trench-constructi.jpeg");
+    url("/imgs/insulation-hero.webp");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -228,6 +216,8 @@ body {
 
 .hero-trust__item-icon {
   color: #ffd700;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .hero-trust__item:hover .hero-trust__item-icon {
@@ -298,9 +288,9 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 6rem;
-  height: 6rem;
-  font-size: 2.4rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  padding: 1rem;
   background: linear-gradient(
     135deg,
     var(--color-light-blue),
@@ -339,10 +329,10 @@ body {
   color: #333;
 }
 
-.service-card__features-item ion-icon {
+.service-card__features-item_icon {
   color: var(--color-light-blue);
-
-  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .sticky-buttons {
@@ -439,12 +429,12 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 4.8rem;
+  height: 4.8rem;
+  padding: 1rem;
   background: linear-gradient(135deg, var(--color-dark-blue), #002244);
   color: #ffd700;
   border-radius: 50%;
-  font-size: 2.4rem;
 }
 
 .why-us__item-title {
@@ -492,11 +482,11 @@ body {
 }
 
 .contact-us__icon {
-  font-size: 2rem;
+  width: 3.2rem;
   color: #ffd700;
   background-color: var(--color-light-blue);
   border-radius: 50%;
-  padding: 1rem;
+  padding: 0.4rem;
 }
 
 .contact-us__text {
@@ -568,7 +558,6 @@ body {
 }
 
 .footer__logo-icon {
-  font-size: 2rem;
   color: #ffd700;
   background-color: var(--color-light-blue);
   padding: 0.8rem;
@@ -590,12 +579,6 @@ body {
 .footer__socials {
   display: flex;
   gap: 1rem;
-}
-
-.footer__socials ion-icon {
-  font-size: 1.6rem;
-  color: #ffd700;
-  cursor: pointer;
 }
 
 .footer__section {
@@ -641,6 +624,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+.footer-contact__icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #ffd700;
 }
 
 .footer__contact a,

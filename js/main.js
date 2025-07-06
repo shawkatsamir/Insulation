@@ -335,7 +335,7 @@
     const browserLangIsArabic = (
       navigator.language || navigator.userLanguage
     ).startsWith("ar");
-    const initialLang = savedLang || (browserLangIsArabic ? "ar" : "en");
+    const initialLang = savedLang || "ar";
 
     setLanguage(initialLang);
 
