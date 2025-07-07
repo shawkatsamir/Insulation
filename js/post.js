@@ -182,7 +182,7 @@
     try {
       // Get post ID and language from URL
       const urlParams = new URLSearchParams(window.location.search);
-      const postId = parseInt(urlParams.get("id"));
+      const postId = parseInt(urlParams.get("id")) || 1;
       const currentLang = urlParams.get("lang") || lang;
 
       if (!postId) {

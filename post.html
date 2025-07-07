@@ -51,6 +51,8 @@
       />
       <meta name="twitter:site" content="@insulmakkah" />
 
+      <link rel="canonical" href="https://www.insulmakkah.com/post.html" />
+
       <!-- Favicon & Manifest -->
       <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
       <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
@@ -82,11 +84,33 @@
         crossorigin
       />
 
-      <!-- Stylesheets -->
-      <link rel="stylesheet" href="bundle.min.css" />
+      <link
+        rel="stylesheet"
+        href="./css/post.min.css"
+        media="all"
+        onload="this.media='all'"
+      />
+      <link
+        rel="stylesheet"
+        href="./css/global.min.css"
+        media="all"
+        onload="this.media='all'"
+      />
+      <link
+        rel="stylesheet"
+        href="./css/queries.min.css"
+        media="all"
+        onload="this.media='all'"
+      />
 
-      <!-- Canonical URL -->
-      <link rel="canonical" href="https://www.insulmakkah.com/post.html" />
+      <noscript>
+        <link rel="stylesheet" href="./css/post.min.css" media="all" /><link
+          rel="stylesheet"
+          href="./css/global.min.css"
+          media="all"
+        />
+        <link rel="stylesheet" href="./css/queries.min.css" media="all" />
+      </noscript>
 
       <!-- Structured Data (Article Schema) -->
       <script type="application/ld+json">
@@ -213,11 +237,11 @@
         >
           <ul class="header-navbar__links">
             <li>
-              <a class="header-navbar__link" href="/index.html">الرئيسية</a>
+              <a class="header-navbar__link" href="index.html">الرئيسية</a>
             </li>
 
             <li>
-              <a class="header-navbar__link no-scroll" href="/blog.html"
+              <a class="header-navbar__link no-scroll" href="blog.html"
                 >المدونة</a
               >
             </li>
@@ -277,7 +301,7 @@
             </div>
             <figure class="post-featured-image">
               <img
-                src=""
+                src="/imgs/posts/post1.webp"
                 alt=""
                 width="800"
                 height="450"
@@ -387,8 +411,8 @@
           >
         </div>
       </footer>
-
-      <script defer src="bundle.min.js"></script>
+      <script defer src="./js/post.min.js"></script>
+      <script defer src="./js/effects.min.js"></script>
     </body>
   </html>
 </html>

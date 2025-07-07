@@ -101,8 +101,33 @@
       crossorigin
     />
 
-    <link rel="stylesheet" href="bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="/css/index.min.css"
+      media="all"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/global.min.css"
+      media="all"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/queries.min.css"
+      media="all"
+      onload="this.media='all'"
+    />
 
+    <noscript>
+      <link rel="stylesheet" href="./css/index.min.css" media="all" /><link
+        rel="stylesheet"
+        href="./css/global.min.css"
+        media="all"
+      />
+      <link rel="stylesheet" href="./css/queries.min.css" />
+    </noscript>
     <style>
       .header {
         display: flex;
@@ -117,7 +142,6 @@
         top: 0;
         z-index: 100;
       }
-
       .header-logo {
         font-weight: 700;
         font-size: 1.8rem;
@@ -125,46 +149,13 @@
         gap: 1.2rem;
         align-items: center;
       }
-
       .logo-icon {
         color: #ffd700;
         display: inline-flex;
-        background-color: #335cad;
+        background-color: var(--color-light-blue);
         padding: 0.7rem;
         border-radius: 50%;
       }
-
-      .button-mobile__toggle {
-        cursor: pointer;
-        border: none;
-        background: none;
-        color: #fff;
-        z-index: 9999;
-      }
-
-      .icon-mobile__nav {
-        width: 4rem;
-        height: 4rem;
-      }
-
-      .lang-toggle {
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        background-color: #ffd700;
-        color: #003366;
-        border: none;
-        padding: 0.6rem 1rem;
-        font-size: 1rem;
-        border-radius: 20px;
-        cursor: pointer;
-      }
-
-      .lang-toggle:hover {
-        background-color: #002244;
-        color: #ffd700;
-      }
-
       .hero {
         text-align: center;
         background-image: linear-gradient(
@@ -179,7 +170,6 @@
         background-repeat: no-repeat;
         position: relative;
       }
-
       .hero-title {
         color: #ffd700;
         font-weight: 700;
@@ -187,27 +177,12 @@
         line-height: 5.2rem;
         margin-bottom: 1.5rem;
       }
-
       .hero-subtitle {
         font-weight: 400;
         font-size: 2rem;
         line-height: 2.8rem;
-        color: #ffffff;
+        color: var(--color-white);
       }
-
-      .btn-call,
-      .btn-whatsapp {
-        display: inline-flex;
-        border-radius: 100px;
-        gap: 1.2rem;
-        margin: 0 auto;
-        align-items: center;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        font-weight: 600;
-        transition: background 0.3s ease;
-      }
-
       .hero-trust {
         display: flex;
         justify-content: center;
@@ -218,7 +193,6 @@
         margin-bottom: 3.2rem;
         flex-wrap: wrap;
       }
-
       .hero-trust__item {
         display: flex;
         align-items: center;
@@ -228,25 +202,18 @@
         border-radius: 8px;
         transition: background 0.3s ease;
       }
-
       .hero-trust__item:hover {
         background: #ffd700;
         color: #003366;
         font-weight: bold;
       }
-
       .hero-trust__item-icon {
         color: #ffd700;
         width: 1.2rem;
         height: 1.2rem;
       }
-
       .hero-trust__item:hover .hero-trust__item-icon {
-        color: #003366;
-      }
-
-      .hero .locations {
-        display: none;
+        color: var(--color-dark-blue);
       }
     </style>
 
@@ -1594,7 +1561,7 @@
               <a href="#" aria-label="Facebook"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon size-sm"
+                  class="ionicon social-icon"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -1606,7 +1573,7 @@
               <a href="#" aria-label="Instagram"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon size-sm"
+                  class="ionicon social-icon"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -1620,7 +1587,7 @@
               <a href="#" aria-label="Google My Business"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon size-sm"
+                  class="ionicon social-icon"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -1728,17 +1695,10 @@
         <ion-icon name="arrow-up-outline" class="icon-back-to-top"></ion-icon>
       </button>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script defer src="js/effects.js"></script>
-    <script defer src="js/common.js"></script>
-    <script defer src="dist/bundle.min.js"></script>
+
+    <script defer src="./js/main.min.js"></script>
+    <script defer src="./js/effects.min.js"></script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org ",

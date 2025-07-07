@@ -142,7 +142,7 @@
   // Load translations from external JSON
   async function loadTranslations() {
     try {
-      const response = await fetch("./data/translation.json");
+      const response = await fetch("/data/translation.json");
       translations = await response.json();
     } catch (error) {
       console.error("Failed to load translations:", error);

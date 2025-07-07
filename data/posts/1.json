@@ -1,5 +1,6 @@
 {
   "en": {
+    "id": 1,
     "postInfo": {
       "title": "The Comprehensive Guide to Insulation Services",
       "author": "Makkah Insulators Team",
@@ -54,6 +55,7 @@
     }
   },
   "ar": {
+    "id": 1,
     "postInfo": {
       "title": "الدليل الشامل لخدمات العزل: كل ما تحتاج لمعرفته",
       "author": "فريق عوازل مكة",
