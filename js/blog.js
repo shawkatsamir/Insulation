@@ -46,7 +46,7 @@
       const data = await response.json();
       const posts = data[lang] || data["ar"];
 
-      elements.postsContainer.innerHTML = ""; // Clear existing content
+      elements.postsContainer.innerHTML = "";
 
       posts.forEach((post) => {
         const postElement = createPostElement(post, lang);

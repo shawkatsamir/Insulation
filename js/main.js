@@ -142,7 +142,7 @@
   // Load translations from external JSON
   async function loadTranslations() {
     try {
-      const response = await fetch("./data/translation.json");
+      const response = await fetch("/data/translation.json");
       translations = await response.json();
     } catch (error) {
       console.error("Failed to load translations:", error);
@@ -335,7 +335,7 @@
     const browserLangIsArabic = (
       navigator.language || navigator.userLanguage
     ).startsWith("ar");
-    const initialLang = savedLang || (browserLangIsArabic ? "ar" : "en");
+    const initialLang = savedLang || "ar";
 
     setLanguage(initialLang);
 

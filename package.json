@@ -1,0 +1,23 @@
+{
+  "name": "insulmakkah",
+  "version": "1.0.0",
+  "description": "Insulation services website for Makkah",
+  "scripts": {
+    "build": "npm run clean && npm run copy:assets && npm run minify:css && npm run minify:js && npm run minify:html",
+    "clean": "rimraf dist",
+    "copy:assets": "copyfiles -u 1 imgs/**/* dist/imgs && copyfiles -u 1 public/**/* dist/public && copyfiles -u 1 favicon/**/* dist/favicon && copyfiles -u 1 data/**/* dist/data",
+    "minify:css": "postcss css/blog.css -o dist/css/blog.min.css --no-map && postcss css/global.css -o dist/css/global.min.css --no-map && postcss css/index.css -o dist/css/index.min.css --no-map && postcss css/post.css -o dist/css/post.min.css --no-map && postcss css/queries.css -o dist/css/queries.min.css --no-map",
+    "minify:js": "terser js/blog.js -o dist/js/blog.min.js && terser js/effects.js -o dist/js/effects.min.js && terser js/main.js -o dist/js/main.min.js && terser js/post.js -o dist/js/post.min.js",
+    "minify:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --keep-closing-slash --minify-css true --minify-js true --ignore-custom-fragments \"<style.*?</style>\" index.html -o dist/index.html && html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --keep-closing-slash --minify-css true --minify-js true --ignore-custom-fragments \"<style.*?</style>\" blog.html -o dist/blog.html && html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --keep-closing-slash --minify-css true --minify-js true --ignore-custom-fragments \"<style.*?</style>\" post.html -o dist/post.html"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cssnano": "^7.0.7",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.1",
+    "rimraf": "^6.0.1",
+    "terser": "^5.43.1"
+  }
+}
