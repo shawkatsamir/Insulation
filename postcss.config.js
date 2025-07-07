@@ -1,6 +1,8 @@
 module.exports = {
   plugins: {
     "postcss-import": {},
-    cssnano: {},
+    cssnano: { 
+      normalizeUrl: false, 
+    },
   },
 };
