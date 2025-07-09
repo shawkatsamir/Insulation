@@ -1,8 +1,7 @@
 {
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "root": "./",
+  "build": {
+    "command": "echo 'No build needed'",
+    "output": "."
+  }
 }
