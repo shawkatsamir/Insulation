@@ -1,12 +1,8 @@
 {
-  "root": "./",
-  "build": {
-    "command": "echo 'No build needed'"
-  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/$1"
     }
   ]
 }
