@@ -1,4 +1,7 @@
 {
+  "build": {
+    "outputDirectory": "."
+  },
   "routes": [
     {
       "src": "/(.*)",
