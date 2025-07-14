@@ -44,10 +44,10 @@ E:/insulations/
 ├── README.md # Project README file
 ├── robots.txt # Directives for web crawlers
 ├── sitemap.xml # XML sitemap for search engines
-├── vercel.json # Vercel deployment configuration
+├── serve.json # Serve configuration for local development
+├── netlify.toml # Netlify deployment configuration
 ├── css/ # Stylesheets
 │ ├── blog.css # Styles for the blog page
-│ ├── bundle.css # Bundled CSS (likely generated)
 │ ├── global.css # Global styles
 │ ├── index.css # Styles for the index page
 │ └── post.css # Styles for individual post pages
