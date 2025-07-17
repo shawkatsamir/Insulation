@@ -260,6 +260,7 @@ input:focus {
 .footer__section {
   background-color: var(--color-dark-blue);
   color: #fff;
+  min-height: 200px;
 }
 .footer__grid {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
