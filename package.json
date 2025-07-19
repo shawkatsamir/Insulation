@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "A modern, responsive website for an insulation services provider based in the Kingdom of Saudi Arabia (KSA). This site showcases services, company values, and contact information for potential clients.",
   "main": "index.js",
-  "scripts": {
+  scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:posts": "node build.js",
-    "clean": "if exist dist rimraf dist",
-    "create-dirs": "mkdir dist && mkdir dist\\css && mkdir dist\\js",
+    "clean": "rimraf dist",
+    "create-dirs": "mkdir -p dist/css dist/js",
     "build:html": "html-minifier index.html -o dist/index.html --remove-comments --collapse-whitespace && html-minifier blog.html -o dist/blog.html --remove-comments --collapse-whitespace",
     "build:css": "postcss css -d dist/css",
     "build:js": "terser js/main.js -o dist/js/main.js -c -m && terser js/blog.js -o dist/js/blog.js -c -m && terser js/post.js -o dist/js/post.js -c -m && terser js/effects.js -o dist/js/effects.js -c -m",
-    "copy:assets": "xcopy imgs dist\\imgs /S /I /Y && xcopy favicon dist\\favicon /S /I /Y && xcopy data dist\\data /S /I /Y && xcopy public dist\\public /S /I /Y",
+    "copy:assets": "cp -r imgs dist/imgs && cp -r favicon dist/favicon && cp -r data dist/data && cp -r public dist/public",
     "build": "npm run clean && npm run create-dirs && npm run build:html && npm run build:css && npm run build:js && npm run copy:assets && npm run build:posts",
     "preview": "serve dist -c ../serve.json"
   },
