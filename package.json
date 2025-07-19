@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A modern, responsive website for an insulation services provider based in the Kingdom of Saudi Arabia (KSA). This site showcases services, company values, and contact information for potential clients.",
   "main": "index.js",
-  scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:posts": "node build.js",
     "clean": "rimraf dist",
