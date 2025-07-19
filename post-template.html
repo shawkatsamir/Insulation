@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" dir="{{DIR}}">
+  <head>
+    <title>{{POST_TITLE}}</title>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{META_DESCRIPTION}}" />
+
+    <!-- Open Graph / Facebook Meta -->
+    <meta property="og:title" content="{{POST_TITLE}}" />
+    <meta property="og:description" content="{{META_DESCRIPTION}}" />
+    <meta property="og:image" content="{{OG_IMAGE}}" />
+    <meta property="og:url" content="{{PAGE_URL}}" />
+    <meta property="og:type" content="article" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{POST_TITLE}}" />
+    <meta name="twitter:description" content="{{META_DESCRIPTION}}" />
+    <meta name="twitter:image" content="{{OG_IMAGE}}" />
+
+    <link rel="canonical" href="{{PAGE_URL}}" />
+
+    <!-- Favicon & Manifest -->
+    <link rel="icon" href="../favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/post.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Header content remains the same -->
+    </header>
+
+    <main class="post-full">
+      <a href="../blog.html" class="back-link">{{BACK_LINK_TEXT}}</a>
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">{{POST_TITLE}}</h1>
+          <div class="post-meta">
+            <span class="post-author">{{POST_AUTHOR}}</span>
+            <time class="post-date" datetime="{{POST_DATE}}">{{POST_DATE}}</time>
+          </div>
+          <figure class="post-featured-image">
+            <img src="{{POST_IMAGE_URL}}" alt="{{POST_IMAGE_ALT}}" width="800" height="450" />
+          </figure>
+        </header>
+
+        <section class="post-body">
+          {{POST_BODY_HTML}}
+        </section>
+
+        <section class="related-posts">
+          <h3>{{RELATED_POSTS_HEADING}}</h3>
+          <ul class="related-posts-list">
+            {{RELATED_POSTS_HTML}}
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="post-footer">
+      <!-- Footer content remains the same -->
+    </footer>
+    <script defer src="../js/effects.js"></script>
+  </body>
+</html>

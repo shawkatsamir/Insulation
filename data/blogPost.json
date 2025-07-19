@@ -11,6 +11,18 @@
       "media": {
         "imageAlt": "Insulation materials on a roof"
       }
+    },
+    {
+      "id": 2,
+      "postInfo": {
+        "title": "Key Benefits of Waterproofing Insulation",
+        "author": "Makkah Insulators Team",
+        "date": "2025-07-18",
+        "summary": "Discover why waterproofing is essential for protecting your building's structure and ensuring a healthy environment."
+      },
+      "media": {
+        "imageAlt": "Waterproofing material being applied to a surface."
+      }
     }
   ],
   "ar": [
@@ -24,6 +36,18 @@
       },
       "media": {
         "imageAlt": "مواد عزل حراري ومائي"
+      }
+    },
+    {
+      "id": 2,
+      "postInfo": {
+        "title": "الفوائد الرئيسية للعزل المائي",
+        "author": "فريق عوازل مكة",
+        "date": "2025-07-18",
+        "summary": "اكتشف لماذا يعتبر العزل المائي ضرورياً لحماية هيكل المبنى وضمان بيئة صحية."
+      },
+      "media": {
+        "imageAlt": "مادة عزل مائي يتم تطبيقها على سطح."
       }
     }
   ]
