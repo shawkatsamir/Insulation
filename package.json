@@ -1,0 +1,40 @@
+{
+  "name": "insulations",
+  "version": "1.0.0",
+  "description": "A modern, responsive website for an insulation services provider based in the Kingdom of Saudi Arabia (KSA). This site showcases services, company values, and contact information for potential clients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:posts": "node build.js",
+    "clean": "rm -rf dist",
+    "create-dirs": "mkdir -p dist/css dist/js dist/imgs dist/favicon dist/data dist/public",
+    "build:html": "html-minifier index.html -o dist/index.html --remove-comments --collapse-whitespace && html-minifier blog.html -o dist/blog.html --remove-comments --collapse-whitespace",
+    "build:css": "postcss css/main.css -o dist/css/main.css && postcss css/blog.css -o dist/css/blog.css && postcss css/index.css -o dist/css/index.css && postcss css/post.css -o dist/css/post.css",
+    "build:js": "terser js/main.js -o dist/js/main.js -c -m && terser js/blog.js -o dist/js/blog.js -c -m && terser js/post.js -o dist/js/post.js -c -m && terser js/effects.js -o dist/js/effects.js -c -m",
+    "copy:assets": "cp -r imgs/* dist/imgs && cp -r favicon/* dist/favicon && cp -r data/* dist/data && cp -r public/* dist/public",
+    "build": "npm run clean && npm run create-dirs && npm run build:html && npm run build:css && npm run build:js && npm run copy:assets && npm run build:posts",
+    "preview": "serve dist -c ../serve.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawkatsamir/Insulation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shawkatsamir/Insulation/issues"
+  },
+  "homepage": "https://github.com/shawkatsamir/Insulation#readme",
+  "devDependencies": {
+    "cssnano": "^7.0.7",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
+    "rimraf": "^6.0.1",
+    "terser": "^5.43.1",
+    "cpx": "^1.5.0"
+  }
+}

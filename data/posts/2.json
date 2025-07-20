@@ -1,0 +1,96 @@
+{
+  "en": {
+    "id": 2,
+    "postInfo": {
+      "title": "Key Benefits of Waterproofing Insulation",
+      "author": "Makkah Insulators Team",
+      "date": "2025-07-18",
+      "category": "Waterproofing",
+      "summary": "Discover why waterproofing is essential for protecting your building's structure and ensuring a healthy environment.",
+      "backLink": "← Back to Blog"
+    },
+    "media": {
+      "imageUrl": "imgs/posts/post1.webp",
+      "imageAlt": "Waterproofing material being applied to a surface."
+    },
+    "body": {
+      "section1": {
+        "heading": "Protect Your Investment",
+        "paragraph": "Waterproofing is a critical measure to prevent water damage, which can lead to costly structural repairs and health hazards like mold."
+      },
+      "section2": {
+        "heading": "Top 3 Benefits",
+        "paragraph": "Effective waterproofing offers long-term advantages for any property owner.",
+        "steps": [
+          {
+            "title": "1. Structural Integrity",
+            "description": "It prevents water from seeping into concrete and steel, avoiding corrosion and weakening of the building's foundation."
+          },
+          {
+            "title": "2. Healthier Environment",
+            "description": "By blocking moisture, it inhibits the growth of mold and mildew, which can cause respiratory issues."
+          },
+          {
+            "title": "3. Increased Property Value",
+            "description": "A well-protected, waterproofed building is a significant asset, increasing its market value and appeal."
+          }
+        ]
+      },
+      "section3": {
+        "heading": "Choosing the Right Materials",
+        "paragraph": "From bituminous membranes to liquid-applied coatings, the right material depends on the specific area and exposure.",
+        "materials": []
+      }
+    },
+    "related": {
+      "posts": [1]
+    }
+  },
+  "ar": {
+    "id": 2,
+    "postInfo": {
+      "title": "الفوائد الرئيسية للعزل المائي",
+      "author": "فريق عوازل مكة",
+      "date": "2025-07-18",
+      "category": "العزل المائي",
+      "summary": "اكتشف لماذا يعتبر العزل المائي ضرورياً لحماية هيكل المبنى وضمان بيئة صحية.",
+      "backLink": "→ العودة إلى المدونة"
+    },
+    "media": {
+      "imageUrl": "imgs/posts/post1.webp",
+      "imageAlt": "مادة عزل مائي يتم تطبيقها على سطح."
+    },
+    "body": {
+      "section1": {
+        "heading": "احمِ استثمارك",
+        "paragraph": "يعتبر العزل المائي إجراءً حاسماً لمنع أضرار المياه، التي يمكن أن تؤدي إلى إصلاحات هيكلية مكلفة ومخاطر صحية مثل العفن."
+      },
+      "section2": {
+        "heading": "أهم 3 فوائد",
+        "paragraph": "يوفر العزل المائي الفعال مزايا طويلة الأمد لأي مالك عقار.",
+        "steps": [
+          {
+            "title": "1. السلامة الهيكلية",
+            "description": "يمنع تسرب المياه إلى الخرسانة والحديد، مما يجنب التآكل وإضعاف أساس المبنى."
+          },
+          {
+            "title": "2. بيئة صحية أكثر",
+            "description": "عن طريق منع الرطوبة، فإنه يثبط نمو العفن والفطريات، التي يمكن أن تسبب مشاكل في الجهاز التنفسي."
+          },
+          {
+            "title": "3. زيادة قيمة العقار",
+            "description": "المبنى المحمي جيداً والمعزول مائيا�� هو أحد الأصول الهامة، مما يزيد من قيمته السوقية وجاذبيته."
+          }
+        ]
+      },
+      "section3": {
+        "heading": "اختيار المواد المناسبة",
+        "paragraph": "من الأغشية البيتومينية إلى الطلاءات السائلة، تعتمد المادة المناسبة على المنطقة المحددة ومدى تعرضها للعوامل الجوية.",
+        "materials": []
+      }
+    },
+    "related": {
+      "posts": [1]
+    }
+  }
+}

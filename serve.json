@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "**/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/posts/:id", "destination": "/posts/:id.html" }
+  ]
+}

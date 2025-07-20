@@ -211,22 +211,28 @@
       );
       setText(elements.section3.heading, postContent.body.section3.heading);
       setText(elements.section3.paragraph, postContent.body.section3.paragraph);
-      setText(
-        elements.section3.materials.item1.strong,
-        postContent.body.section3.materials[0].title
-      );
-      setText(
-        elements.section3.materials.item1.text,
-        postContent.body.section3.materials[0].description
-      );
-      setText(
-        elements.section3.materials.item2.strong,
-        postContent.body.section3.materials[1].title
-      );
-      setText(
-        elements.section3.materials.item2.text,
-        postContent.body.section3.materials[1].description
-      );
+
+      if (postContent.body.section3.materials && postContent.body.section3.materials.length > 0) {
+        setText(
+          elements.section3.materials.item1.strong,
+          postContent.body.section3.materials[0].title
+        );
+        setText(
+          elements.section3.materials.item1.text,
+          postContent.body.section3.materials[0].description
+        );
+      }
+      
+      if (postContent.body.section3.materials && postContent.body.section3.materials.length > 1) {
+        setText(
+          elements.section3.materials.item2.strong,
+          postContent.body.section3.materials[1].title
+        );
+        setText(
+          elements.section3.materials.item2.text,
+          postContent.body.section3.materials[1].description
+        );
+      }
       updateStructuredData(postContent, postMetadata);
       setupSocialSharing(postContent.postInfo.title);
     } catch (error) {
