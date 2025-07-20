@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:posts": "node build.js",
-    "clean": "rimraf dist",
-    "create-dirs": "mkdirp dist dist/css dist/js dist/imgs dist/favicon dist/data dist/public",
+    "clean": "rm -rf dist",
+    "create-dirs": "mkdir -p dist/css dist/js dist/imgs dist/favicon dist/data dist/public",
     "build:html": "html-minifier index.html -o dist/index.html --remove-comments --collapse-whitespace && html-minifier blog.html -o dist/blog.html --remove-comments --collapse-whitespace",
     "build:css": "postcss css/main.css -o dist/css/main.css && postcss css/blog.css -o dist/css/blog.css && postcss css/index.css -o dist/css/index.css && postcss css/post.css -o dist/css/post.css",
     "build:js": "terser js/main.js -o dist/js/main.js -c -m && terser js/blog.js -o dist/js/blog.js -c -m && terser js/post.js -o dist/js/post.js -c -m && terser js/effects.js -o dist/js/effects.js -c -m",
-    "copy:assets": "cpx imgs/**/* dist/imgs && cpx favicon/**/* dist/favicon && cpx data/**/* dist/data && cpx public/**/* dist/public",
+    "copy:assets": "cp -r imgs/* dist/imgs && cp -r favicon/* dist/favicon && cp -r data/* dist/data && cp -r public/* dist/public",
     "build": "npm run clean && npm run create-dirs && npm run build:html && npm run build:css && npm run build:js && npm run copy:assets && npm run build:posts",
     "preview": "serve dist -c ../serve.json"
   },
