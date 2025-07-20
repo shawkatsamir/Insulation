@@ -1,9 +1,13 @@
 module.exports = {
   plugins: [
-    require('cssnano')({
-      preset: ['default', {
-        normalizeUrl: false,
-      }]
+    require("postcss-import"),
+    require("cssnano")({
+      preset: [
+        "default",
+        {
+          normalizeUrl: false,
+        },
+      ],
     }),
   ],
 };

@@ -30,8 +30,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/post.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/queries.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -45,16 +44,21 @@
           <h1 class="post-title">{{POST_TITLE}}</h1>
           <div class="post-meta">
             <span class="post-author">{{POST_AUTHOR}}</span>
-            <time class="post-date" datetime="{{POST_DATE}}">{{POST_DATE}}</time>
+            <time class="post-date" datetime="{{POST_DATE}}"
+              >{{POST_DATE}}</time
+            >
           </div>
           <figure class="post-featured-image">
-            <img src="{{POST_IMAGE_URL}}" alt="{{POST_IMAGE_ALT}}" width="800" height="450" />
+            <img
+              src="{{POST_IMAGE_URL}}"
+              alt="{{POST_IMAGE_ALT}}"
+              width="800"
+              height="450"
+            />
           </figure>
         </header>
 
-        <section class="post-body">
-          {{POST_BODY_HTML}}
-        </section>
+        <section class="post-body">{{POST_BODY_HTML}}</section>
 
         <section class="related-posts">
           <h3>{{RELATED_POSTS_HEADING}}</h3>
