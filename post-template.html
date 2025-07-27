@@ -31,6 +31,34 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/post.css" />
     <link rel="stylesheet" href="../css/main.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{PAGE_URL}}"
+        },
+        "headline": "{{POST_TITLE}}",
+        "description": "{{META_DESCRIPTION}}",
+        "image": "{{OG_IMAGE}}",
+        "author": {
+          "@type": "Person",
+          "name": "{{POST_AUTHOR}}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "عوازل مكة",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.insulmakkah.com/favicon/favicon-96x96.png"
+          }
+        },
+        "datePublished": "{{POST_DATE}}",
+        "dateModified": "{{POST_DATE}}"
+      }
+    </script>
   </head>
   <body>
     <header class="header">
