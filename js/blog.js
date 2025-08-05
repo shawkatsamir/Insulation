@@ -10,7 +10,7 @@
     const title = document.createElement("h2");
     title.dataset.key = `post.${post.id}.title`;
     const link = document.createElement("a");
-    link.href = `/posts/${post.id}_${lang}.html`;
+    link.href = `dist/posts/${post.id}_${lang}.html`;
     link.textContent = post.postInfo.title;
     title.appendChild(link);
     const meta = document.createElement("p");

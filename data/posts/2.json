@@ -14,32 +14,95 @@
       "imageAlt": "Waterproofing material being applied to a surface."
     },
     "body": {
-      "section1": {
-        "heading": "Protect Your Investment",
-        "paragraph": "Waterproofing is a critical measure to prevent water damage, which can lead to costly structural repairs and health hazards like mold."
+      "introduction": {
+        "heading": "Introduction to Waterproofing Insulation",
+        "paragraph": "Waterproofing insulation is a vital service for protecting buildings in Saudi Arabia from water damage. This guide explains what waterproofing insulation is, how it works, and why it's crucial for maintaining the structural integrity and longevity of your property. We will explore the different types of waterproofing materials and their applications, helping you understand how to safeguard your investment against the risks of water intrusion, which is a common concern in many parts of the Kingdom."
       },
-      "section2": {
-        "heading": "Top 3 Benefits",
-        "paragraph": "Effective waterproofing offers long-term advantages for any property owner.",
-        "steps": [
+      "understanding": {
+        "heading": "Understanding Waterproofing Insulation",
+        "definition": "Waterproofing insulation involves the application of a barrier to prevent water from penetrating a building's structure. This is essential for protecting foundations, roofs, and walls from the damaging effects of moisture. It works by creating an impermeable layer that repels water, thus preventing leaks and water damage. In a country like Saudi Arabia, where sudden heavy rains can occur, and where coastal areas experience high humidity, effective waterproofing is a critical line of defense for any building.",
+        "criticality": "The importance of waterproofing in Saudi Arabia cannot be overstated. It prevents costly structural repairs, protects against the growth of mold and mildew (which can cause health problems), and preserves the value of your property. Whether you are in a coastal city like Jeddah or an inland area, waterproofing is a fundamental requirement for a safe and durable building."
+      },
+      "problems": {
+        "heading": "Common Problems Without Proper Waterproofing",
+        "paragraph": "The absence of proper waterproofing can lead to a host of problems for buildings in Saudi Arabia, with significant financial and safety implications. Here are some of the issues that can arise:",
+        "points": [
           {
-            "title": "1. Structural Integrity",
-            "description": "It prevents water from seeping into concrete and steel, avoiding corrosion and weakening of the building's foundation."
+            "title": "Structural Weakening",
+            "description": "Water seepage can corrode steel reinforcements and weaken concrete, compromising the structural integrity of the building. This can lead to serious safety hazards and expensive repairs."
           },
           {
-            "title": "2. Healthier Environment",
-            "description": "By blocking moisture, it inhibits the growth of mold and mildew, which can cause respiratory issues."
+            "title": "Mold and Mildew Growth",
+            "description": "Damp environments are ideal for the growth of mold and mildew, which can trigger allergies and respiratory problems. This poses a health risk to the occupants of the building."
           },
           {
-            "title": "3. Increased Property Value",
-            "description": "A well-protected, waterproofed building is a significant asset, increasing its market value and appeal."
+            "title": "Damage to Interior Finishes",
+            "description": "Water leaks can damage walls, ceilings, and floors, leading to unsightly stains and costly renovations. It can also damage furniture and personal belongings."
           }
         ]
       },
-      "section3": {
-        "heading": "Choosing the Right Materials",
-        "paragraph": "From bituminous membranes to liquid-applied coatings, the right material depends on the specific area and exposure.",
-        "materials": []
+      "materials": {
+        "heading": "Types & Materials Suitable for Saudi Climate",
+        "paragraph": "There are various waterproofing materials available, each with its own set of properties and applications. The choice of material depends on the specific requirements of the project and the climatic conditions.",
+        "comparison": [
+          {
+            "material": "Bituminous Membranes",
+            "description": "These are widely used for roofing and are known for their durability and effectiveness. They are a cost-effective solution for large surface areas and are well-suited for the Saudi climate."
+          },
+          {
+            "material": "Liquid-Applied Coatings",
+            "description": "These coatings provide a seamless and flexible waterproofing layer that can be applied to various surfaces. They are ideal for complex shapes and are resistant to UV radiation, making them a good choice for exposed areas."
+          },
+          {
+            "material": "Cementitious Waterproofing",
+            "description": "This type of waterproofing is often used for wet areas such as bathrooms and basements. It provides a durable and long-lasting barrier against water intrusion."
+          }
+        ]
+      },
+      "installation": {
+        "heading": "Step-by-Step Installation Process",
+        "paragraph": "The installation of waterproofing insulation should be carried out by experienced professionals to ensure a high-quality and long-lasting result. The process typically involves the following steps:",
+        "steps": [
+          {
+            "title": "1. Surface Preparation",
+            "description": "The surface to be waterproofed is thoroughly cleaned and repaired to ensure it is smooth and free from any contaminants that could affect the adhesion of the waterproofing material."
+          },
+          {
+            "title": "2. Application of the Waterproofing Material",
+            "description": "The chosen waterproofing material is applied evenly over the surface, following the manufacturer's instructions. This may involve multiple coats to achieve the desired thickness."
+          },
+          {
+            "title": "3. Curing and Protection",
+            "description": "The waterproofing layer is allowed to cure completely, and a protective layer may be added to shield it from mechanical damage and UV radiation."
+          }
+        ],
+        "considerations": "It is best to carry out waterproofing work during the dry season in Saudi Arabia to ensure that the materials cure properly and form a strong, durable barrier."
+      },
+      "maintenance": {
+        "heading": "Maintenance Tips for Saudi Conditions",
+        "paragraph": "Regular maintenance is essential for preserving the effectiveness of your waterproofing insulation. Here are some tips to help you keep your waterproofing in top condition:",
+        "tips": [
+          "Inspect the waterproofed areas regularly for any signs of damage, such as cracks, blisters, or peeling.",
+          "Keep the waterproofed surfaces clean and free from debris that could puncture or damage the waterproofing membrane.",
+          "Repair any damage to the waterproofing as soon as it is discovered to prevent water from seeping into the building."
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How often should I have my waterproofing inspected?",
+            "answer": "It is recommended to have your waterproofing inspected by a professional every 2 to 3 years, or after any major weather event, to ensure it is still in good condition."
+          },
+          {
+            "question": "Can I apply waterproofing myself?",
+            "answer": "While some waterproofing products are available for DIY application, it is generally best to hire a professional contractor to ensure the job is done correctly and effectively. Professional installation comes with a warranty, giving you peace of mind."
+          },
+          {
+            "question": "What is the best waterproofing material for my roof?",
+            "answer": "The best waterproofing material for your roof depends on several factors, including the type of roof, the climate, and your budget. A professional waterproofing contractor can help you choose the most suitable material for your specific needs."
+          }
+        ]
       }
     },
     "related": {
@@ -61,32 +124,95 @@
       "imageAlt": "مادة عزل مائي يتم تطبيقها على سطح."
     },
     "body": {
-      "section1": {
-        "heading": "احمِ استثمارك",
-        "paragraph": "يعتبر العزل المائي إجراءً حاسماً لمنع أضرار المياه، التي يمكن أن تؤدي إلى إصلاحات هيكلية مكلفة ومخاطر صحية مثل العفن."
+      "introduction": {
+        "heading": "مقدمة في العزل المائي",
+        "paragraph": "يعتبر عزل العزل المائي خدمة حيوية لحماية المباني في المملكة العربية السعودية من أضرار المياه. يشرح هذا الدليل ما هو عزل العزل المائي، وكيف يعمل، ولماذا هو حاسم للحفاظ على السلامة الهيكلية وطول عمر الممتلكات الخاصة بك. سوف نستكشف الأنواع المختلفة من مواد العزل المائي وتطبيقاتها، مما يساعدك على فهم كيفية حماية استثمارك من مخاطر تسرب المياه، وهو مصدر قلق شائع في أجزاء كثيرة من المملكة."
       },
-      "section2": {
-        "heading": "أهم 3 فوائد",
-        "paragraph": "يوفر العزل المائي الفعال مزايا طويلة الأمد لأي مالك عقار.",
-        "steps": [
+      "understanding": {
+        "heading": "فهم العزل المائي",
+        "definition": "يتضمن عزل العزل المائي تطبيق حاجز لمنع تسرب المياه إلى هيكل المبنى. هذا ضروري لحماية الأساسات والأسطح والجدران من الآثار الضارة للرطوبة. وهو يعمل عن طريق إنشاء طبقة غير منفذة تصد الماء، وبالتالي منع التسربات وأضرار المياه. في بلد مثل المملكة العربية السعودية، حيث يمكن أن تحدث أمطار غزيرة مفاجئة، وحيث تشهد المناطق الساحلية رطوبة عالية، يعد العزل المائي الفعال خط دفاع حاسم لأي مبنى.",
+        "criticality": "لا يمكن المبالغة في أهمية العزل المائي في المملكة العربية السعودية. فهو يمنع الإصلاحات الهيكلية المكلفة، ويحمي من نمو العفن والعفن الفطري (الذي يمكن أن يسبب مشاكل صحية)، ويحافظ على قيمة الممتلكات الخاصة بك. سواء كنت في مدينة ساحلية مثل جدة أو منطقة داخلية، فإن العزل المائي هو مطلب أساسي لمبنى آمن ومتين."
+      },
+      "problems": {
+        "heading": "المشاكل الشائعة بدون عزل مائي مناسب",
+        "paragraph": "يمكن أن يؤدي عدم وجود عزل مائي مناسب إلى مجموعة من المشاكل للمباني في المملكة العربية السعودية، مع آثار مالية وسلامة كبيرة. فيما يلي بعض المشكلات التي يمكن أن تنشأ:",
+        "points": [
           {
-            "title": "1. السلامة الهيكلية",
-            "description": "يمنع تسرب المياه إلى الخرسانة والحديد، مما يجنب التآكل وإضعاف أساس المبنى."
+            "title": "إضعاف الهيكل",
+            "description": "يمكن أن يؤدي تسرب المياه إلى تآكل حديد التسليح وإضعاف الخرسانة، مما يضر بالسلامة الهيكلية للمبنى. يمكن أن يؤدي ذلك إلى مخاطر جسيمة على السلامة وإصلاحات باهظة الثمن."
           },
           {
-            "title": "2. بيئة صحية أكثر",
-            "description": "عن طريق منع الرطوبة، فإنه يثبط نمو العفن والفطريات، التي يمكن أن تسبب مشاكل في الجهاز التنفسي."
+            "title": "نمو العفن والعفن الفطري",
+            "description": "البيئات الرطبة مثالية لنمو العفن والعفن الفطري، والتي يمكن أن تسبب الحساسية ومشاكل في الجهاز التنفسي. وهذا يشكل خطراً على صحة شاغلي المبنى."
           },
           {
-            "title": "3. زيادة قيمة العقار",
-            "description": "المبنى المحمي جيداً والمعزول مائيا�� هو أحد الأصول الهامة، مما يزيد من قيمته السوقية وجاذبيته."
+            "title": "تلف التشطيبات الداخلية",
+            "description": "يمكن أن يؤدي تسرب المياه إلى إتلاف الجدران والأسقف والأرضيات، مما يؤدي إلى ظهور بقع قبيحة وتجديدات مكلفة. كما يمكن أن يتلف الأثاث والممتلكات الشخصية."
           }
         ]
       },
-      "section3": {
-        "heading": "اختيار المواد المناسبة",
-        "paragraph": "من الأغشية البيتومينية إلى الطلاءات السائلة، تعتمد المادة المناسبة على المنطقة المحددة ومدى تعرضها للعوامل الجوية.",
-        "materials": []
+      "materials": {
+        "heading": "الأنواع والمواد المناسبة لمناخ المملكة العربية السعودية",
+        "paragraph": "تتوفر مواد عزل مائي مختلفة، لكل منها مجموعة خصائصها وتطبيقاتها الخاصة. يعتمد اختيار المواد على المتطلبات المحددة للمشروع والظروف المناخية.",
+        "comparison": [
+          {
+            "material": "الأغشية البيتومينية",
+            "description": "تستخدم على نطاق واسع للأسطح وتشتهر بمتانتها وفعاليتها. وهي حل فعال من حيث التكلفة للمساحات الكبيرة ومناسبة تمامًا لمناخ المملكة العربية السعودية."
+          },
+          {
+            "material": "الطلاءات السائلة",
+            "description": "توفر هذه الطلاءات طبقة عزل مائي سلسة ومرنة يمكن تطبيقها على أسطح مختلفة. وهي مثالية للأشكال المعقدة ومقاومة للأشعة فوق البنفسجية، مما يجعلها خيارًا جيدًا للمناطق المكشوفة."
+          },
+          {
+            "material": "العزل المائي الأسمنتي",
+            "description": "غالبًا ما يستخدم هذا النوع من العزل المائي للمناطق الرطبة مثل الحمامات والأقبية. ويوفر حاجزًا متينًا وطويل الأمد ضد تسرب المياه."
+          }
+        ]
+      },
+      "installation": {
+        "heading": "عملية التثبيت خطوة بخطوة",
+        "paragraph": "يجب أن يتم تركيب عزل العزل المائي من قبل محترفين ذوي خبرة لضمان نتيجة عالية الجودة وطويلة الأمد. تتضمن العملية عادةً الخطوات التالية:",
+        "steps": [
+          {
+            "title": "1. تحضير السطح",
+            "description": "يتم تنظيف السطح المراد عزله مائيًا وإصلاحه تمامًا لضمان أنه أملس وخالٍ من أي ملوثات يمكن أن تؤثر على التصاق مادة العزل المائي."
+          },
+          {
+            "title": "2. تطبيق مادة العزل المائي",
+            "description": "يتم تطبيق مادة العزل المائي المختارة بالتساوي على السطح، مع اتباع تعليمات الشركة المصنعة. قد يتضمن ذلك طبقات متعددة لتحقيق السماكة المطلوبة."
+          },
+          {
+            "title": "3. المعالجة والحماية",
+            "description": "يتم ترك طبقة العزل المائي لتجف تمامًا، ويمكن إضافة طبقة واقية لحمايتها من التلف الميكانيكي والأشعة فوق البنفسجية."
+          }
+        ],
+        "considerations": "من الأفضل تنفيذ أعمال العزل المائي خلال موسم الجفاف في المملكة العربية السعودية لضمان جفاف المواد بشكل صحيح وتشكيل حاجز قوي ومتين."
+      },
+      "maintenance": {
+        "heading": "نصائح الصيانة للظروف السعودية",
+        "paragraph": "الصيانة الدورية ضرورية للحفاظ على فعالية عزل العزل المائي الخاص بك. فيما يلي بعض النصائح لمساعدتك في الحفاظ على العزل المائي في أفضل حالة:",
+        "tips": [
+          "افحص المناطق المعزولة مائيًا بانتظام بحثًا عن أي علامات تلف، مثل الشقوق أو البثور أو التقشير.",
+          "حافظ على نظافة الأسطح المعزولة مائيًا وخلوها من الحطام الذي يمكن أن يثقب أو يتلف غشاء العزل المائي.",
+          "أصلح أي تلف في العزل المائي بمجرد اكتشافه لمنع تسرب المياه إلى المبنى."
+        ]
+      },
+      "faq": {
+        "heading": "أسئلة مكررة",
+        "questions": [
+          {
+            "question": "كم مرة يجب أن أفحص العزل المائي الخاص بي؟",
+            "answer": "يوصى بفحص العزل المائي الخاص بك من قبل محترف كل 2 إلى 3 سنوات، أو بعد أي حدث جوي كبير، للتأكد من أنه لا يزال في حالة جيدة."
+          },
+          {
+            "question": "هل يمكنني تطبيق العزل المائي بنفسي؟",
+            "answer": "بينما تتوفر بعض منتجات العزل المائي للتطبيق بنفسك، فمن الأفضل عمومًا توظيف مقاول محترف لضمان إنجاز المهمة بشكل صحيح وفعال. يأتي التركيب الاحترافي مع ضمان، مما يمنحك راحة البال."
+          },
+          {
+            "question": "ما هي أفضل مادة عزل مائي لسطح منزلي؟",
+            "answer": "تعتمد أفضل مادة عزل مائي لسطح منزلك على عدة عوامل، بما في ذلك نوع السطح والمناخ وميزانيتك. يمكن لمقاول العزل المائي المحترف مساعدتك في اختيار المادة الأنسب لاحتياجاتك الخاصة."
+          }
+        ]
       }
     },
     "related": {
