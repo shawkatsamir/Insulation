@@ -1,3 +1,4 @@
+
 {
   "en": [
     {
@@ -22,6 +23,30 @@
       },
       "media": {
         "imageAlt": "Waterproofing material being applied to a surface."
+      }
+    },
+    {
+      "id": 3,
+      "postInfo": {
+        "title": "The Ultimate Guide to Thermal Insulation",
+        "author": "Makkah Insulators Team",
+        "date": "2025-08-10",
+        "summary": "Explore the benefits and types of thermal insulation to keep your building energy-efficient and comfortable."
+      },
+      "media": {
+        "imageAlt": "Image showing thermal insulation being installed in a wall."
+      }
+    },
+    {
+      "id": 4,
+      "postInfo": {
+        "title": "An In-Depth Look at Foam Insulation",
+        "author": "Makkah Insulators Team",
+        "date": "2025-08-20",
+        "summary": "Understand the types, benefits, and applications of foam insulation for superior thermal performance."
+      },
+      "media": {
+        "imageAlt": "Close-up of spray foam insulation being applied to a wall."
       }
     }
   ],
@@ -48,6 +73,30 @@
       },
       "media": {
         "imageAlt": "مادة عزل مائي يتم تطبيقها على سطح."
+      }
+    },
+    {
+      "id": 3,
+      "postInfo": {
+        "title": "الدليل النهائي للعزل الحراري",
+        "author": "فريق عوازل مكة",
+        "date": "2025-08-10",
+        "summary": "استكشف فوائد وأنواع العزل الحراري للحفاظ على كفاءة الطاقة والراحة في المبنى الخاص بك."
+      },
+      "media": {
+        "imageAlt": "صورة تظهر تركيب العزل الحراري في جدار."
+      }
+    },
+    {
+      "id": 4,
+      "postInfo": {
+        "title": "نظرة متعمقة على عزل الفوم",
+        "author": "فريق عوازل مكة",
+        "date": "2025-08-20",
+        "summary": "تعرف على أنواع وفوائد وتطبيقات عزل الفوم للحصول على أداء حراري فائق."
+      },
+      "media": {
+        "imageAlt": "صورة مقربة لرغوة الرش العازلة التي يتم تطبيقها على الحائط."
       }
     }
   ]
