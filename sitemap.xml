@@ -41,4 +41,30 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- New Posts -->
+  <url>
+    <loc>https://www.insulmakkah.com/posts/3_ar.html</loc>
+    <lastmod>2025-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.insulmakkah.com/posts/3_en.html</loc>
+    <lastmod>2025-08-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.insulmakkah.com/posts/4_ar.html</loc>
+    <lastmod>2025-08-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.insulmakkah.com/posts/4_en.html</loc>
+    <lastmod>2025-08-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
