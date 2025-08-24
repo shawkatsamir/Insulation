@@ -48,6 +48,30 @@
       "media": {
         "imageAlt": "Close-up of spray foam insulation being applied to a wall."
       }
+    },
+    {
+      "id": 5,
+      "postInfo": {
+        "title": "Best Waterproofing Company in Makkah",
+        "author": "Makkah Insulators Team",
+        "date": "2025-08-24",
+        "summary": "Get the best waterproofing services in Makkah with Makkah Insulators team. Professional solutions to protect your home from water leaks."
+      },
+      "media": {
+        "imageAlt": "Best waterproofing expert in Makkah"
+      }
+    },
+    {
+      "id": 6,
+      "postInfo": {
+        "title": "Best Thermal Insulation Company in Makkah",
+        "author": "Makkah Insulators Team",
+        "date": "2025-08-24",
+        "summary": "Get the best thermal insulation services in Makkah with Makkah Insulators team. Professional solutions to keep your home cool and energy efficient."
+      },
+      "media": {
+        "imageAlt": "Best thermal insulation expert in Makkah"
+      }
     }
   ],
   "ar": [
@@ -97,6 +121,30 @@
       },
       "media": {
         "imageAlt": "صورة مقربة لرغوة الرش العازلة التي يتم تطبيقها على الحائط."
+      }
+    },
+    {
+      "id": 5,
+      "postInfo": {
+        "title": "أفضل شركة عزل مائى فى مكة",
+        "author": "فريق عوازل مكة",
+        "date": "2025-08-24",
+        "summary": "احصل على أفضل خدمات العزل المائي في مكة مع فريق عوازل مكة. حلول احترافية لحماية منزلك من التسربات المائية."
+      },
+      "media": {
+        "imageAlt": "أفضل معلم عزل مائى فى مكة"
+      }
+    },
+    {
+      "id": 6,
+      "postInfo": {
+        "title": "أفضل شركة عزل حراري في مكة",
+        "author": "فريق عوازل مكة",
+        "date": "2025-08-24",
+        "summary": "احصل على أفضل خدمات العزل الحراري في مكة مع فريق عوازل مكة. حلول احترافية لحفظ منزلك بارداً وموفر للطاقة."
+      },
+      "media": {
+        "imageAlt": "أفضل معلم عزل حراري في مكة"
       }
     }
   ]

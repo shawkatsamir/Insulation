@@ -41,6 +41,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "Our Waterproofing Services",
+        "paragraph": "We offer comprehensive waterproofing services tailored to the specific needs of properties in Saudi Arabia. Our solutions are designed to provide long-lasting protection against water damage.",
+        "services": [
+          {
+            "name": "Roof Waterproofing",
+            "description": "Specialized solutions for flat and sloped roofs to prevent water infiltration and protect the interior of your building."
+          },
+          {
+            "name": "Basement Waterproofing",
+            "description": "Effective barriers for basements and underground structures to prevent moisture and water seepage."
+          },
+          {
+            "name": "Bathroom Waterproofing",
+            "description": "Specialized treatment for bathrooms and wet areas to prevent water damage to adjacent rooms."
+          },
+          {
+            "name": "Tank Waterproofing",
+            "description": "Protection for water tanks and reservoirs to prevent leaks and maintain water quality."
+          }
+        ],
+        "localKeywords": ["waterproofing services Makkah", "waterproofing services Jeddah", "waterproofing services Riyadh", "professional waterproofing Saudi Arabia"]
+      },
       "materials": {
         "heading": "Types & Materials Suitable for Saudi Climate",
         "paragraph": "There are various waterproofing materials available, each with its own set of properties and applications. The choice of material depends on the specific requirements of the project and the climatic conditions.",
@@ -78,6 +101,43 @@
         ],
         "considerations": "It is best to carry out waterproofing work during the dry season in Saudi Arabia to ensure that the materials cure properly and form a strong, durable barrier."
       },
+      "costFactors": {
+        "heading": "Cost Factors for Waterproofing Services",
+        "paragraph": "Understanding the factors that influence the cost of waterproofing services can help you plan your budget effectively. Here are the key elements that affect pricing:",
+        "costFactors": [
+          {
+            "factor": "Type of Waterproofing Material",
+            "description": "Different materials have varying costs, with liquid-applied coatings generally being more expensive than bituminous membranes but offering superior flexibility."
+          },
+          {
+            "factor": "Area Size",
+            "description": "Larger areas require more materials and labor, which increases the overall cost."
+          },
+          {
+            "factor": "Accessibility",
+            "description": "Difficult-to-reach areas such as basements or high-rise buildings may require additional equipment or specialized techniques, affecting the price."
+          },
+          {
+            "factor": "Severity of Water Damage",
+            "description": "Properties with existing water damage may require additional repair work before waterproofing, which can increase costs."
+          }
+        ],
+        "localKeywords": ["waterproofing cost Makkah", "waterproofing cost Jeddah", "waterproofing cost Riyadh", "affordable waterproofing Saudi Arabia"]
+      },
+      "benefits": {
+        "heading": "Benefits of Professional Waterproofing",
+        "paragraph": "Investing in professional waterproofing services offers numerous advantages that extend beyond simple water protection:",
+        "benefits": [
+          "Prevention of costly structural repairs and maintenance",
+          "Protection against health hazards like mold and mildew growth",
+          "Increased property value and marketability",
+          "Enhanced comfort with dry, usable spaces",
+          "Extended lifespan of building materials and finishes",
+          "Energy savings through improved insulation properties",
+          "Peace of mind with comprehensive warranty coverage"
+        ],
+        "localKeywords": ["benefits of waterproofing Makkah", "benefits of waterproofing Jeddah", "benefits of waterproofing Riyadh", "property protection Saudi Arabia"]
+      },
       "maintenance": {
         "heading": "Maintenance Tips for Saudi Conditions",
         "paragraph": "Regular maintenance is essential for preserving the effectiveness of your waterproofing insulation. Here are some tips to help you keep your waterproofing in top condition:",
@@ -103,6 +163,33 @@
             "answer": "The best waterproofing material for your roof depends on several factors, including the type of roof, the climate, and your budget. A professional waterproofing contractor can help you choose the most suitable material for your specific needs."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "Why Choose Our Waterproofing Services?",
+        "paragraph": "With years of experience in the Saudi market, we understand the unique challenges posed by the local climate and building requirements. Our team of certified professionals uses only high-quality materials and follows industry best practices to ensure optimal results.",
+        "points": [
+          {
+            "title": "Local Expertise",
+            "description": "We specialize in solutions tailored specifically for the Saudi climate and building standards."
+          },
+          {
+            "title": "Quality Materials",
+            "description": "We use only premium waterproofing materials from trusted manufacturers."
+          },
+          {
+            "title": "Professional Installation",
+            "description": "Our certified technicians ensure precise installation for maximum effectiveness."
+          },
+          {
+            "title": "Warranty Coverage",
+            "description": "We stand behind our work with comprehensive warranty protection."
+          },
+          {
+            "title": "Free Consultation",
+            "description": "Get a no-obligation assessment and quote for your waterproofing needs."
+          }
+        ],
+        "localKeywords": ["best waterproofing company Makkah", "best waterproofing company Jeddah", "best waterproofing company Riyadh", "professional waterproofing services Saudi Arabia"]
       }
     },
     "related": {
@@ -151,6 +238,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "خدماتنا في مجال العزل المائي",
+        "paragraph": "نقدم خدمات عزل مائي شاملة مصممة خصيصًا لاحتياجات الممتلكات في المملكة العربية السعودية. حلولنا مصممة لتقديم حماية طويلة الأمد ضد أضرار المياه.",
+        "services": [
+          {
+            "name": "عزل الأسطح المائي",
+            "description": "حلول متخصصة للأسطح المسطحة والمنحدرة لمنع تسرب المياه وحماية داخلية المبنى."
+          },
+          {
+            "name": "عزل الأقبية المائي",
+            "description": "حواجز فعالة للأقبية والهياكل تحت الأرض لمنع الرطوبة وتسرب المياه."
+          },
+          {
+            "name": "عزل الحمامات المائي",
+            "description": "علاج متخصص للحمامات والمناطق الرطبة لمنع تلف المياه للغرف المجاورة."
+          },
+          {
+            "name": "عزل الخزانات المائي",
+            "description": "حماية لخزانات المياه والخزانات لمنع التسرب والحفاظ على جودة المياه."
+          }
+        ],
+        "localKeywords": ["خدمات عزل مائي مكة", "خدمات عزل مائي جدة", "خدمات عزل مائي الرياض", "شركة عزل مائي محترفة السعودية"]
+      },
       "materials": {
         "heading": "الأنواع والمواد المناسبة لمناخ المملكة العربية السعودية",
         "paragraph": "تتوفر مواد عزل مائي مختلفة، لكل منها مجموعة خصائصها وتطبيقاتها الخاصة. يعتمد اختيار المواد على المتطلبات المحددة للمشروع والظروف المناخية.",
@@ -188,6 +298,43 @@
         ],
         "considerations": "من الأفضل تنفيذ أعمال العزل المائي خلال موسم الجفاف في المملكة العربية السعودية لضمان جفاف المواد بشكل صحيح وتشكيل حاجز قوي ومتين."
       },
+      "costFactors": {
+        "heading": "عوامل تكلفة خدمات العزل المائي",
+        "paragraph": "إن فهم العوامل التي تؤثر على تكلفة خدمات العزل المائي يمكن أن يساعدك في التخطيط لميزانيتك بشكل فعال. فيما يلي العناصر الرئيسية التي تؤثر على التسعير:",
+        "costFactors": [
+          {
+            "factor": "نوع مادة العزل المائي",
+            "description": "تختلف المواد المختلفة في التكلفة، حيث أن الطلاءات السائلة عمومًا تكون أكثر تكلفة من الأغشية البيتومينية ولكنها توفر مرونة متفوقة."
+          },
+          {
+            "factor": "حجم المنطقة",
+            "description": "تتطلب المناطق الأكبر مساحة مواد وأيدي عمل أكثر، مما يزيد التكلفة الإجمالية."
+          },
+          {
+            "factor": "سهولة الوصول",
+            "description": "قد تتطلب المناطق الصعبة الوصول إليها مثل الأقبية أو المباني الشاهقة معدات إضافية أو تقنيات متخصصة، مما يؤثر على السعر."
+          },
+          {
+            "factor": "شدة ضرر المياه",
+            "description": "قد تتطلب الممتلكات التي تعاني من ضرر مائي موجود أعمال إصلاح إضافية قبل العزل المائي، مما يمكن أن يزيد التكاليف."
+          }
+        ],
+        "localKeywords": ["تكلفة العزل المائي مكة", "تكلفة العزل المائي جدة", "تكلفة العزل المائي الرياض", "عزل مائي ميسور السعودية"]
+      },
+      "benefits": {
+        "heading": "فوائد العزل المائي المهني",
+        "paragraph": "توفر الاستثمار في خدمات العزل المائي المهنية العديد من المزايا التي تتجاوز الحماية البسيطة من المياه:",
+        "benefits": [
+          "منع الإصلاحات الهيكلية المكلفة والصيانة",
+          "الحماية من المخاطر الصحية مثل نمو العفن والعفن الفطري",
+          "زيادة قيمة العقار وقابلية التسويق",
+          "تحسين الراحة مع مساحات جافة وقابلة للاستخدام",
+          "زيادة عمر المواد والتشطيبات الإنشائية",
+          "توفير الطاقة من خلال خصائص العزل المحسنة",
+          "راحة البال مع تغطية ضمان شاملة"
+        ],
+        "localKeywords": ["فوائد العزل المائي مكة", "فوائد العزل المائي جدة", "فوائد العزل المائي الرياض", "حماية الممتلكات السعودية"]
+      },
       "maintenance": {
         "heading": "نصائح الصيانة للظروف السعودية",
         "paragraph": "الصيانة الدورية ضرورية للحفاظ على فعالية عزل العزل المائي الخاص بك. فيما يلي بعض النصائح لمساعدتك في الحفاظ على العزل المائي في أفضل حالة:",
@@ -213,6 +360,33 @@
             "answer": "تعتمد أفضل مادة عزل مائي لسطح منزلك على عدة عوامل، بما في ذلك نوع السطح والمناخ وميزانيتك. يمكن لمقاول العزل المائي المحترف مساعدتك في اختيار المادة الأنسب لاحتياجاتك الخاصة."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "لماذا تختار خدمات العزل المائي لدينا؟",
+        "paragraph": "مع سنوات من الخبرة في السوق السعودي، نحن نفهم التحديات الفريدة التي يفرضها المناخ المحلي ومعايير البناء. فريقنا من المحترفين المعتمدين يستخدم فقط مواد عالية الجودة ويتابع أفضل الممارسات الصناعية لضمان النتائج المثلى.",
+        "points": [
+          {
+            "title": "الخبرة المحلية",
+            "description": "نحن متخصصون في حلول مصممة خصيصًا لمناخ المملكة العربية السعودية ومعايير البناء."
+          },
+          {
+            "title": "المواد عالية الجودة",
+            "description": "نحن نستخدم فقط مواد عزل مائي عالية الجودة من المصنعين الموثوقين."
+          },
+          {
+            "title": "التركيب المهني",
+            "description": "فنيونا المعتمدون يضمنون التركيب الدقيق لتحقيق أقصى فعالية."
+          },
+          {
+            "title": "تغطية الضمان",
+            "description": "نحن ندافع عن عملنا من خلال حماية ضمان شاملة."
+          },
+          {
+            "title": "استشارة مجانية",
+            "description": "احصل على تقييم وعرض سعر بدون التزام لاحتياجات العزل المائي الخاصة بك."
+          }
+        ],
+        "localKeywords": ["أفضل شركة عزل مائي مكة", "أفضل شركة عزل مائي جدة", "أفضل شركة عزل مائي الرياض", "خدمات عزل مائي محترفة السعودية"]
       }
     },
     "related": {

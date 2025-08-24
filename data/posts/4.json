@@ -42,6 +42,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "Our Foam Insulation Services",
+        "paragraph": "We offer comprehensive foam insulation services designed to provide superior thermal performance and energy efficiency for buildings across Saudi Arabia. Our solutions are tailored to meet the specific needs of different building types and applications.",
+        "services": [
+          {
+            "name": "Spray Foam Insulation",
+            "description": "Professional application of open-cell and closed-cell spray foam for walls, attics, and complex geometries."
+          },
+          {
+            "name": "Rigid Foam Board Installation",
+            "description": "Installation of pre-formed foam boards for sheathing walls and roofs."
+          },
+          {
+            "name": "Foam Insulation for Pipes",
+            "description": "Specialized foam insulation solutions for HVAC and plumbing pipes."
+          },
+          {
+            "name": "Foam Insulation for Tanks",
+            "description": "Insulation solutions for water heaters and storage tanks to maintain temperature."
+          }
+        ],
+        "localKeywords": ["foam insulation services Makkah", "foam insulation services Jeddah", "foam insulation services Riyadh", "professional foam insulation Saudi Arabia"]
+      },
       "materials": {
         "heading": "Types of Foam Insulation",
         "paragraph": "The two primary types of foam insulation used in construction are spray foam and rigid foam boards.",
@@ -75,6 +98,43 @@
         ],
         "considerations": "Proper ventilation is crucial during and after the application of spray foam insulation to ensure that the chemical components cure correctly and any off-gassing is safely dissipated."
       },
+      "costFactors": {
+        "heading": "Cost Factors for Foam Insulation Services",
+        "paragraph": "Understanding the factors that influence the cost of foam insulation services can help you plan your budget effectively. Here are the key elements that affect pricing:",
+        "costFactors": [
+          {
+            "factor": "Type of Foam Insulation",
+            "description": "Closed-cell spray foam is generally more expensive than open-cell spray foam but offers superior moisture resistance and R-value."
+          },
+          {
+            "factor": "Area Size",
+            "description": "Larger areas require more materials and labor, which increases the overall cost."
+          },
+          {
+            "factor": "Accessibility",
+            "description": "Difficult-to-reach areas such as attics or tight wall cavities may require additional equipment or specialized techniques, affecting the price."
+          },
+          {
+            "factor": "Building Complexity",
+            "description": "Complex geometries or structures with many obstacles may require more time and expertise, increasing costs."
+          }
+        ],
+        "localKeywords": ["foam insulation cost Makkah", "foam insulation cost Jeddah", "foam insulation cost Riyadh", "affordable foam insulation Saudi Arabia"]
+      },
+      "benefits": {
+        "heading": "Benefits of Professional Foam Insulation",
+        "paragraph": "Investing in professional foam insulation services offers numerous advantages that extend beyond simple temperature control:",
+        "benefits": [
+          "Superior thermal performance with high R-values",
+          "Excellent air sealing that reduces energy loss",
+          "Moisture barrier that prevents mold and mildew growth",
+          "Sound insulation that reduces noise transmission",
+          "Increased structural integrity by filling gaps and voids",
+          "Long-term durability with minimal settling or sagging",
+          "Improved indoor air quality by sealing out pollutants"
+        ],
+        "localKeywords": ["benefits of foam insulation Makkah", "benefits of foam insulation Jeddah", "benefits of foam insulation Riyadh", "energy savings Saudi Arabia"]
+      },
       "maintenance": {
         "heading": "Caring for Foam Insulation",
         "paragraph": "Foam insulation is very low-maintenance. However, it is important to protect it from physical damage and UV exposure.",
@@ -100,6 +160,33 @@
             "answer": "Yes, foam insulation can be retrofitted into existing homes. Injectable foam can be used to fill wall cavities with minimal disruption."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "Why Choose Our Foam Insulation Services?",
+        "paragraph": "With years of experience in the Saudi market, we understand the unique challenges posed by the local climate and building requirements. Our team of certified professionals uses only high-quality materials and follows industry best practices to ensure optimal results.",
+        "points": [
+          {
+            "title": "Local Expertise",
+            "description": "We specialize in solutions tailored specifically for the Saudi climate and building standards."
+          },
+          {
+            "title": "Quality Materials",
+            "description": "We use only premium foam insulation materials from trusted manufacturers."
+          },
+          {
+            "title": "Professional Installation",
+            "description": "Our certified technicians ensure precise installation for maximum effectiveness."
+          },
+          {
+            "title": "Warranty Coverage",
+            "description": "We stand behind our work with comprehensive warranty protection."
+          },
+          {
+            "title": "Free Consultation",
+            "description": "Get a no-obligation assessment and quote for your foam insulation needs."
+          }
+        ],
+        "localKeywords": ["best foam insulation company Makkah", "best foam insulation company Jeddah", "best foam insulation company Riyadh", "professional foam insulation services Saudi Arabia"]
       }
     },
     "related": {
@@ -148,6 +235,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "خدماتنا في مجال عزل الفوم",
+        "paragraph": "نقدم خدمات عزل فوم شاملة مصممة لتقديم أداء حراري فائق وكفاءة في استخدام الطاقة للمباني عبر المملكة العربية السعودية. حلولنا مصممة لتلبية الاحتياجات المحددة لأنواع المباني والتطبيقات المختلفة.",
+        "services": [
+          {
+            "name": "عزل رغوة الرش",
+            "description": "تطبيق احترافي لرغوة الرش ذات الخلية المفتوحة والمغلقة للجدران والسندرات والأشكال الهندسية المعقدة."
+          },
+          {
+            "name": "تركيب ألواح الرغوة الصلبة",
+            "description": "تركيب ألواح رغوة مسبقة التشكيل لتغليف الجدران والأسطح."
+          },
+          {
+            "name": "عزل الفوم للمواسير",
+            "description": "حلول عزل فوم متخصصة لمواسير التكييف والصرف الصحي."
+          },
+          {
+            "name": "عزل الفوم للخزانات",
+            "description": "حلول العزل للسخانات وخزانات التخزين للحفاظ على درجة الحرارة."
+          }
+        ],
+        "localKeywords": ["خدمات عزل الفوم مكة", "خدمات عزل الفوم جدة", "خدمات عزل الفوم الرياض", "شركة عزل فوم محترفة السعودية"]
+      },
       "materials": {
         "heading": "أنواع عزل الفوم",
         "paragraph": "النوعان الأساسيان من عزل الفوم المستخدمان في البناء هما رغوة الرش وألواح الرغوة الصلبة.",
@@ -181,6 +291,43 @@
         ],
         "considerations": "التهوية المناسبة أمر بالغ الأهمية أثناء وبعد تطبيق عزل رغوة الرش لضمان معالجة المكونات الكيميائية بشكل صحيح وتبديد أي انبعاثات غازية بأمان."
       },
+      "costFactors": {
+        "heading": "عوامل تكلفة خدمات عزل الفوم",
+        "paragraph": "إن فهم العوامل التي تؤثر على تكلفة خدمات عزل الفوم يمكن أن يساعدك في التخطيط لميزانيتك بشكل فعال. فيما يلي العناصر الرئيسية التي تؤثر على التسعير:",
+        "costFactors": [
+          {
+            "factor": "نوع عزل الفوم",
+            "description": "رغوة الرش ذات الخلية المغلقة عمومًا تكون أكثر تكلفة من رغوة الرش ذات الخلية المفتوحة ولكنها توفر مقاومة متفوقة للرطوبة وقيمة R."
+          },
+          {
+            "factor": "حجم المنطقة",
+            "description": "تتطلب المناطق الأكبر مساحة مواد وأيدي عمل أكثر، مما يزيد التكلفة الإجمالية."
+          },
+          {
+            "factor": "سهولة الوصول",
+            "description": "قد تتطلب المناطق الصعبة الوصول إليها مثل الأسقف أو التجاويف الضيقة في الجدران معدات إضافية أو تقنيات متخصصة، مما يؤثر على السعر."
+          },
+          {
+            "factor": "تعقيد المبنى",
+            "description": "قد تتطلب الأشكال الهندسية المعقدة أو الهياكل ذات العوائق الكثيرة المزيد من الوقت والخبرة، مما يزيد التكاليف."
+          }
+        ],
+        "localKeywords": ["تكلفة عزل الفوم مكة", "تكلفة عزل الفوم جدة", "تكلفة عزل الفوم الرياض", "عزل فوم ميسور السعودية"]
+      },
+      "benefits": {
+        "heading": "فوائد عزل الفوم المهني",
+        "paragraph": "توفر الاستثمار في خدمات عزل الفوم المهنية العديد من المزايا التي تتجاوز التحكم البسيط في درجة الحرارة:",
+        "benefits": [
+          "أداء حراري فائق مع قيم R عالية",
+          "إحكام غلق هواء ممتاز يقلل فقدان الطاقة",
+          "حاجز رطوبة يمنع نمو العفن والعفن الفطري",
+          "عزل صوتي يقلل انتقال الضوضاء",
+          "زيادة السلامة الهيكلية عن طريق ملء الفجوات والفراغات",
+          "متانة طويلة المدى مع الحد الأدنى من الاستقرار أو الترهل",
+          "تحسين جودة الهواء الداخلي عن طريق إغلاق الملوثات"
+        ],
+        "localKeywords": ["فوائد عزل الفوم مكة", "فوائد عزل الفوم جدة", "فوائد عزل الفوم الرياض", "توفير الطاقة السعودية"]
+      },
       "maintenance": {
         "heading": "العناية بعزل الفوم",
         "paragraph": "عزل الفوم يتطلب صيانة منخفضة للغاية. ومع ذلك، من المهم حمايته من التلف المادي والتعرض للأشعة فوق البنفسجية.",
@@ -206,6 +353,33 @@
             "answer": "نعم، يمكن تحديث عزل الفوم في المنازل القائمة. يمكن استخدام رغوة الحقن لملء تجاويف الجدران بأقل قدر من الإزعاج."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "لماذا تختار خدمات عزل الفوم لدينا؟",
+        "paragraph": "مع سنوات من الخبرة في السوق السعودي، نحن نفهم التحديات الفريدة التي يفرضها المناخ المحلي ومعايير البناء. فريقنا من المحترفين المعتمدين يستخدم فقط مواد عالية الجودة ويتابع أفضل الممارسات الصناعية لضمان النتائج المثلى.",
+        "points": [
+          {
+            "title": "الخبرة المحلية",
+            "description": "نحن متخصصون في حلول مصممة خصيصًا لمناخ المملكة العربية السعودية ومعايير البناء."
+          },
+          {
+            "title": "المواد عالية الجودة",
+            "description": "نحن نستخدم فقط مواد عزل فوم عالية الجودة من المصنعين الموثوقين."
+          },
+          {
+            "title": "التركيب المهني",
+            "description": "فنيونا المعتمدون يضمنون التركيب الدقيق لتحقيق أقصى فعالية."
+          },
+          {
+            "title": "تغطية الضمان",
+            "description": "نحن ندافع عن عملنا من خلال حماية ضمان شاملة."
+          },
+          {
+            "title": "استشارة مجانية",
+            "description": "احصل على تقييم وعرض سعر بدون التزام لاحتياجات عزل الفوم الخاصة بك."
+          }
+        ],
+        "localKeywords": ["أفضل شركة عزل فوم مكة", "أفضل شركة عزل فوم جدة", "أفضل شركة عزل فوم الرياض", "خدمات عزل فوم محترفة السعودية"]
       }
     },
     "related": {
