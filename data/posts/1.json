@@ -41,6 +41,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "Our Insulation Services",
+        "paragraph": "We offer a comprehensive range of insulation services tailored to meet the specific needs of properties in Saudi Arabia. Our services are designed to provide maximum efficiency and long-term protection for your building.",
+        "services": [
+          {
+            "name": "Roof Insulation",
+            "description": "Specialized insulation solutions for rooftops to combat extreme heat and protect the interior of your building."
+          },
+          {
+            "name": "Wall Insulation",
+            "description": "Effective thermal barriers for walls to maintain consistent indoor temperatures and reduce energy consumption."
+          },
+          {
+            "name": "Pipe Insulation",
+            "description": "Protection for water and HVAC pipes to prevent heat loss, condensation, and energy waste."
+          },
+          {
+            "name": "Tank Insulation",
+            "description": "Insulation for water tanks to maintain water temperature and prevent heat loss."
+          }
+        ],
+        "localKeywords": ["insulation services Makkah", "insulation services Jeddah", "insulation services Riyadh", "professional insulation Saudi Arabia"]
+      },
       "materials": {
         "heading": "Types & Materials Suitable for Saudi Climate",
         "paragraph": "Choosing the right insulation material is crucial for achieving optimal performance in the Saudi climate. Different materials offer varying levels of thermal resistance (R-value) and have different costs and suitability for various applications.",
@@ -72,11 +95,48 @@
             "description": "The chosen insulation material is then installed according to the manufacturer's specifications and local building codes. This may involve spraying foam, laying batts, or blowing in loose-fill material."
           },
           {
-            "title": "3. Sealing and Finishing",
+          "title": "3. Sealing and Finishing",
             "description": "After the insulation is in place, all gaps and joints are sealed to create a continuous air barrier. A protective layer or covering may be added to finish the installation."
           }
         ],
         "considerations": "The best time to install insulation in Saudi Arabia is during the cooler months, from October to March, to avoid the extreme heat of the summer, which can affect the installation process and the performance of some materials."
+      },
+      "costFactors": {
+        "heading": "Cost Factors for Insulation Services",
+        "paragraph": "Understanding the factors that influence the cost of insulation services can help you plan your budget effectively. Here are the key elements that affect pricing:",
+        "costFactors": [
+          {
+            "factor": "Type of Insulation Material",
+            "description": "Different materials have varying costs, with spray foam being more expensive than fiberglass but offering superior performance."
+          },
+          {
+            "factor": "Area Size",
+            "description": "Larger areas require more materials and labor, which increases the overall cost."
+          },
+          {
+            "factor": "Accessibility",
+            "description": "Difficult-to-reach areas may require additional equipment or specialized techniques, affecting the price."
+          },
+          {
+            "factor": "Building Age and Condition",
+            "description": "Older buildings may require additional preparation work, which can increase costs."
+          }
+        ],
+        "localKeywords": ["insulation cost Makkah", "insulation cost Jeddah", "insulation cost Riyadh", "affordable insulation Saudi Arabia"]
+      },
+      "benefits": {
+        "heading": "Benefits of Professional Insulation",
+        "paragraph": "Investing in professional insulation services offers numerous advantages that extend beyond simple temperature control:",
+        "benefits": [
+          "Significant reduction in energy bills by up to 30%",
+          "Enhanced comfort with consistent indoor temperatures",
+          "Protection against moisture-related issues like mold and mildew",
+          "Reduced noise pollution from outside sources",
+          "Extended lifespan of HVAC systems",
+          "Increased property value",
+          "Environmentally friendly solution that reduces carbon footprint"
+        ],
+        "localKeywords": ["benefits of insulation Makkah", "benefits of insulation Jeddah", "benefits of insulation Riyadh", "energy savings Saudi Arabia"]
       },
       "maintenance": {
         "heading": "Maintenance Tips for Saudi Conditions",
@@ -103,6 +163,33 @@
             "answer": "The cost of insulation varies depending on the type of material, the size of the area to be insulated, and the complexity of the job. It is best to get quotes from several reputable contractors to compare prices and services."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "Why Choose Our Insulation Services?",
+        "paragraph": "With years of experience in the Saudi market, we understand the unique challenges posed by the local climate and building requirements. Our team of certified professionals uses only high-quality materials and follows industry best practices to ensure optimal results.",
+        "points": [
+          {
+            "title": "Local Expertise",
+            "description": "We specialize in solutions tailored specifically for the Saudi climate and building standards."
+          },
+          {
+            "title": "Quality Materials",
+            "description": "We use only premium insulation materials from trusted manufacturers."
+          },
+          {
+            "title": "Professional Installation",
+            "description": "Our certified technicians ensure precise installation for maximum effectiveness."
+          },
+          {
+            "title": "Warranty Coverage",
+            "description": "We stand behind our work with comprehensive warranty protection."
+          },
+          {
+            "title": "Free Consultation",
+            "description": "Get a no-obligation assessment and quote for your insulation needs."
+          }
+        ],
+        "localKeywords": ["best insulation company Makkah", "best insulation company Jeddah", "best insulation company Riyadh", "professional insulation services Saudi Arabia"]
       }
     },
     "related": {
@@ -151,6 +238,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "خدماتنا في مجال العزل",
+        "paragraph": "نقدم مجموعة شاملة من خدمات العزل المصممة لتلبية الاحتياجات المحددة للممتلكات في المملكة العربية السعودية. تم تصميم خدماتنا لتقديم أقصى قدر من الكفاءة والحماية طويلة المدى لمبناك.",
+        "services": [
+          {
+            "name": "عزل الأسطح",
+            "description": "حلول عزل متخصصة للأسطح لمكافحة الحرارة الشديدة وحماية داخلية المبنى."
+          },
+          {
+            "name": "عزل الجدران",
+            "description": "حواجز حرارية فعالة للجدران للحفاظ على درجات حرارة داخلية ثابتة وتقليل استهلاك الطاقة."
+          },
+          {
+            "name": "عزل المواسير",
+            "description": "حماية لمواسير المياه وأنظمة HVAC لمنع فقدان الحرارة والتكاثف وهدر الطاقة."
+          },
+          {
+            "name": "عزل الخزانات",
+            "description": "عزل خزانات المياه للحفاظ على درجة حرارة المياه ومنع فقدان الحرارة."
+          }
+        ],
+        "localKeywords": ["خدمات عزل مكة", "خدمات عزل جدة", "خدمات عزل الرياض", "شركة عزل محترفة السعودية"]
+      },
       "materials": {
         "heading": "الأنواع والمواد المناسبة لمناخ المملكة العربية السعودية",
         "paragraph": "يعد اختيار مادة العزل المناسبة أمرًا بالغ الأهمية لتحقيق الأداء الأمثل في مناخ المملكة العربية السعودية. توفر المواد المختلفة مستويات متفاوتة من المقاومة الحرارية (قيمة R) ولها تكاليف وملاءمة مختلفة لمختلف التطبيقات.",
@@ -188,6 +298,43 @@
         ],
         "considerations": "أفضل وقت لتركيب العزل في المملكة العربية السعودية هو خلال الأشهر الباردة، من أكتوبر إلى مارس، لتجنب حرارة الصيف الشديدة، والتي يمكن أن تؤثر على عملية التركيب وأداء بعض المواد."
       },
+      "costFactors": {
+        "heading": "عوامل تكلفة خدمات العزل",
+        "paragraph": "إن فهم العوامل التي تؤثر على تكلفة خدمات العزل يمكن أن يساعدك في التخطيط لميزانيتك بشكل فعال. فيما يلي العناصر الرئيسية التي تؤثر على التسعير:",
+        "costFactors": [
+          {
+            "factor": "نوع مادة العزل",
+            "description": "تختلف المواد المختلفة في التكلفة، حيث أن رغوة الرش تكون أكثر تكلفة من الألياف الزجاجية ولكنها توفر أداءً متفوقًا."
+          },
+          {
+            "factor": "حجم المنطقة",
+            "description": "تتطلب المناطق الأكبر مساحة مواد وأيدي عمل أكثر، مما يزيد التكلفة الإجمالية."
+          },
+          {
+            "factor": "سهولة الوصول",
+            "description": "قد تتطلب المناطق الصعبة الوصول إليها معدات إضافية أو تقنيات متخصصة، مما يؤثر على السعر."
+          },
+          {
+            "factor": "عمر المبنى والحالة",
+            "description": "قد تتطلب المباني الأقدم أعمال تحضير إضافية، مما يمكن أن يزيد التكاليف."
+          }
+        ],
+        "localKeywords": ["تكلفة العزل مكة", "تكلفة العزل جدة", "تكلفة العزل الرياض", "عزل ميسور السعودية"]
+      },
+      "benefits": {
+        "heading": "فوائد العزل المهني",
+        "paragraph": "توفر الاستثمار في خدمات العزل المهنية العديد من المزايا التي تتجاوز التحكم البسيط في درجة الحرارة:",
+        "benefits": [
+          "تقليل كبير في فواتير الطاقة بنسبة تصل إلى 30%",
+          "تحسين الراحة مع درجات حرارة داخلية ثابتة",
+          "الحماية من المشكلات المتعلقة بالرطوبة مثل العفن والعفن الفطري",
+          "تقليل تلوث الضوضاء من مصادر خارجية",
+          "زيادة عمر أنظمة HVAC",
+          "زيادة قيمة العقار",
+          "حل صديق للبيئة يقلل من البصمة الكربونية"
+        ],
+        "localKeywords": ["فوائد العزل مكة", "فوائد العزل جدة", "فوائد العزل الرياض", "توفير الطاقة السعودية"]
+      },
       "maintenance": {
         "heading": "نصائح الصيانة للظروف السعودية",
         "paragraph": "الصيانة المناسبة هي مفتاح ضمان الأداء طويل الأمد للعزل الخاص بك في مناخ المملكة العربية السعودية القاسي. يمكن أن تساعدك عمليات التفتيش المنتظمة في تحديد أي مشكلات ومعالجتها قبل أن تصبح مشاكل كبيرة.",
@@ -213,6 +360,33 @@
             "answer": "تختلف تكلفة العزل اعتمادًا على نوع المادة وحجم المنطقة المراد عزلها ومدى تعقيد المهمة. من الأفضل الحصول على عروض أسعار من العديد من المقاولين ذوي السمعة الطيبة لمقارنة الأسعار والخدمات."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "لماذا تختار خدمات العزل لدينا؟",
+        "paragraph": "مع سنوات من الخبرة في السوق السعودي، نحن نفهم التحديات الفريدة التي يفرضها المناخ المحلي ومعايير البناء. فريقنا من المحترفين المعتمدين يستخدم فقط مواد عالية الجودة ويتابع أفضل الممارسات الصناعية لضمان النتائج المثلى.",
+        "points": [
+          {
+            "title": "الخبرة المحلية",
+            "description": "نحن متخصصون في حلول مصممة خصيصًا لمناخ المملكة العربية السعودية ومعايير البناء."
+          },
+          {
+            "title": "المواد عالية الجودة",
+            "description": "نحن نستخدم فقط مواد عزل عالية الجودة من المصنعين الموثوقين."
+          },
+          {
+            "title": "التركيب المهني",
+            "description": "فنيونا المعتمدون يضمنون التركيب الدقيق لتحقيق أقصى فعالية."
+          },
+          {
+            "title": "تغطية الضمان",
+            "description": "نحن ندافع عن عملنا من خلال حماية ضمان شاملة."
+          },
+          {
+            "title": "استشارة مجانية",
+            "description": "احصل على تقييم وعرض سعر بدون التزام لاحتياجات العزل الخاصة بك."
+          }
+        ],
+        "localKeywords": ["أفضل شركة عزل مكة", "أفضل شركة عزل جدة", "أفضل شركة عزل الرياض", "خدمات عزل محترفة السعودية"]
       }
     },
     "related": {

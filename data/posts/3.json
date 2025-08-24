@@ -42,6 +42,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "Our Thermal Insulation Services",
+        "paragraph": "We provide comprehensive thermal insulation services designed to maximize energy efficiency and comfort in buildings across Saudi Arabia. Our solutions are tailored to meet the specific needs of different building types and applications.",
+        "services": [
+          {
+            "name": "Roof Thermal Insulation",
+            "description": "Specialized solutions for rooftops to combat extreme heat and reduce cooling costs."
+          },
+          {
+            "name": "Wall Thermal Insulation",
+            "description": "Effective thermal barriers for walls to maintain consistent indoor temperatures."
+          },
+          {
+            "name": "Floor Thermal Insulation",
+            "description": "Insulation solutions for floors to prevent heat transfer from the ground."
+          },
+          {
+            "name": "Pipe Thermal Insulation",
+            "description": "Protection for HVAC and plumbing pipes to prevent heat loss and condensation."
+          }
+        ],
+        "localKeywords": ["thermal insulation services Makkah", "thermal insulation services Jeddah", "thermal insulation services Riyadh", "professional thermal insulation Saudi Arabia"]
+      },
       "materials": {
         "heading": "Common Thermal Insulation Materials",
         "paragraph": "A range of materials is available for thermal insulation, each with its own advantages and suitability for different applications in the Saudi context.",
@@ -79,6 +102,43 @@
         ],
         "considerations": "Installation should ideally be done during the construction phase of a new building, but it can also be retrofitted to existing structures to improve their energy efficiency."
       },
+      "costFactors": {
+        "heading": "Cost Factors for Thermal Insulation Services",
+        "paragraph": "Understanding the factors that influence the cost of thermal insulation services can help you plan your budget effectively. Here are the key elements that affect pricing:",
+        "costFactors": [
+          {
+            "factor": "Type of Insulation Material",
+            "description": "Different materials have varying costs, with polyurethane foam generally being more expensive than EPS but offering superior thermal performance."
+          },
+          {
+            "factor": "Area Size",
+            "description": "Larger areas require more materials and labor, which increases the overall cost."
+          },
+          {
+            "factor": "Accessibility",
+            "description": "Difficult-to-reach areas such as high ceilings or tight spaces may require additional equipment or specialized techniques, affecting the price."
+          },
+          {
+            "factor": "Building Age and Condition",
+            "description": "Older buildings may require additional preparation work or structural modifications, which can increase costs."
+          }
+        ],
+        "localKeywords": ["thermal insulation cost Makkah", "thermal insulation cost Jeddah", "thermal insulation cost Riyadh", "affordable thermal insulation Saudi Arabia"]
+      },
+      "benefits": {
+        "heading": "Benefits of Professional Thermal Insulation",
+        "paragraph": "Investing in professional thermal insulation services offers numerous advantages that extend beyond simple temperature control:",
+        "benefits": [
+          "Significant reduction in energy bills by up to 40%",
+          "Enhanced comfort with consistent indoor temperatures",
+          "Reduced noise pollution from outside sources",
+          "Extended lifespan of HVAC systems",
+          "Increased property value",
+          "Environmentally friendly solution that reduces carbon footprint",
+          "Improved indoor air quality by reducing dust and allergens"
+        ],
+        "localKeywords": ["benefits of thermal insulation Makkah", "benefits of thermal insulation Jeddah", "benefits of thermal insulation Riyadh", "energy savings Saudi Arabia"]
+      },
       "maintenance": {
         "heading": "Maintaining Thermal Insulation",
         "paragraph": "Thermal insulation generally requires minimal maintenance, but regular inspections can help ensure its long-term performance.",
@@ -104,6 +164,33 @@
             "answer": "Absolutely. The initial cost of installing high-quality thermal insulation is quickly offset by the significant savings on energy bills, making it a highly cost-effective investment in the long run."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "Why Choose Our Thermal Insulation Services?",
+        "paragraph": "With years of experience in the Saudi market, we understand the unique challenges posed by the local climate and building requirements. Our team of certified professionals uses only high-quality materials and follows industry best practices to ensure optimal results.",
+        "points": [
+          {
+            "title": "Local Expertise",
+            "description": "We specialize in solutions tailored specifically for the Saudi climate and building standards."
+          },
+          {
+            "title": "Quality Materials",
+            "description": "We use only premium thermal insulation materials from trusted manufacturers."
+          },
+          {
+            "title": "Professional Installation",
+            "description": "Our certified technicians ensure precise installation for maximum effectiveness."
+          },
+          {
+            "title": "Warranty Coverage",
+            "description": "We stand behind our work with comprehensive warranty protection."
+          },
+          {
+            "title": "Free Consultation",
+            "description": "Get a no-obligation assessment and quote for your thermal insulation needs."
+          }
+        ],
+        "localKeywords": ["best thermal insulation company Makkah", "best thermal insulation company Jeddah", "best thermal insulation company Riyadh", "professional thermal insulation services Saudi Arabia"]
       }
     },
     "related": {
@@ -152,6 +239,29 @@
           }
         ]
       },
+      "services": {
+        "heading": "خدماتنا في مجال العزل الحراري",
+        "paragraph": "نقدم خدمات عزل حراري شاملة مصممة لزيادة كفاءة الطاقة والراحة في المباني عبر المملكة العربية السعودية. حلولنا مصممة لتلبية الاحتياجات المحددة لأنواع المباني والتطبيقات المختلفة.",
+        "services": [
+          {
+            "name": "عزل الأسطح الحراري",
+            "description": "حلول متخصصة للأسطح لمكافحة الحرارة الشديدة وتقليل تكاليف التبريد."
+          },
+          {
+            "name": "عزل الجدران الحراري",
+            "description": "حواجز حرارية فعالة للجدران للحفاظ على درجات حرارة داخلية ثابتة."
+          },
+          {
+            "name": "عزل الأرضيات الحراري",
+            "description": "حلول عزل للأرضيات لمنع انتقال الحرارة من الأرض."
+          },
+          {
+            "name": "عزل المواسير الحراري",
+            "description": "حماية لمواسير التكييف والصرف الصحي لمنع فقدان الحرارة والتكاثف."
+          }
+        ],
+        "localKeywords": ["خدمات العزل الحراري مكة", "خدمات العزل الحراري جدة", "خدمات العزل الحراري الرياض", "شركة عزل حراري محترفة السعودية"]
+      },
       "materials": {
         "heading": "مواد العزل الحراري الشائعة",
         "paragraph": "تتوفر مجموعة من المواد للعزل الحراري، لكل منها مزاياها الخاصة وملاءمتها للتطبيقات المختلفة في السياق السعودي.",
@@ -189,6 +299,43 @@
         ],
         "considerations": "من الناحية المثالية، يجب أن يتم التركيب أثناء مرحلة بناء مبنى جديد، ولكن يمكن أيضًا تحديثه للمباني القائمة لتحسين كفاءتها في استخدام الطاقة."
       },
+      "costFactors": {
+        "heading": "عوامل تكلفة خدمات العزل الحراري",
+        "paragraph": "إن فهم العوامل التي تؤثر على تكلفة خدمات العزل الحراري يمكن أن يساعدك في التخطيط لميزانيتك بشكل فعال. فيما يلي العناصر الرئيسية التي تؤثر على التسعير:",
+        "costFactors": [
+          {
+            "factor": "نوع مادة العزل",
+            "description": "تختلف المواد المختلفة في التكلفة، حيث أن رغوة البولي يوريثين عمومًا تكون أكثر تكلفة من EPS ولكنها توفر أداءً حراريًا متفوقًا."
+          },
+          {
+            "factor": "حجم المنطقة",
+            "description": "تتطلب المناطق الأكبر مساحة مواد وأيدي عمل أكثر، مما يزيد التكلفة الإجمالية."
+          },
+          {
+            "factor": "سهولة الوصول",
+            "description": "قد تتطلب المناطق الصعبة الوصول إليها مثل الأسقف المرتفعة أو المساحات الضيقة معدات إضافية أو تقنيات متخصصة، مما يؤثر على السعر."
+          },
+          {
+            "factor": "عمر المبنى والحالة",
+            "description": "قد تتطلب المباني الأقدم أعمال تحضير إضافية أو تعديلات هيكلية، مما يمكن أن يزيد التكاليف."
+          }
+        ],
+        "localKeywords": ["تكلفة العزل الحراري مكة", "تكلفة العزل الحراري جدة", "تكلفة العزل الحراري الرياض", "عزل حراري ميسور السعودية"]
+      },
+      "benefits": {
+        "heading": "فوائد العزل الحراري المهني",
+        "paragraph": "توفر الاستثمار في خدمات العزل الحراري المهنية العديد من المزايا التي تتجاوز التحكم البسيط في درجة الحرارة:",
+        "benefits": [
+          "تقليل كبير في فواتير الطاقة بنسبة تصل إلى 40%",
+          "تحسين الراحة مع درجات حرارة داخلية ثابتة",
+          "تقليل تلوث الضوضاء من مصادر خارجية",
+          "زيادة عمر أنظمة التكييف والتدفئة",
+          "زيادة قيمة العقار",
+          "حل صديق للبيئة يقلل من البصمة الكربونية",
+          "تحسين جودة الهواء الداخلي من خلال تقليل الغبار والمواد المثيرة للحساسية"
+        ],
+        "localKeywords": ["فوائد العزل الحراري مكة", "فوائد العزل الحراري جدة", "فوائد العزل الحراري الرياض", "توفير الطاقة السعودية"]
+      },
       "maintenance": {
         "heading": "صيانة العزل الحراري",
         "paragraph": "يتطلب العزل الحراري عمومًا الحد الأدنى من الصيانة، ولكن يمكن أن تساعد عمليات التفتيش المنتظمة في ضمان أدائه على المدى الطويل.",
@@ -214,6 +361,33 @@
             "answer": "بالتأكيد. يتم تعويض التكلفة الأولية لتركيب عزل حراري عالي الجودة بسرعة من خلال التوفير الكبير في فواتير الطاقة، مما يجعله استثمارًا فعالاً من حيث التكلفة على المدى الطويل."
           }
         ]
+      },
+      "whyChooseUs": {
+        "heading": "لماذا تختار خدمات العزل الحراري لدينا؟",
+        "paragraph": "مع سنوات من الخبرة في السوق السعودي، نحن نفهم التحديات الفريدة التي يفرضها المناخ المحلي ومعايير البناء. فريقنا من المحترفين المعتمدين يستخدم فقط مواد عالية الجودة ويتابع أفضل الممارسات الصناعية لضمان النتائج المثلى.",
+        "points": [
+          {
+            "title": "الخبرة المحلية",
+            "description": "نحن متخصصون في حلول مصممة خصيصًا لمناخ المملكة العربية السعودية ومعايير البناء."
+          },
+          {
+            "title": "المواد عالية الجودة",
+            "description": "نحن نستخدم فقط مواد عزل حراري عالية الجودة من المصنعين الموثوقين."
+          },
+          {
+            "title": "التركيب المهني",
+            "description": "فنيونا المعتمدون يضمنون التركيب الدقيق لتحقيق أقصى فعالية."
+          },
+          {
+            "title": "تغطية الضمان",
+            "description": "نحن ندافع عن عملنا من خلال حماية ضمان شاملة."
+          },
+          {
+            "title": "استشارة مجانية",
+            "description": "احصل على تقييم وعرض سعر بدون التزام لاحتياجات العزل الحراري الخاصة بك."
+          }
+        ],
+        "localKeywords": ["أفضل شركة عزل حراري مكة", "أفضل شركة عزل حراري جدة", "أفضل شركة عزل حراري الرياض", "خدمات عزل حراري محترفة السعودية"]
       }
     },
     "related": {
