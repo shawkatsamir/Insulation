@@ -1,85 +1,49 @@
-# Insulations KSA Website
+# insulmakkah.com
 
-A modern, responsive website for an insulation services provider based in the Kingdom of Saudi Arabia (KSA). This site showcases services, company values, and contact information for potential clients.
+The website of **عوازل مكة** — insulation and leak-detection services in Makkah, KSA.
 
-## 🌐 Live Demo
+Next.js 15 (App Router) + TypeScript + Tailwind v4. Deploys to Vercel.
 
-https://singular-tiramisu-a467d3.netlify.app
+## Structure
 
-## 💼 About the Company
+| Path | What it is |
+|---|---|
+| `/app` | App Router routes — homepage, `/services`, `/areas`, `/contact`, `/about`, `/blog`, and the 180 SEO-driver pages at `/[city]/[service]`. |
+| `/components` | UI components — Hero, ServiceCard, FAQAccordion, CityServiceGrid, etc. |
+| `/content` | Typed content modules — services, cities, city×service overrides, reviews, business profile. Zod-validated at build time. Shape mirrors the planned Sanity schema 1:1. |
+| `/lib` | Shared helpers — SEO metadata, URL builders. |
+| `/scripts` | Build-time scripts — content validation. |
+| `/public` | Static assets — images, favicons, GSC verification. |
+| `/data` | Legacy blog post JSON (10 posts × AR/EN). Preserved for the upcoming Sanity migration; not consumed by the app yet. |
+| `/.github/workflows` | CI — typecheck, lint, content validation, build. |
 
-We are a trusted provider of **thermal, acoustic, and industrial insulation solutions** across KSA. Our mission is to deliver high-quality, energy-efficient, and durable insulation systems tailored to the region’s climate and infrastructure needs.
+## Local development
 
-## 🧰 Features
+```bash
+npm install
+npm run dev
+```
 
-- Responsive design for mobile & desktop
-- Clear service descriptions
-- Contact form for client inquiries
-- SEO-friendly structure
-- Optimized for fast loading
+Then open <http://localhost:3000>.
 
-## 🛠 Technologies Used
+| Script | What it does |
+|---|---|
+| `npm run dev` | Next.js dev server with HMR |
+| `npm run build` | Validate content + production build (220 static pages) |
+| `npm run typecheck` | `tsc --noEmit` over the project |
+| `npm run validate-content` | Zod-validates `content/*.ts` and prints per-city override coverage |
+| `npm run lint` | ESLint with `next/core-web-vitals` + `next/typescript` rules |
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Optional: Simple animations or interactive features
+## Deploy
 
-## 🏢 Cities We Serve
+Vercel project's **Root Directory** is the repository root.
 
-Riyadh | Jeddah | Dammam | Al-Khobar | Jubail | Yanbu | Medina | Mecca | Taif | Buraidah | Hail | Abha | Tabuk | Najran | Qassim
+- Required env var: `NEXT_PUBLIC_GA_ID` (currently `G-J3SV4QG95R`).
+- Sitemap, robots, and OG images are generated from `app/sitemap.ts`, `app/robots.ts`, and per-page metadata helpers in `lib/seo.ts`.
+- Legacy URLs `/index.html` and `/blog.html` 308-redirect to their new paths via `next.config.ts`.
 
-## 📁 Project Structure
+## Content authoring
 
-E:/insulations/
-├── .git/ # Git version control
-├── .gitignore # Specifies intentionally untracked files to ignore
-├── blog.html # Blog page
-├── index.html # Main landing page
-├── manifest.json # Web App Manifest for PWA features
-├── package-lock.json # Records the exact dependency tree
-├── package.json # Project metadata and dependencies (npm)
-├── post.html # Individual blog post page
-├── postcss.config.js # PostCSS configuration
-├── README.md # Project README file
-├── robots.txt # Directives for web crawlers
-├── sitemap.xml # XML sitemap for search engines
-├── serve.json # Serve configuration for local development
-├── netlify.toml # Netlify deployment configuration
-├── css/ # Stylesheets
-│ ├── blog.css # Styles for the blog page
-│ ├── global.css # Global styles
-│ ├── index.css # Styles for the index page
-│ └── post.css # Styles for individual post pages
-├── data/ # Data files (e.g., JSON)
-│ ├── blogPost.json # Blog post data
-│ ├── translation.json # Translation data
-│ └── posts/ # Directory for individual post data
-│ └── 1.json # Example post data
-├── dist/ # Distribution/build output directory
-├── favicon/ # Favicon and app icon assets
-│ ├── apple-touch-icon.png
-│ ├── favicon-96x96.png
-│ ├── favicon.ico
-│ ├── favicon.svg
-│ ├── site.webmanifest
-│ ├── web-app-manifest-192x192.png
-│ └── web-app-manifest-512x512.png
-├── imgs/ # Image assets
-│ ├── insulation-hero.webp # Hero image
-│ └── posts/ # Images for blog posts
-│ └── post1.webp # Example post image
-├── js/ # JavaScript files
-│ ├── blog.js # JavaScript for the blog page
-│ ├── effects.js # JavaScript for visual effects
-│ ├── main.js # Main JavaScript file
-│ └── post.js # JavaScript for individual post pages
-├── node_modules/ # Node.js dependencies
-└── public/ # Publicly served assets
-└── fonts/ # Web fonts
-├── Cairo-Bold.woff2
-├── Cairo-Regular.woff2
-├── Cairo-SemiBold.woff2
-├── Montserrat-Bold.woff2
-├── Montserrat-Regular.woff2
-└── Montserrat-SemiBold.woff2
+The 9 services and 20 cities/neighborhoods power 180 city × service SEO landing pages at `/[city]/[service]`. Each combo can have a hand-written override in `content/city-service-overrides.ts` (≥550 chars, gated by Zod at build time). Combos without an override fall through to a templated default — SEO-acceptable but lower value.
+
+`npm run validate-content` prints per-city coverage so you can prioritise authoring.
