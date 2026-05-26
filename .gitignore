@@ -1,8 +1,14 @@
 # Dependencies
-/node_modules
+**/node_modules
 
-# Build output
-/dist
+# Next.js build output
+/.next
+/out
+/.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
 # Environment variables
 .env
@@ -23,5 +29,10 @@
 # OS-generated files
 .DS_Store
 Thumbs.db
-# Local Netlify folder
-.netlify
+
+# Logs
+*.log
+npm-debug.log*
+
+# Notes (legacy text dumps)
+*.txt

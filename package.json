@@ -1,40 +1,36 @@
 {
-  "name": "insulations",
-  "version": "1.0.0",
-  "description": "A modern, responsive website for an insulation services provider based in the Kingdom of Saudi Arabia (KSA). This site showcases services, company values, and contact information for potential clients.",
-  "main": "index.js",
+  "name": "insulmakkah-web",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:posts": "node build.js",
-    "clean": "rm -rf dist",
-    "create-dirs": "mkdir -p dist/css dist/js dist/imgs dist/favicon dist/data dist/public",
-    "build:html": "html-minifier index.html -o dist/index.html --remove-comments --collapse-whitespace && html-minifier blog.html -o dist/blog.html --remove-comments --collapse-whitespace",
-    "build:css": "postcss css/main.css -o dist/css/main.css && postcss css/blog.css -o dist/css/blog.css && postcss css/index.css -o dist/css/index.css && postcss css/post.css -o dist/css/post.css",
-    "build:js": "terser js/main.js -o dist/js/main.js -c -m && terser js/blog.js -o dist/js/blog.js -c -m && terser js/post.js -o dist/js/post.js -c -m && terser js/effects.js -o dist/js/effects.js -c -m",
-    "copy:assets": "cp -r imgs/* dist/imgs && cp -r favicon/* dist/favicon && cp -r data/* dist/data && cp -r public/* dist/public && cp sitemap.xml robots.txt manifest.json googlef0c8bb87b12734bd.html dist/",
-    "build": "npm run clean && npm run create-dirs && npm run build:html && npm run build:css && npm run build:js && npm run copy:assets && npm run build:posts",
-    "preview": "serve dist -c ../serve.json"
+    "dev": "next dev",
+    "build": "npm run validate-content && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "validate-content": "tsx scripts/validate-content.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shawkatsamir/Insulation.git  "
+  "dependencies": {
+    "@next/third-parties": "^15.5.0",
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-dialog": "^1.1.4",
+    "lucide-react": "^0.469.0",
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.0",
+    "zod": "^3.24.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/shawkatsamir/Insulation/issues  "
-  },
-  "homepage": "https://github.com/shawkatsamir/Insulation#readme  ",
   "devDependencies": {
-    "cssnano": "^7.0.7",
-    "html-minifier": "^4.0.0",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "postcss-import": "^16.1.0",
-    "rimraf": "^6.0.1",
-    "terser": "^5.43.1",
-    "cpx": "^1.5.0"
+    "@eslint/eslintrc": "^3.3.5",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15.5.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
   }
 }

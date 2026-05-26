@@ -1,12 +1,7 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-
-  // Pin the workspace root — the legacy static site at the parent dir has its
-  // own package-lock.json which otherwise confuses Next's file tracing.
-  outputFileTracingRoot: path.join(__dirname),
 
   images: {
     formats: ["image/avif", "image/webp"],
