@@ -76,7 +76,9 @@ export async function generateMetadata({
   return pageMetadata({
     title: cs.seo?.title || cs.title || "",
     description: cs.seo?.description || cs.tldr || "",
-    path: ["case-study", slug],
+    // Canonical from stored slug (decoded), not the percent-encoded URL param —
+    // otherwise canonical() double-encodes it and it mismatches the sitemap.
+    path: ["case-study", cs.slug ?? decodeSlug(slug)],
     image: ogImage,
   });
 }
@@ -101,7 +103,7 @@ export default async function CaseStudyPage({
 
   const city = cs.neighborhood ? getCity(cs.neighborhood) : null;
   const service = cs.serviceTypeSlug ? getService(cs.serviceTypeSlug) : null;
-  const url = canonical("case-study", slug);
+  const url = canonical("case-study", cs.slug ?? decodeSlug(slug));
 
   return (
     <>

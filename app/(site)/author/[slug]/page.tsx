@@ -15,7 +15,7 @@ import { PostCard } from "@/components/PostCard";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { PersonJsonLd } from "@/components/JsonLdSanity";
 import { pageMetadata } from "@/lib/seo";
-import { canonical, SITE_URL } from "@/lib/url";
+import { canonical } from "@/lib/url";
 
 export const revalidate = 3600;
 
@@ -60,7 +60,7 @@ export async function generateMetadata({
   return pageMetadata({
     title: `${author.name} — كاتب في مدونة عوازل مكة`,
     description: `${author.name}, ${author.role ?? ""}. ${author.yearsExperience ? `${author.yearsExperience} سنة خبرة. ` : ""}مقالات في العزل الحراري والمائي وكشف التسريبات.`,
-    path: ["author", slug],
+    path: ["author", author.slug ?? decodeSlug(slug)],
   });
 }
 
@@ -82,7 +82,7 @@ export default async function AuthorPage({
         .url()
     : null;
 
-  const url = `${SITE_URL}/author/${slug}`;
+  const url = canonical("author", author.slug ?? decodeSlug(slug));
 
   return (
     <>
