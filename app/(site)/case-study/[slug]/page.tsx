@@ -62,7 +62,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const cs = await fetchCaseStudy(slug);
   if (!cs) return {};
-  const ogImage = cs.seo?.ogImage
+  // Guard on .asset: the SEO projection coalesces ogImage to heroImage, which
+  // may carry alt/caption metadata with no uploaded asset. urlFor().url() throws
+  // on an asset-less object and crashes the prerender.
+  const ogImage = cs.seo?.ogImage?.asset
     ? urlFor(cs.seo.ogImage as Parameters<typeof urlFor>[0])
         .width(1200)
         .height(630)

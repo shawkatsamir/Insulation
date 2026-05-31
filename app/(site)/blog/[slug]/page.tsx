@@ -65,7 +65,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = await fetchPost(slug);
   if (!post) return {};
-  const ogImage = post.seo?.ogImage
+  // Guard on .asset, not bare truthiness: the SEO projection coalesces ogImage
+  // to heroImage, and an image object can carry alt/caption metadata with NO
+  // uploaded asset. urlFor().url() throws "Unable to resolve image URL from
+  // source" on an asset-less object, which crashes the prerender.
+  const ogImage = post.seo?.ogImage?.asset
     ? urlFor(post.seo.ogImage as Parameters<typeof urlFor>[0])
         .width(1200)
         .height(630)
