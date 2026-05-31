@@ -13,12 +13,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Static + city/service URLs (driven by the typed content modules).
   const staticUrls: MetadataRoute.Sitemap = [
-    { url: SITE_URL + "/", lastModified: now, priority: 1, changeFrequency: "weekly" },
-    { url: url("services"), lastModified: now, priority: 0.8, changeFrequency: "monthly" },
-    { url: url("areas"), lastModified: now, priority: 0.8, changeFrequency: "monthly" },
-    { url: url("blog"), lastModified: now, priority: 0.7, changeFrequency: "weekly" },
-    { url: url("about"), lastModified: now, priority: 0.4, changeFrequency: "yearly" },
-    { url: url("contact"), lastModified: now, priority: 0.5, changeFrequency: "yearly" },
+    {
+      url: SITE_URL + "/",
+      lastModified: now,
+      priority: 1,
+      changeFrequency: "weekly",
+    },
+    {
+      url: url("services"),
+      lastModified: now,
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      url: url("areas"),
+      lastModified: now,
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      url: url("blog"),
+      lastModified: now,
+      priority: 0.7,
+      changeFrequency: "weekly",
+    },
+    {
+      url: url("about"),
+      lastModified: now,
+      priority: 0.4,
+      changeFrequency: "yearly",
+    },
+    {
+      url: url("contact"),
+      lastModified: now,
+      priority: 0.5,
+      changeFrequency: "yearly",
+    },
   ];
 
   const serviceUrls = services.map((s) => ({

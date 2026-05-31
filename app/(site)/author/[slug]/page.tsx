@@ -30,11 +30,22 @@ export async function generateStaticParams() {
     .map((s) => ({ slug: s.slug as string }));
 }
 
+// Next hands non-ASCII dynamic segments to us percent-encoded, but slug.current
+// is stored decoded — decode before querying or the author 404s.
+function decodeSlug(slug: string): string {
+  try {
+    return decodeURIComponent(slug);
+  } catch {
+    return slug;
+  }
+}
+
 async function fetchAuthor(slug: string): Promise<AuthorDetail | null> {
+  const decoded = decodeSlug(slug);
   return (await client.fetch(
     AUTHOR_BY_SLUG_QUERY,
-    { slug },
-    { next: { tags: [`author:${slug}`, "author"] } },
+    { slug: decoded },
+    { next: { tags: [`author:${decoded}`, "author"] } },
   )) as AuthorDetail | null;
 }
 

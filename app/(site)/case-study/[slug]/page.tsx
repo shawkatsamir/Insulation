@@ -35,11 +35,22 @@ export async function generateStaticParams() {
     .map((s) => ({ slug: s.slug as string }));
 }
 
+// Next hands non-ASCII (Arabic) dynamic segments to us percent-encoded, but
+// slug.current is stored decoded — decode before querying or every doc 404s.
+function decodeSlug(slug: string): string {
+  try {
+    return decodeURIComponent(slug);
+  } catch {
+    return slug;
+  }
+}
+
 async function fetchCaseStudy(slug: string): Promise<CaseStudyDetail | null> {
+  const decoded = decodeSlug(slug);
   return (await client.fetch(
     CASE_STUDY_BY_SLUG_QUERY,
-    { slug, lang: DEFAULT_LANG },
-    { next: { tags: [`caseStudy:${slug}`, "caseStudy"] } },
+    { slug: decoded, lang: DEFAULT_LANG },
+    { next: { tags: [`caseStudy:${decoded}`, "caseStudy"] } },
   )) as CaseStudyDetail | null;
 }
 
