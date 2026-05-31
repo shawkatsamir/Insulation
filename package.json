@@ -14,11 +14,17 @@
     "@next/third-parties": "^15.5.0",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-dialog": "^1.1.4",
+    "@sanity/client": "^7.22.0",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.22.0",
     "lucide-react": "^0.469.0",
     "next": "^15.5.0",
+    "next-sanity": "^11.6.13",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.0",
+    "sanity": "^4.22.0",
+    "styled-components": "^6.4.2",
     "zod": "^3.24.0"
   },
   "devDependencies": {
