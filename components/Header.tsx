@@ -11,13 +11,14 @@ const nav = [
   { href: "/areas", label: "مناطق العمل" },
   { href: "/about", label: "من نحن" },
   { href: "/contact", label: "تواصل" },
+  { href: "/blog", label: "المدونة" },
 ];
 
 export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-navy-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-40 border-b border-navy-100 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/80">
       <div className="container-page flex h-16 items-center justify-between">
         <Link
           href="/"
@@ -73,7 +74,10 @@ export function Header() {
           id="mobile-nav"
           className="md:hidden border-t border-navy-100 bg-white"
         >
-          <nav className="container-page flex flex-col py-3" aria-label="قائمة الجوال">
+          <nav
+            className="container-page flex flex-col py-3"
+            aria-label="قائمة الجوال"
+          >
             {nav.map((n) => (
               <Link
                 key={n.href}
