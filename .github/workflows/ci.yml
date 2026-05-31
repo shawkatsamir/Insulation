@@ -8,6 +8,7 @@ on:
 
 env:
   FORCE_COLOR: 1
+  NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
 
 jobs:
   build:
