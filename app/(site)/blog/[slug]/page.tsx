@@ -83,7 +83,11 @@ export async function generateMetadata({
       post.seo?.description ||
       post.tldr ||
       "مقال من مدونة عوازل مكة عن خدمات العزل وكشف التسريبات في مكة المكرمة.",
-    path: ["blog", slug],
+    // Build the canonical from the stored slug (slug.current, decoded), NOT the
+    // URL param — params.slug arrives percent-encoded, and canonical() encodes
+    // again, producing a double-encoded URL that mismatches the sitemap and
+    // breaks Google indexing.
+    path: ["blog", post.slug ?? decodeSlug(slug)],
     image: ogImage,
   });
 }
@@ -115,7 +119,7 @@ export default async function PostPage({
         .url()
     : null;
 
-  const url = canonical("blog", slug);
+  const url = canonical("blog", post.slug ?? decodeSlug(slug));
 
   return (
     <>
