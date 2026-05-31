@@ -1,0 +1,1945 @@
+[
+  {
+    "options": {
+      "collapsible": true,
+      "collapsed": true
+    },
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 70
+              }
+            ],
+            "level": "warning",
+            "message": "Over 70 chars may get truncated in SERPs."
+          }
+        ],
+        "description": "Overrides the document title in <title> if provided. ~60 chars max.",
+        "name": "title",
+        "type": "string",
+        "title": "SEO Title (override)"
+      },
+      {
+        "rows": 3,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 170
+              }
+            ],
+            "level": "warning",
+            "message": "Over 170 chars may get truncated in SERPs."
+          }
+        ],
+        "description": "1–2 sentence summary shown in SERPs. ~155 chars max.",
+        "name": "description",
+        "type": "text",
+        "title": "Meta description"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "1200×630 recommended. Falls back to the hero image if empty.",
+        "name": "ogImage",
+        "type": "image",
+        "title": "Social share image"
+      },
+      {
+        "initialValue": false,
+        "description": "Sets robots: noindex. Use sparingly.",
+        "name": "noIndex",
+        "type": "boolean",
+        "title": "Hide from search engines"
+      },
+      {
+        "description": "The main query this page targets (Arabic). Used by the duplicate-content gate to flag cannibalization.",
+        "name": "focusKeyword",
+        "type": "string",
+        "title": "Primary focus keyword"
+      },
+      {
+        "options": {
+          "layout": "tags"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 5
+              }
+            ],
+            "level": "warning",
+            "message": "Stay focused — more than 5 dilutes intent."
+          }
+        ],
+        "description": "3–5 related queries this page also targets.",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "relatedKeywords",
+        "type": "array",
+        "title": "Secondary keywords"
+      }
+    ],
+    "name": "seo",
+    "type": "object",
+    "title": "SEO"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 8
+              }
+            ],
+            "level": "error",
+            "message": "Question must be at least 8 characters."
+          }
+        ],
+        "name": "q",
+        "type": "string",
+        "title": "Question"
+      },
+      {
+        "rows": 4,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 30
+              }
+            ],
+            "level": "error",
+            "message": "Answer must be substantive (≥30 chars) to rank in AI Overviews."
+          }
+        ],
+        "description": "1–3 sentence answer that makes sense out of context. Cite a fact or number when possible — this is what AI Overviews surface.",
+        "name": "a",
+        "type": "text",
+        "title": "Answer"
+      }
+    ],
+    "name": "faq",
+    "type": "object",
+    "title": "FAQ entry"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 3
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Short descriptive name shown in the article (e.g., \"كود البناء السعودي 2018\").",
+        "name": "label",
+        "type": "string",
+        "title": "Source label"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "uri",
+                "constraint": {
+                  "options": {
+                    "scheme": [
+                      "/^http$/",
+                      "/^https$/"
+                    ],
+                    "allowRelative": false,
+                    "relativeOnly": false,
+                    "allowCredentials": false
+                  }
+                }
+              }
+            ],
+            "level": "error",
+            "message": "Must be a valid http(s) URL."
+          }
+        ],
+        "name": "url",
+        "type": "url",
+        "title": "Source URL"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Government / Standards",
+              "value": "government"
+            },
+            {
+              "title": "Manufacturer datasheet",
+              "value": "manufacturer"
+            },
+            {
+              "title": "Academic / Research",
+              "value": "research"
+            },
+            {
+              "title": "Industry news",
+              "value": "news"
+            },
+            {
+              "title": "Technical manual",
+              "value": "manual"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "manufacturer",
+        "description": "Helps the duplicate-content validator weight source authority.",
+        "name": "type",
+        "type": "string",
+        "title": "Source type"
+      }
+    ],
+    "name": "citation",
+    "type": "object"
+  },
+  {
+    "of": [
+      {
+        "marks": {
+          "annotations": [
+            {
+              "fields": [
+                {
+                  "validation": [
+                    {
+                      "rules": [
+                        {
+                          "flag": "presence",
+                          "constraint": "required"
+                        },
+                        {
+                          "flag": "uri",
+                          "constraint": {
+                            "options": {
+                              "scheme": [
+                                "/^http$/",
+                                "/^https$/",
+                                "/^mailto$/",
+                                "/^tel$/"
+                              ],
+                              "allowRelative": false,
+                              "relativeOnly": false,
+                              "allowCredentials": false
+                            }
+                          }
+                        }
+                      ],
+                      "level": "error"
+                    }
+                  ],
+                  "name": "href",
+                  "type": "url"
+                }
+              ],
+              "name": "link",
+              "type": "object",
+              "title": "External link"
+            },
+            {
+              "fields": [
+                {
+                  "validation": [
+                    {
+                      "rules": [
+                        {
+                          "flag": "presence",
+                          "constraint": "required"
+                        }
+                      ],
+                      "level": "error"
+                    }
+                  ],
+                  "to": [
+                    {
+                      "type": "post"
+                    },
+                    {
+                      "type": "caseStudy"
+                    },
+                    {
+                      "type": "author"
+                    }
+                  ],
+                  "name": "reference",
+                  "type": "reference"
+                }
+              ],
+              "name": "internalLink",
+              "type": "object",
+              "title": "Internal link"
+            }
+          ],
+          "decorators": [
+            {
+              "value": "strong",
+              "title": "Strong"
+            },
+            {
+              "value": "em",
+              "title": "Emphasis"
+            }
+          ]
+        },
+        "lists": [
+          {
+            "value": "bullet",
+            "title": "Bullet"
+          },
+          {
+            "value": "number",
+            "title": "Numbered"
+          }
+        ],
+        "styles": [
+          {
+            "value": "normal",
+            "title": "Normal"
+          },
+          {
+            "value": "h2",
+            "title": "H2"
+          },
+          {
+            "value": "h3",
+            "title": "H3"
+          },
+          {
+            "value": "blockquote",
+            "title": "Quote"
+          }
+        ],
+        "of": [],
+        "type": "block"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error",
+                "message": "Alt text is required for every image."
+              }
+            ],
+            "name": "alt",
+            "type": "string",
+            "title": "Alt text (required for accessibility + SEO)"
+          },
+          {
+            "name": "caption",
+            "type": "string",
+            "title": "Caption (optional, shown below image)"
+          }
+        ],
+        "type": "image"
+      }
+    ],
+    "name": "richText",
+    "type": "array",
+    "title": "Rich text"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 3
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Real name. Will appear on every post byline.",
+        "name": "name",
+        "type": "string",
+        "title": "Full name (Arabic)"
+      },
+      {
+        "description": "For Google Knowledge Panel + structured data.",
+        "name": "nameLatin",
+        "type": "string",
+        "title": "Full name (Latin transliteration)"
+      },
+      {
+        "options": {
+          "source": "nameLatin",
+          "maxLength": 60
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "URL: /author/[slug]. Use Latin chars (e.g., 'ahmed-al-omari').",
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 5
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "e.g., \"مهندس عزل ميداني\" or \"رئيس قسم العزل الحراري\". Specific is better than generic.",
+        "name": "role",
+        "type": "string",
+        "title": "Role / title"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Real photo — not a logo or stock avatar.",
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "alt",
+            "type": "string",
+            "title": "Alt text"
+          }
+        ],
+        "name": "photo",
+        "type": "image",
+        "title": "Profile photo"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "100–300 words covering experience, specialisations, and notable projects. Surfaces on /author/[slug] and at the end of each post.",
+        "name": "bio",
+        "type": "richText",
+        "title": "Short bio"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 1
+              }
+            ],
+            "level": "error",
+            "message": "Add at least one credential for EEAT credibility."
+          }
+        ],
+        "description": "Certifications, years of experience, professional licences (e.g., SCE registration), notable training.",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "credentials",
+        "type": "array"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "yearsExperience",
+        "type": "number",
+        "title": "Years of experience"
+      },
+      {
+        "description": "LinkedIn is the strongest signal — add it if available.",
+        "of": [
+          {
+            "fields": [
+              {
+                "options": {
+                  "list": [
+                    "LinkedIn",
+                    "X / Twitter",
+                    "Instagram",
+                    "YouTube",
+                    "Website"
+                  ]
+                },
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "valid",
+                        "constraint": [
+                          "LinkedIn",
+                          "X / Twitter",
+                          "Instagram",
+                          "YouTube",
+                          "Website"
+                        ]
+                      },
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "platform",
+                "type": "string"
+              },
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "uri",
+                        "constraint": {
+                          "options": {
+                            "scheme": [
+                              "/^http$/",
+                              "/^https$/"
+                            ],
+                            "allowRelative": false,
+                            "relativeOnly": false,
+                            "allowCredentials": false
+                          }
+                        }
+                      },
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "url",
+                "type": "url"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "socialLinks",
+        "type": "array",
+        "title": "Social / professional links"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "title": "Public email"
+      }
+    ],
+    "name": "author",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Arabic",
+              "value": "ar"
+            },
+            {
+              "title": "English",
+              "value": "en"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "ar",
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "ar",
+                  "en"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "language",
+        "type": "string"
+      },
+      {
+        "initialValue": false,
+        "description": "Pillar posts are the hub of a topic cluster. Other posts link to them. Use sparingly — 1–3 per topic.",
+        "name": "isPillar",
+        "type": "boolean",
+        "title": "Pillar post?"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "Published at"
+      },
+      {
+        "description": "Bump this when you refresh the post quarterly. Surfaces on the byline and in JSON-LD as dateModified.",
+        "name": "updatedAt",
+        "type": "datetime",
+        "title": "Last updated"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 15
+              },
+              {
+                "flag": "max",
+                "constraint": 100
+              }
+            ],
+            "level": "warning",
+            "message": "Aim for 40–70 chars for best SERP display."
+          }
+        ],
+        "description": "Arabic post title. Should contain the primary keyword naturally.",
+        "name": "title",
+        "type": "string",
+        "title": "Title (H1)"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "URL: /blog/[slug]. Use Arabic letters + hyphens (e.g., 'دليل-عزل-الاسطح-مكة').",
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 3,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 150
+              },
+              {
+                "flag": "max",
+                "constraint": 500
+              }
+            ],
+            "level": "error",
+            "message": "TLDR must be 150–500 chars (~40–80 Arabic words)."
+          }
+        ],
+        "description": "40–60 word standalone answer to the search query. THIS is what Google's AI Overviews surface. Make it count.",
+        "name": "tldr",
+        "type": "text",
+        "title": "TLDR / Quick answer"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Original photo from real work. No stock photography — Google's image search rewards uniqueness.",
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  },
+                  {
+                    "flag": "min",
+                    "constraint": 10
+                  }
+                ],
+                "level": "error",
+                "message": "Alt text is required and must be descriptive."
+              }
+            ],
+            "name": "alt",
+            "type": "string",
+            "title": "Alt text (Arabic, describe what's in the photo)"
+          },
+          {
+            "name": "caption",
+            "type": "string",
+            "title": "Caption (shown under image)"
+          }
+        ],
+        "name": "heroImage",
+        "type": "image",
+        "title": "Hero image"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Named human with a real bio. Powers the E-E-A-T byline + Person JSON-LD.",
+        "to": [
+          {
+            "type": "author"
+          }
+        ],
+        "name": "author",
+        "type": "reference"
+      },
+      {
+        "description": "Link to the contentBrief that produced this post (for traceability).",
+        "to": [
+          {
+            "type": "contentBrief"
+          }
+        ],
+        "name": "brief",
+        "type": "reference",
+        "title": "Source brief"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Use H2 sections that each answer a People-Also-Ask question. First sentence of each section should restate the H2 as a complete answer (passage ranking).",
+        "name": "body",
+        "type": "richText"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 3
+              },
+              {
+                "flag": "max",
+                "constraint": 10
+              }
+            ],
+            "level": "error",
+            "message": "FAQ must have 3–10 entries (AEO sweet spot)."
+          }
+        ],
+        "description": "Minimum 3 Q&A pairs. Each answer must stand alone (read out of context). Emitted as FAQPage JSON-LD.",
+        "of": [
+          {
+            "type": "faq",
+            "title": "FAQ entry"
+          }
+        ],
+        "name": "faq",
+        "type": "array",
+        "title": "FAQ"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 2
+              }
+            ],
+            "level": "error",
+            "message": "At least 2 external citations required for EEAT credibility."
+          }
+        ],
+        "description": "Minimum 2 authoritative sources. Government standards, manufacturer datasheets, and academic research carry the most weight.",
+        "of": [
+          {
+            "type": "citation"
+          }
+        ],
+        "name": "citations",
+        "type": "array",
+        "title": "External citations"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 3
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "1–3 related posts. Strengthens the topical cluster.",
+        "of": [
+          {
+            "to": [
+              {
+                "type": "post"
+              },
+              {
+                "type": "caseStudy"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to blog post or case study"
+          }
+        ],
+        "name": "relatedPosts",
+        "type": "array",
+        "title": "Related posts"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 5
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Slug pairs (e.g., 'مكة/عزل-اسطح') to link this post out to high-intent landing pages. 2–3 ideal.",
+        "of": [
+          {
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "citySlug",
+                "type": "string"
+              },
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "serviceSlug",
+                "type": "string"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "relatedCityServices",
+        "type": "array",
+        "title": "Related city × service pages"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": true
+        },
+        "name": "seo",
+        "type": "seo",
+        "title": "SEO"
+      }
+    ],
+    "name": "post",
+    "type": "document",
+    "title": "Blog post"
+  },
+  {
+    "fields": [
+      {
+        "options": {
+          "list": [
+            {
+              "title": "💡 Idea",
+              "value": "idea"
+            },
+            {
+              "title": "🔍 Researched",
+              "value": "researched"
+            },
+            {
+              "title": "📝 Ready for draft",
+              "value": "ready-for-draft"
+            },
+            {
+              "title": "✍️ In draft",
+              "value": "in-draft"
+            },
+            {
+              "title": "👀 Ready for review",
+              "value": "ready-for-review"
+            },
+            {
+              "title": "✅ Published",
+              "value": "published"
+            },
+            {
+              "title": "🗄️ Archived",
+              "value": "archived"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "idea",
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "idea",
+                  "researched",
+                  "ready-for-draft",
+                  "in-draft",
+                  "ready-for-review",
+                  "published",
+                  "archived"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "status",
+        "type": "string"
+      },
+      {
+        "to": [
+          {
+            "type": "author"
+          }
+        ],
+        "name": "assignedTo",
+        "type": "reference",
+        "title": "Assigned author"
+      },
+      {
+        "description": "Set when a draft post is created from this brief.",
+        "to": [
+          {
+            "type": "post"
+          },
+          {
+            "type": "caseStudy"
+          }
+        ],
+        "name": "linkedPost",
+        "type": "reference",
+        "title": "Resulting post"
+      },
+      {
+        "name": "dueDate",
+        "type": "date",
+        "title": "Target publish date"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 5
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Working title"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "The single query this post targets.",
+        "name": "primaryKeyword",
+        "type": "string",
+        "title": "Primary keyword (Arabic)"
+      },
+      {
+        "options": {
+          "layout": "tags"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 5
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "3–5 related queries that share intent.",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "secondaryKeywords",
+        "type": "array",
+        "title": "Secondary keywords"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Informational (learn)",
+              "value": "informational"
+            },
+            {
+              "title": "Commercial (compare)",
+              "value": "commercial"
+            },
+            {
+              "title": "Navigational (find a brand)",
+              "value": "navigational"
+            },
+            {
+              "title": "Transactional (buy/hire)",
+              "value": "transactional"
+            }
+          ],
+          "layout": "radio"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "informational",
+                  "commercial",
+                  "navigational",
+                  "transactional"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "intent",
+        "type": "string",
+        "title": "Search intent"
+      },
+      {
+        "name": "monthlyVolume",
+        "type": "number",
+        "title": "Estimated monthly volume"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "max",
+                "constraint": 5
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Currently ranking pages for the primary keyword.",
+        "of": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "type": "url"
+          }
+        ],
+        "name": "competitorUrls",
+        "type": "array",
+        "title": "Top 3 competing URLs"
+      },
+      {
+        "rows": 3,
+        "description": "What do the competing URLs miss? Original data? Local angle? Recency? This is the one-sentence reason this post will rank above them.",
+        "name": "gapExploit",
+        "type": "text",
+        "title": "The gap we exploit"
+      },
+      {
+        "rows": 3,
+        "description": "Who specifically is reading this? (e.g., \"Makkah villa owner with a 6-year-old roof showing rain stains, comparing 2-3 contractors.\")",
+        "name": "audiencePersona",
+        "type": "text",
+        "title": "Audience persona"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Pillar guide",
+              "value": "pillar"
+            },
+            {
+              "title": "Case study",
+              "value": "case-study"
+            },
+            {
+              "title": "Explainer",
+              "value": "explainer"
+            },
+            {
+              "title": "Comparison",
+              "value": "comparison"
+            },
+            {
+              "title": "News / update",
+              "value": "news"
+            }
+          ],
+          "layout": "radio"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "pillar",
+                  "case-study",
+                  "explainer",
+                  "comparison",
+                  "news"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "structureType",
+        "type": "string",
+        "title": "Structure type"
+      },
+      {
+        "initialValue": 1500,
+        "description": "1500 for explainers, 2500+ for pillars.",
+        "name": "targetWordCount",
+        "type": "number",
+        "title": "Target word count"
+      },
+      {
+        "rows": 3,
+        "description": "Write the TLDR as part of the brief. Forces clarity on what the post is actually about.",
+        "name": "tldrTarget",
+        "type": "text",
+        "title": "Draft TLDR (40–60 words)"
+      },
+      {
+        "description": "Posts and case studies this post should link to.",
+        "of": [
+          {
+            "to": [
+              {
+                "type": "post"
+              },
+              {
+                "type": "caseStudy"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to blog post or case study"
+          }
+        ],
+        "name": "internalLinksToSeed",
+        "type": "array",
+        "title": "Internal links to seed"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "citySlug",
+                "type": "string"
+              },
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "serviceSlug",
+                "type": "string"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "relatedCityServices",
+        "type": "array",
+        "title": "City × service pages to link out to"
+      }
+    ],
+    "name": "contentBrief",
+    "type": "document",
+    "title": "Content brief"
+  },
+  {
+    "fields": [
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Arabic",
+              "value": "ar"
+            },
+            {
+              "title": "English",
+              "value": "en"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "ar",
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "ar",
+                  "en"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "language",
+        "type": "string"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "Published at"
+      },
+      {
+        "name": "updatedAt",
+        "type": "datetime",
+        "title": "Last updated"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "to": [
+          {
+            "type": "author"
+          }
+        ],
+        "name": "author",
+        "type": "reference"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 15
+              },
+              {
+                "flag": "max",
+                "constraint": 120
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Title (H1)"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 3,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 150
+              },
+              {
+                "flag": "max",
+                "constraint": 500
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "40–60 word summary of the project — surfaces in AI Overviews and case-study cards.",
+        "name": "tldr",
+        "type": "text",
+        "title": "TLDR / Quick summary"
+      },
+      {
+        "description": "Leave blank to keep anonymous (we'll show \"Private client\" on the page).",
+        "name": "clientName",
+        "type": "string",
+        "title": "Client name (optional)"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Villa",
+              "value": "villa"
+            },
+            {
+              "title": "Apartment building",
+              "value": "apartment-building"
+            },
+            {
+              "title": "Hotel",
+              "value": "hotel"
+            },
+            {
+              "title": "Mosque",
+              "value": "mosque"
+            },
+            {
+              "title": "School",
+              "value": "school"
+            },
+            {
+              "title": "Commercial",
+              "value": "commercial"
+            },
+            {
+              "title": "Industrial",
+              "value": "industrial"
+            }
+          ],
+          "layout": "dropdown"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "villa",
+                  "apartment-building",
+                  "hotel",
+                  "mosque",
+                  "school",
+                  "commercial",
+                  "industrial"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "clientType",
+        "type": "string",
+        "title": "Property type"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Slug matching a city in content/cities.ts (e.g., 'العزيزية', 'مكة', 'الجموم').",
+        "name": "neighborhood",
+        "type": "string",
+        "title": "Neighborhood / city slug"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Slug matching a service in content/services.ts (e.g., 'عزل-اسطح').",
+        "name": "serviceTypeSlug",
+        "type": "string",
+        "title": "Service slug"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  },
+                  {
+                    "flag": "min",
+                    "constraint": 10
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "alt",
+            "type": "string"
+          },
+          {
+            "name": "caption",
+            "type": "string"
+          }
+        ],
+        "name": "heroImage",
+        "type": "image",
+        "title": "Hero image"
+      },
+      {
+        "rows": 5,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 150
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "What the client was facing before we arrived. 1–3 paragraphs.",
+        "name": "problem",
+        "type": "text",
+        "title": "The problem"
+      },
+      {
+        "rows": 5,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 150
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "What we proposed and why. 1–3 paragraphs.",
+        "name": "solution",
+        "type": "text",
+        "title": "Our solution"
+      },
+      {
+        "description": "Step-by-step description of the work, materials, techniques. This is where you demonstrate expertise.",
+        "name": "workDetails",
+        "type": "richText",
+        "title": "Work details (rich text)"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 1
+              }
+            ],
+            "level": "error",
+            "message": "At least one before photo required for proof."
+          }
+        ],
+        "of": [
+          {
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "alt",
+                "type": "string"
+              },
+              {
+                "name": "caption",
+                "type": "string"
+              }
+            ],
+            "type": "image"
+          }
+        ],
+        "name": "beforePhotos",
+        "type": "array",
+        "title": "Before photos"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 1
+              }
+            ],
+            "level": "error",
+            "message": "At least one after photo required for proof."
+          }
+        ],
+        "of": [
+          {
+            "options": {
+              "hotspot": true
+            },
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ],
+                    "level": "error"
+                  }
+                ],
+                "name": "alt",
+                "type": "string"
+              },
+              {
+                "name": "caption",
+                "type": "string"
+              }
+            ],
+            "type": "image"
+          }
+        ],
+        "name": "afterPhotos",
+        "type": "array",
+        "title": "After photos"
+      },
+      {
+        "description": "e.g., \"3 days\", \"يومان\".",
+        "name": "duration",
+        "type": "string",
+        "title": "Project duration"
+      },
+      {
+        "description": "Bullet list of concrete outcomes (e.g., \"خفض درجة حرارة السطح من 65°C إلى 38°C\").",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "results",
+        "type": "array",
+        "title": "Measurable results"
+      },
+      {
+        "fields": [
+          {
+            "rows": 3,
+            "name": "quote",
+            "type": "text"
+          },
+          {
+            "description": "e.g., \"أبو محمد، صاحب الفيلا\".",
+            "name": "attribution",
+            "type": "string"
+          }
+        ],
+        "name": "testimonial",
+        "type": "object",
+        "title": "Client testimonial"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 2
+              }
+            ],
+            "level": "warning",
+            "message": "2+ FAQs strengthen AI Overview pickup."
+          }
+        ],
+        "of": [
+          {
+            "type": "faq",
+            "title": "FAQ entry"
+          }
+        ],
+        "name": "faq",
+        "type": "array",
+        "title": "FAQ"
+      },
+      {
+        "of": [
+          {
+            "type": "citation"
+          }
+        ],
+        "name": "citations",
+        "type": "array"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": true
+        },
+        "name": "seo",
+        "type": "seo",
+        "title": "SEO"
+      }
+    ],
+    "name": "caseStudy",
+    "type": "document",
+    "title": "Case study"
+  }
+]

@@ -45,9 +45,16 @@ const CITATIONS_PROJECTION = `citations[]{ _key, label, url, type }`;
 /*  Blog index                                                                */
 /* -------------------------------------------------------------------------- */
 
-export const POSTS_INDEX_QUERY = defineQuery(`
+/**
+ * NOTE: GROQ slice ranges must be *constant numbers* — `[$start...$end]` is
+ * rejected by the Content Lake ("slicing must use constant numbers"), which is
+ * why the blog index silently fell back to its empty state. We coerce the
+ * bounds to safe integers and interpolate them into the query string instead.
+ */
+export const postsIndexQuery = (start: number, end: number) =>
+  defineQuery(`
   *[_type == "post" && defined(slug.current) && language == $lang]
-  | order(coalesce(publishedAt, _createdAt) desc) [$start...$end] {
+  | order(coalesce(publishedAt, _createdAt) desc) [${Math.trunc(start)}...${Math.trunc(end)}] {
     _id,
     _type,
     title,
@@ -154,9 +161,10 @@ export const AUTHOR_SLUGS_QUERY = defineQuery(`
 /*  Case study                                                                */
 /* -------------------------------------------------------------------------- */
 
-export const CASE_STUDIES_INDEX_QUERY = defineQuery(`
+export const caseStudiesIndexQuery = (start: number, end: number) =>
+  defineQuery(`
   *[_type == "caseStudy" && defined(slug.current) && language == $lang]
-  | order(coalesce(publishedAt, _createdAt) desc) [$start...$end] {
+  | order(coalesce(publishedAt, _createdAt) desc) [${Math.trunc(start)}...${Math.trunc(end)}] {
     _id,
     _type,
     title,

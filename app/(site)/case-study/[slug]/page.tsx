@@ -35,11 +35,22 @@ export async function generateStaticParams() {
     .map((s) => ({ slug: s.slug as string }));
 }
 
+// Next hands non-ASCII (Arabic) dynamic segments to us percent-encoded, but
+// slug.current is stored decoded — decode before querying or every doc 404s.
+function decodeSlug(slug: string): string {
+  try {
+    return decodeURIComponent(slug);
+  } catch {
+    return slug;
+  }
+}
+
 async function fetchCaseStudy(slug: string): Promise<CaseStudyDetail | null> {
+  const decoded = decodeSlug(slug);
   return (await client.fetch(
     CASE_STUDY_BY_SLUG_QUERY,
-    { slug, lang: DEFAULT_LANG },
-    { next: { tags: [`caseStudy:${slug}`, "caseStudy"] } },
+    { slug: decoded, lang: DEFAULT_LANG },
+    { next: { tags: [`caseStudy:${decoded}`, "caseStudy"] } },
   )) as CaseStudyDetail | null;
 }
 
@@ -51,7 +62,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const cs = await fetchCaseStudy(slug);
   if (!cs) return {};
-  const ogImage = cs.seo?.ogImage
+  // Guard on .asset: the SEO projection coalesces ogImage to heroImage, which
+  // may carry alt/caption metadata with no uploaded asset. urlFor().url() throws
+  // on an asset-less object and crashes the prerender.
+  const ogImage = cs.seo?.ogImage?.asset
     ? urlFor(cs.seo.ogImage as Parameters<typeof urlFor>[0])
         .width(1200)
         .height(630)

@@ -34,11 +34,26 @@ export async function generateStaticParams() {
     .map((s) => ({ slug: s.slug as string }));
 }
 
+/**
+ * Next.js hands the dynamic `[slug]` segment to us *percent-encoded* for
+ * non-ASCII (Arabic) slugs. Our `slug.current` values are stored decoded, so we
+ * must decodeURIComponent before querying or every post 404s. decodeURIComponent
+ * can throw on a malformed `%` sequence, so we fall back to the raw value.
+ */
+function decodeSlug(slug: string): string {
+  try {
+    return decodeURIComponent(slug);
+  } catch {
+    return slug;
+  }
+}
+
 async function fetchPost(slug: string): Promise<PostDetail | null> {
+  const decoded = decodeSlug(slug);
   return (await client.fetch(
     POST_BY_SLUG_QUERY,
-    { slug, lang: DEFAULT_LANG },
-    { next: { tags: [`post:${slug}`, "post"] } },
+    { slug: decoded, lang: DEFAULT_LANG },
+    { next: { tags: [`post:${decoded}`, "post"] } },
   )) as PostDetail | null;
 }
 
@@ -50,7 +65,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = await fetchPost(slug);
   if (!post) return {};
-  const ogImage = post.seo?.ogImage
+  // Guard on .asset, not bare truthiness: the SEO projection coalesces ogImage
+  // to heroImage, and an image object can carry alt/caption metadata with NO
+  // uploaded asset. urlFor().url() throws "Unable to resolve image URL from
+  // source" on an asset-less object, which crashes the prerender.
+  const ogImage = post.seo?.ogImage?.asset
     ? urlFor(post.seo.ogImage as Parameters<typeof urlFor>[0])
         .width(1200)
         .height(630)

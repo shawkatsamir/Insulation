@@ -11,6 +11,16 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 640, 750, 828, 1080, 1200, 1920],
+    // Sanity serves all assets from cdn.sanity.io under /images/<projectId>/...
+    // next/image rejects any src whose hostname isn't whitelisted here, which
+    // is what threw "Invalid src prop ... hostname is not configured".
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "/images/**",
+      },
+    ],
   },
 
   // 301 redirects from legacy static URLs to preserve link equity.

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Newspaper, ArrowLeft } from "lucide-react";
 import { client } from "@/sanity/lib/client";
 import {
-  POSTS_INDEX_QUERY,
+  postsIndexQuery,
   POSTS_COUNT_QUERY,
 } from "@/sanity/lib/queries";
 import type { PostCardData } from "@/sanity/lib/query-types";
@@ -40,8 +40,8 @@ export default async function BlogIndex({
 
   const [posts, total] = (await Promise.all([
     client.fetch(
-      POSTS_INDEX_QUERY,
-      { lang: DEFAULT_LANG, start, end },
+      postsIndexQuery(start, end),
+      { lang: DEFAULT_LANG },
       { next: { tags: ["post"] } },
     ),
     client.fetch(
